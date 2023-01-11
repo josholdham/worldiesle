@@ -1,0 +1,32 @@
+.wonBanner {
+  border: 2px solid rgb(var(--highlight-rgb));
+  padding: 10px 5px;
+  margin: 20px 0 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.previousGuesses {
+  margin: 40px 0px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.previousGuessesTitle {
+  margin: 0 10px;
+  color: #ccc;
+}
+
+.line {
+  border-top: 1px dashed #eee;
+  flex: 1;
+}
+
+.shareButton {
+  background-color: rgb(var(--highlight-rgb));
+  padding: 10px 5px;
+  margin: 20px 0 0;
+  flex: 1;
+  width: 100%;
+}

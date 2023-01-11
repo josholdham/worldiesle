@@ -1,0 +1,44 @@
+.imagesRowOuter {
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  margin: 30px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagesRowInner {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.imageContainer {
+  width: 400px;
+}
+
+.imageNav {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 0;
+}
+
+.imageNavButton {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 5px;
+}
+.imageNavButton:last-child {
+  margin-right: 0px;
+}
+
+.imageNavButtonActive {
+  background-color: rgb(var(--highlight-rgb))
+}

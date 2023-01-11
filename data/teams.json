@@ -1,0 +1,127 @@
+[
+  {
+    "id": "ARS",
+    "names": ["Arsenal FC", "Arsenal"],
+    "imgUrl": "https://crests.football-data.org/57.png"
+  },
+  {
+    "id": "AVL",
+    "names": ["Aston Villa FC", "Aston Villa"],
+    "imgUrl": "https://crests.football-data.org/58.png"
+  },
+  {
+    "id": "CHE",
+    "names": ["Chelsea FC", "Chelsea"],
+    "imgUrl": "https://crests.football-data.org/61.png"
+  },
+  {
+    "id": "EVE",
+    "names": ["Everton FC", "Everton"],
+    "imgUrl": "https://crests.football-data.org/62.png"
+  },
+  {
+    "id": "FUL",
+    "names": ["Fulham FC", "Fulham"],
+    "imgUrl": "https://crests.football-data.org/63.svg"
+  },
+  {
+    "id": "LIV",
+    "names": ["Liverpool FC", "Liverpool"],
+    "imgUrl": "https://crests.football-data.org/64.png"
+  },
+  {
+    "id": "MCI",
+    "names": ["Manchester City FC", "Man City"],
+    "imgUrl": "https://crests.football-data.org/65.png"
+  },
+  {
+    "id": "MUN",
+    "names": ["Manchester United FC", "Man United"],
+    "imgUrl": "https://crests.football-data.org/66.png"
+  },
+  {
+    "id": "NEW",
+    "names": ["Newcastle United FC", "Newcastle"],
+    "imgUrl": "https://crests.football-data.org/67.png"
+  },
+  {
+    "id": "TOT",
+    "names": ["Tottenham Hotspur FC", "Tottenham"],
+    "imgUrl": "https://crests.football-data.org/73.svg"
+  },
+  {
+    "id": "WBA",
+    "names": ["West Bromwich Albion FC", "West Brom"],
+    "imgUrl": "https://crests.football-data.org/74.png"
+  },
+  {
+    "id": "WOL",
+    "names": ["Wolverhampton Wanderers FC", "Wolverhampton"],
+    "imgUrl": "https://crests.football-data.org/76.svg"
+  },
+  {
+    "id": "BUR",
+    "names": ["Burnley FC", "Burnley"],
+    "imgUrl": "https://crests.football-data.org/328.png"
+  },
+  {
+    "id": "LEI",
+    "names": ["Leicester City FC", "Leicester City"],
+    "imgUrl": "https://crests.football-data.org/338.png"
+  },
+  {
+    "id": "SOU",
+    "names": ["Southampton FC", "Southampton"],
+    "imgUrl": "https://crests.football-data.org/340.png"
+  },
+  {
+    "id": "LEE",
+    "names": ["Leeds United FC", "Leeds United"],
+    "imgUrl": "https://crests.football-data.org/341.png"
+  },
+  {
+    "id": "CRY",
+    "names": ["Crystal Palace FC", "Crystal Palace"],
+    "imgUrl": "https://crests.football-data.org/354.png"
+  },
+  {
+    "id": "SHE",
+    "names": ["Sheffield United FC", "Sheffield Utd"],
+    "imgUrl": "https://crests.football-data.org/356.svg"
+  },
+  {
+    "id": "BHA",
+    "names": ["Brighton & Hove Albion FC", "Brighton Hove"],
+    "imgUrl": "https://crests.football-data.org/397.svg"
+  },
+  {
+    "id": "WHU",
+    "names": ["West Ham United FC", "West Ham"],
+    "imgUrl": "https://crests.football-data.org/563.png"
+  },
+  {
+    "id": "NOR",
+    "names": ["Norwich City FC", "Norwich"],
+    "imgUrl": "https://crests.football-data.org/68.png"
+  },
+  {
+    "id": "WAT",
+    "names": ["Watford FC", "Watford"],
+    "imgUrl": "https://crests.football-data.org/346.png"
+  },
+  {
+    "id": "BRE",
+    "names": ["Brentford FC", "Brentford"],
+    "imgUrl": "https://crests.football-data.org/402.png"
+  },
+  {
+    "id": "NOT",
+    "names": ["Nottingham Forest FC", "Nottingham"],
+    "imgUrl": "https://crests.football-data.org/351.png"
+  },
+  {
+    "id": "BOU",
+    "names": ["AFC Bournemouth", "Bournemouth"],
+    "imgUrl": "https://crests.football-data.org/1044.png"
+  }
+]

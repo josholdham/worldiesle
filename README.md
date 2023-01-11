@@ -1,3 +1,18 @@
+# Worldiesle
+
+## Todo
+
+- [ ] Create scripts to import teams & players
+  - [x] Create script folder, & dev instal ts-node
+  - [ ] Choose API
+  - [ ] Save to json files
+- [x] Setup basic autocomplete
+- [ ] Tidy input inline styles
+- [ ] Add analytics
+- [ ] PWA-ready
+
+=========
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
