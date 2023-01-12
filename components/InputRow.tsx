@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import Autosuggest, { ChangeEvent } from 'react-autosuggest';
+import Autosuggest, {
+  ChangeEvent,
+  RenderInputComponentProps,
+} from 'react-autosuggest';
 import Fuse from 'fuse.js';
 import {
   FormattedPlayer,
   FormattedTeam,
-  GuessFromSuggestion,
+  FormattedYear,
+  Suggestion,
   GuessType,
 } from '../custom-types';
 import styles from '../styles/InputRow.module.css';
+import theme from '../utils/autosuggestTheme';
+import Emoji from './Emoji';
 
 const fuseOptions = {
   includeScore: true,
@@ -18,27 +24,31 @@ const fuseOptions = {
 
 const settings = {
   teamA: {
-    placeholder: 'Enter Team A',
+    placeholder: 'Guess a Home Team',
   },
   teamB: {
-    placeholder: 'Enter Team B',
+    placeholder: 'Guess an Away Team',
   },
   player: {
-    placeholder: 'Enter Player',
+    placeholder: 'Guess a Player',
   },
   year: {
-    placeholder: 'Enter Year',
+    placeholder: 'Guess a Year',
   },
 };
 
-type FormattedOption = FormattedTeam | FormattedPlayer;
+// TODO: perhaps this could be avoided if I could pass a generic to a component?
+type FormattedOption =
+  | FormattedTeam
+  | FormattedPlayer
+  | FormattedYear;
 
 const InputRow: React.FC<{
   options: FormattedOption[];
   inputType: GuessType;
   guessIndex: number;
-  onSetValue: (val: GuessFromSuggestion) => void;
-  correctGuess: GuessFromSuggestion;
+  onSetValue: (val: Suggestion) => void;
+  correctGuess: Suggestion;
 }> = ({
   options,
   inputType,
@@ -46,27 +56,27 @@ const InputRow: React.FC<{
   guessIndex,
   correctGuess,
 }) => {
-  console.log('correctGuess', correctGuess);
   // TODO: should this be in a memo?
   const fuse = new Fuse(options, fuseOptions);
 
   const [value, setValue] = useState('');
-  const [suggestions, setSuggestions] = useState<FormattedOption[]>(
-    []
-  );
+  const [suggestions, setSuggestions] =
+    useState<FormattedOption[]>(options);
 
+  /** Whenever we are looking at a new guess, check if there is a (previous) correct
+   * guess: if there is we want to pre-fill the input and disable new values. */
   useEffect(() => {
     setValue(correctGuess?.names[0] || '');
   }, [guessIndex, correctGuess]);
 
   const clearSuggestions = () => {
-    setSuggestions([]);
+    setSuggestions(options);
   };
 
+  /** Populate the suggestion array based on input text */
   const getSuggestions = ({ value }: { value: string }): void => {
     const inputValue = value.trim().toLowerCase();
     const inputLength = inputValue.length;
-
     const fuseResults = fuse.search(inputValue);
 
     setSuggestions(
@@ -74,14 +84,23 @@ const InputRow: React.FC<{
     );
   };
 
+  const manuallyMatchOption = (val: string) =>
+    options.find((o) => o.names[0] === val);
+
   const onChange = (
-    event: React.FormEvent<HTMLElement>,
-    { newValue }: ChangeEvent
+    _: React.FormEvent<HTMLElement>,
+    { newValue, method }: ChangeEvent
   ) => {
     setValue(newValue);
+    const matched = manuallyMatchOption(newValue);
+    if (matched) {
+      onSetValue(matched);
+    } else {
+      onSetValue(undefined);
+    }
   };
 
-  const inputProps = {
+  const customInputProps = {
     placeholder: settings[inputType].placeholder,
     value,
     onChange,
@@ -89,19 +108,21 @@ const InputRow: React.FC<{
     disabled: !!correctGuess,
   };
 
-  const renderInputComponent = (inputProps) => (
+  const renderInputComponent = (
+    inputProps: RenderInputComponentProps
+  ) => (
     <div style={{ position: 'relative' }}>
       <input
         {...inputProps}
         style={
           correctGuess
-            ? { paddingLeft: 25, borderColor: 'green' }
+            ? { paddingLeft: 27, borderColor: 'green' }
             : {}
         }
       />
       {correctGuess ? (
         <div style={{ position: 'absolute', top: -1, padding: 5 }}>
-          ✅
+          <Emoji symbol="✅" label="White Checkmark" />
         </div>
       ) : null}
     </div>
@@ -127,7 +148,7 @@ const InputRow: React.FC<{
           </div>
         );
       }}
-      inputProps={inputProps}
+      inputProps={customInputProps}
       containerProps={{
         className: styles['input-container'],
       }}
@@ -140,10 +161,12 @@ const InputRow: React.FC<{
         </div>
       )}
       onSuggestionSelected={(event, { suggestion }) => {
-        setSuggestions([]);
-        onSetValue(suggestion);
+        setSuggestions(options);
       }}
+      theme={theme}
       renderInputComponent={renderInputComponent}
+      shouldRenderSuggestions={() => true}
+      highlightFirstSuggestion
     />
   );
 };

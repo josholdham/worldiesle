@@ -18,6 +18,10 @@
   overflow-y: scroll;
 }
 
+.suggestionsContainerOpen {
+  border: 1px solid red;
+}
+
 .suggestions-container ul {
   border: 1px solid #fff;
 }
@@ -26,7 +30,6 @@
   list-style-type: none;
   border-bottom: 1px solid #fff;
   padding: 7px 5px;
-  font-size: .8rem;
 }
 
 .highlighted-suggestion {

@@ -10,9 +10,16 @@ export type FormattedPlayer = {
   nationality: string;
 };
 
+export type FormattedYear = {
+  id: string;
+  names: string[];
+};
+
 export type GuessType = 'teamA' | 'teamB' | 'player' | 'year';
 
 export type BasicAnswer = {
+  dateId: string;
+  dayNumber: number;
   teamA: string;
   teamB: string;
   player: string;
@@ -22,17 +29,20 @@ export type BasicAnswer = {
   homeTeamMatters?: boolean;
 };
 
-export type GuessFromSuggestion =
+export type Suggestion =
   | FormattedPlayer
   | FormattedTeam
+  | FormattedYear
   | undefined;
 
-export type FullSetOfGuesses = {
-  teamA?: GuessFromSuggestion;
-  teamB?: GuessFromSuggestion;
-  player?: GuessFromSuggestion;
-  year?: GuessFromSuggestion;
+export type SetOfGuesses = {
+  teamA: Suggestion;
+  teamB: Suggestion;
+  player: Suggestion;
+  year: Suggestion;
 };
+
+export type StoredGuesses = Record<string, SetOfGuesses[]>;
 
 export type EmojiProps = {
   label?: string;
@@ -40,8 +50,15 @@ export type EmojiProps = {
 };
 
 export type GuessWithFeedback = {
-  guess: GuessFromSuggestion;
+  guess: Suggestion;
   emoji: EmojiProps;
   hoverText: string;
-  status: string;
+  isCorrect: boolean;
+};
+
+export type SetOfGuessesWithFeedback = {
+  teamA?: GuessWithFeedback;
+  teamB?: GuessWithFeedback;
+  player?: GuessWithFeedback;
+  year?: GuessWithFeedback;
 };

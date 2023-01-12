@@ -9,15 +9,23 @@ import {
   FormattedPlayer,
   FormattedTeam,
   BasicAnswer,
+  FormattedYear,
 } from '../custom-types';
+import Header from '../components/Header';
 
 type HomeProps = {
   teams: FormattedTeam[];
   players: FormattedPlayer[];
+  years: FormattedYear[];
   answer: BasicAnswer;
 };
 
-const Home: React.FC<HomeProps> = ({ teams, players, answer }) => {
+const Home: React.FC<HomeProps> = ({
+  teams,
+  players,
+  answer,
+  years,
+}) => {
   return (
     <>
       <Head>
@@ -33,14 +41,10 @@ const Home: React.FC<HomeProps> = ({ teams, players, answer }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.headerRow}>
-          <h2>
-            worldies<span className="highlighted-text">le</span>
-          </h2>
-        </div>
+        <Header />
         <div className={styles.bodyContent}>
-          <p className={styles.heroText}>
-            <h1>
+          <div className="inner-container--hero">
+            <h1 className={styles.heroText}>
               Guess the teams, scorer and year of this iconic or
               <span className="highlighted-text-secondary">
                 {' '}
@@ -48,9 +52,13 @@ const Home: React.FC<HomeProps> = ({ teams, players, answer }) => {
               </span>{' '}
               goal from the pictures below
             </h1>
-          </p>
-
-          <Game teams={teams} players={players} answer={answer} />
+          </div>
+          <Game
+            teams={teams}
+            players={players}
+            years={years}
+            answer={answer}
+          />
         </div>
       </main>
     </>
@@ -58,7 +66,10 @@ const Home: React.FC<HomeProps> = ({ teams, players, answer }) => {
 };
 
 const LAUNCH_DATE = '2023-01-04';
+const START_YEAR = 1970;
+
 export async function getStaticProps() {
+  const END_YEAR = dayjs().year();
   const daysSinceLaunch = dayjs().diff(LAUNCH_DATE, 'day');
 
   //Find the absolute path of the json directory
@@ -73,18 +84,30 @@ export async function getStaticProps() {
   );
 
   const answer: BasicAnswer = {
+    dateId: 'test',
+    dayNumber: 1,
     teamA: 'CHE',
     teamB: 'LIV',
     player: 'Mohamed Salah',
     year: 2020,
     competition: 'Premier League',
     link: 'http://youtube.com',
+    homeTeamMatters: true,
   };
+
+  const years: FormattedYear[] = [];
+  for (let i = START_YEAR; i <= END_YEAR; i++) {
+    years.push({
+      id: i.toString(),
+      names: [i.toString()],
+    });
+  }
 
   return {
     props: {
       teams: JSON.parse(teamsFile),
       players: JSON.parse(playersFile),
+      years,
       answer,
     },
   };

@@ -8,6 +8,10 @@
   - [ ] Save to json files
 - [x] Setup basic autocomplete
 - [ ] Tidy input inline styles
+- [ ] Add heart, faq and stats icons
+- [ ] Better year indicators
+- [x] Sort out font size in suggestion list
+- [ ] Ensure manual entered year counts
 - [ ] Add analytics
 - [ ] PWA-ready
 

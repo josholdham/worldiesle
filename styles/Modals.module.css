@@ -1,0 +1,41 @@
+.h2 {
+  text-align: center;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.statsBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.statsValue {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.statsLabel {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: .9rem;
+  margin-top: 5px;
+  max-width: 100px;
+  text-align: center;
+}
+
+.statsDivider {
+  width: 400px;
+  margin: 40px auto;
+  border-top: 1px solid #bbb;
+}
+
+.statsDistributionTitle {
+
+}

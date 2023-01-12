@@ -1,27 +1,24 @@
 .guess-container {
-  margin: 10px 0 0;
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-  font-size: 0.8rem;
-  
+  flex-direction: column;  
 }
 
 .guess-title {
   text-transform: uppercase;
-  font-size: .8rem;
   padding-bottom: 5px;
+  font-size: .8rem;
 }
 
 .guess-table {
   display: flex;
   flex-direction: column;
   border: 1px solid #888;
-  font-size: 0.9rem;
   color: #888;
 }
 
 .cell {
-  padding: 7px;
+  padding: 5px;
   border-left: 1px solid #888;
 }
 
@@ -46,10 +43,17 @@
   border-left: 0;
   padding-left: 5px;
   padding-right: 10px;
+  width: 60px;
 }
 
 .indicator-cell {
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.guess-cell {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 }

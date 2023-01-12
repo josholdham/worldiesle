@@ -2,30 +2,34 @@ import React, { useState } from 'react';
 import {
   FormattedPlayer,
   FormattedTeam,
-  FullSetOfGuesses,
-  GuessFromSuggestion,
+  FormattedYear,
+  SetOfGuesses,
+  SetOfGuessesWithFeedback,
+  Suggestion,
 } from '../custom-types';
-import styles from '../styles/Guess.module.css';
+import styles from '../styles/GuessInputs.module.css';
 import InputRow from './InputRow';
 
-type GuessProps = {
+type GuessInputsProps = {
   teams: FormattedTeam[];
   players: FormattedPlayer[];
+  years: FormattedYear[];
   guessIndex: number;
-  onSubmit: (guess: FullSetOfGuesses) => void;
-  correctGuesses: FullSetOfGuesses;
+  onSubmit: (guess: SetOfGuesses) => void;
+  correctGuesses: SetOfGuessesWithFeedback;
 };
-const Guess: React.FC<GuessProps> = ({
+const GuessInputs: React.FC<GuessInputsProps> = ({
   guessIndex,
   teams,
   players,
+  years,
   onSubmit,
   correctGuesses,
 }) => {
-  const [teamA, setTeamA] = useState<GuessFromSuggestion>();
-  const [teamB, setTeamB] = useState<GuessFromSuggestion>();
-  const [player, setPlayer] = useState<GuessFromSuggestion>();
-  const [year, setYear] = useState<GuessFromSuggestion>();
+  const [teamA, setTeamA] = useState<Suggestion>();
+  const [teamB, setTeamB] = useState<Suggestion>();
+  const [player, setPlayer] = useState<Suggestion>();
+  const [year, setYear] = useState<Suggestion>();
 
   const onGuessClick = () => {
     onSubmit({
@@ -34,6 +38,10 @@ const Guess: React.FC<GuessProps> = ({
       player,
       year,
     });
+
+    setTeamA(undefined);
+    setTeamB(undefined);
+    setPlayer(undefined);
   };
 
   return (
@@ -46,28 +54,29 @@ const Guess: React.FC<GuessProps> = ({
         inputType="teamA"
         onSetValue={setTeamA}
         guessIndex={guessIndex}
-        correctGuess={correctGuesses.teamA}
+        correctGuess={correctGuesses.teamA?.guess}
       />
       <InputRow
         options={teams}
         inputType="teamB"
         onSetValue={setTeamB}
         guessIndex={guessIndex}
-        correctGuess={correctGuesses.teamB}
+        correctGuess={correctGuesses.teamB?.guess}
       />
       <InputRow
         options={players}
         inputType="player"
         onSetValue={setPlayer}
         guessIndex={guessIndex}
-        correctGuess={correctGuesses.player}
+        correctGuess={correctGuesses.player?.guess}
       />
-      {/* <InputRow
-        options={teams}
+      <InputRow
+        options={years}
         inputType="year"
         onSetValue={setYear}
         guessIndex={guessIndex}
-      /> */}
+        correctGuess={correctGuesses.year?.guess}
+      />
       <button className={`button`} onClick={onGuessClick}>
         Guess
       </button>
@@ -75,4 +84,4 @@ const Guess: React.FC<GuessProps> = ({
   );
 };
 
-export default Guess;
+export default GuessInputs;

@@ -1,208 +1,166 @@
-import Image from 'next/image';
-import Guess from '../components/Guess';
+import GuessInputs from './GuessInputs';
 import styles from '../styles/Game.module.css';
 import {
   FormattedTeam,
   FormattedPlayer,
-  FullSetOfGuesses,
+  SetOfGuesses,
   BasicAnswer,
-  GuessWithFeedback,
+  SetOfGuessesWithFeedback,
+  GuessType,
+  FormattedYear,
 } from '../custom-types';
-import { useCallback, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import PreviousGuess from './PreviousGuess';
 import ImagesBrowser from './ImagesBrowser';
 import Confetti from './Confetti';
-import Emoji from './Emoji';
-
-const defaultGuessWithFeedback = {
-  status: 'blank',
-  emoji: {
-    symbol: '🔴',
-    label: 'Red Circle',
-  },
-  hoverText: 'No answer was guessed.',
-};
+import { getGuessFeedback } from '../utils/evaluateGuesses';
+import { getTodaysGuesses, storeGuess } from '../utils/storage';
+import PuffLoader from 'react-spinners/PuffLoader';
+import GameFinished from './GameFinished';
 
 type GameProps = {
   teams: FormattedTeam[];
   players: FormattedPlayer[];
   answer: BasicAnswer;
+  years: FormattedYear[];
 };
-const Game: React.FC<GameProps> = ({ teams, players, answer }) => {
-  const [guesses, setGuesses] = useState<FullSetOfGuesses[]>([]);
-  const [correctGuesses, setCorrectGuesses] =
-    useState<FullSetOfGuesses>({});
-
-  const onSubmit = useCallback(
-    (basicGuess: FullSetOfGuesses) => {
-      if (guesses.length > 4) return;
-
-      const correctGuessesCopy = { ...correctGuesses };
-
-      const teamAGuess: GuessWithFeedback = {
-        guess: basicGuess.teamA,
-        ...defaultGuessWithFeedback,
-      };
-      if (
-        basicGuess.teamA?.id === answer.teamA ||
-        (!answer.homeTeamMatters &&
-          basicGuess.teamA?.id === answer.teamB &&
-          basicGuess.teamB?.id !== answer.teamB)
-      ) {
-        teamAGuess.status = 'correct';
-        teamAGuess.emoji = {
-          symbol: '✅',
-          label: 'White Checkmark',
-        };
-        teamAGuess.hoverText = '';
-      } else if (
-        answer.homeTeamMatters &&
-        basicGuess.teamA?.id === answer.teamB &&
-        basicGuess.teamB?.id !== answer.teamB
-      ) {
-        teamAGuess.status = 'close';
-        teamAGuess.emoji = {
-          symbol: '🔄',
-          label: 'Clockwise Arrows',
-        };
-        teamAGuess.hoverText =
-          'This team did feature in this match, but not as the home team';
-      } else {
-        teamAGuess.status = 'incorrect';
-        teamAGuess.emoji = {
-          symbol: '🔴',
-          label: 'Red Circle',
-        };
-        teamAGuess.hoverText = 'Incorrect guess';
-      }
-
-      const teamBGuess: GuessWithFeedback = {
-        guess: basicGuess.teamB,
-        ...defaultGuessWithFeedback,
-      };
-      if (
-        basicGuess.teamB?.id === answer.teamB ||
-        (!answer.homeTeamMatters &&
-          basicGuess.teamB?.id === answer.teamA &&
-          basicGuess.teamA?.id !== answer.teamA)
-      ) {
-        teamBGuess.status = 'correct';
-        teamBGuess.emoji = {
-          symbol: '✅',
-          label: 'White Checkmark',
-        };
-        teamBGuess.hoverText = '';
-      } else if (
-        answer.homeTeamMatters &&
-        basicGuess.teamB?.id === answer.teamA &&
-        basicGuess.teamA?.id !== answer.teamA
-      ) {
-        teamBGuess.status = 'close';
-        teamBGuess.emoji = {
-          symbol: '🔄',
-          label: 'Clockwise Arrows',
-        };
-        teamBGuess.hoverText =
-          'This team did feature in this match, but not as the away team';
-      } else {
-        teamBGuess.status = 'incorrect';
-        teamBGuess.emoji = {
-          symbol: '🔴',
-          label: 'Red Circle',
-        };
-        teamBGuess.hoverText = 'Incorrect guess';
-      }
-
-      const playerGuess: GuessWithFeedback = {
-        guess: basicGuess.player,
-        ...defaultGuessWithFeedback,
-      };
-      if (basicGuess.player?.id === answer.player) {
-        playerGuess.status = 'correct';
-        playerGuess.emoji = {
-          symbol: '✅',
-          label: 'White Checkmark',
-        };
-        playerGuess.hoverText = '';
-      } else {
-        playerGuess.status = 'incorrect';
-        playerGuess.emoji = {
-          symbol: '🔴',
-          label: 'Red Circle',
-        };
-        playerGuess.hoverText = 'Incorrect guess';
-      }
-
-      setCorrectGuesses(correctGuessesCopy);
-      setGuesses([...guesses, basicGuess]);
-    },
-    [guesses, correctGuesses, answer]
+const Game: React.FC<GameProps> = ({
+  teams,
+  players,
+  answer,
+  years,
+}) => {
+  const [guesses, setGuesses] = useState<SetOfGuessesWithFeedback[]>(
+    []
   );
+  const [loaded, setLoaded] = useState(false);
+
+  /** When we get a new answer (this includes when the component is initialised)
+   * we check local storage to see if any guesses already exist */
+  useEffect(() => {
+    const existingBasicGuesses = getTodaysGuesses(answer.dateId);
+    const existingGuesses: SetOfGuessesWithFeedback[] =
+      existingBasicGuesses.map((guess) => {
+        // Create curried fn to get feedback for each guess type
+        const getFeedback = (guessKey: GuessType) =>
+          getGuessFeedback(guess, guessKey, answer, {});
+
+        return {
+          teamA: getFeedback('teamA'),
+          teamB: getFeedback('teamB'),
+          player: getFeedback('player'),
+          year: getFeedback('year'),
+        };
+      });
+    setGuesses(existingGuesses);
+    setLoaded(true);
+  }, [answer]);
+
+  const onSubmit = (basicGuess: SetOfGuesses) => {
+    if (guesses.length > 4) return;
+
+    // Add this guess to local storage.
+    storeGuess(answer.dateId, basicGuess);
+
+    // Create curried fn to get feedback for each guess type
+    const getFeedback = (guessKey: GuessType) =>
+      getGuessFeedback(basicGuess, guessKey, answer, correctGuesses);
+
+    const newGuess = {
+      teamA: getFeedback('teamA'),
+      teamB: getFeedback('teamB'),
+      player: getFeedback('player'),
+      year: getFeedback('year'),
+    };
+
+    setGuesses([newGuess, ...guesses]);
+  };
 
   const isGameWon = useMemo(() => {
-    const { teamA, teamB, player } = correctGuesses;
-    return !!(teamA && teamB && player);
-  }, [correctGuesses]);
+    if (!guesses.length) return false;
+    const guess = guesses[0];
+    if (
+      guess.teamA?.isCorrect &&
+      guess.teamB?.isCorrect &&
+      guess.player?.isCorrect &&
+      guess.year?.isCorrect
+    ) {
+      return true;
+    }
+    return false;
+  }, [guesses]);
+
+  const correctGuesses = useMemo<SetOfGuessesWithFeedback>(() => {
+    if (!guesses.length) return {};
+    const guess = guesses[0];
+    return {
+      teamA: guess.teamA?.isCorrect ? guess.teamA : undefined,
+      teamB: guess.teamB?.isCorrect ? guess.teamB : undefined,
+      player: guess.player?.isCorrect ? guess.player : undefined,
+      year: guess.year?.isCorrect ? guess.year : undefined,
+    };
+  }, [guesses]);
 
   return (
     <>
-      <ImagesBrowser guessIndex={isGameWon ? 4 : guesses.length} />
+      <ImagesBrowser
+        guessIndex={guesses.length}
+        isGameWon={isGameWon}
+      />
 
       <Confetti isGameWon={isGameWon} />
 
-      <div className="inner-container">
-        {isGameWon ? (
-          <>
-            <div className={styles.wonBanner}>
-              You guessed correctly in {guesses.length} guess
-              {guesses.length > 1 ? 'es' : ''}!
-            </div>
-            <button className={`button ${styles.shareButton}`}>
-              Share
-            </button>
-            <p>
-              The goal scored was the {answer.year} goal scored by{' '}
-              {answer.player} in the {answer.competition} match
-              between {answer.teamA} and {answer.teamB}.{' '}
-              {answer.link
-                ? `You should be able to watch the goal here`
-                : ''}
-            </p>
-          </>
-        ) : null}
-
-        {guesses.length <= 4 && !isGameWon ? (
-          <Guess
-            guessIndex={guesses.length}
-            teams={teams}
-            players={players}
-            onSubmit={onSubmit}
-            correctGuesses={correctGuesses}
-          />
-        ) : null}
-      </div>
-
-      {guesses.length ? (
-        <div className={styles.previousGuesses}>
-          <span className={styles.line}></span>
-          <span className={styles.previousGuessesTitle}>
-            Previous Guesses
-          </span>
-          <span className={styles.line}></span>
-        </div>
-      ) : null}
-
-      <div className="inner-container">
-        {guesses.length
-          ? guesses.map((guess, i) => (
-              <PreviousGuess
-                guess={guess}
-                guessIndex={i}
-                key={`prevGuess_${i}`}
+      {loaded ? (
+        <>
+          <div className="inner-container">
+            {isGameWon || guesses.length > 4 ? (
+              <GameFinished
+                guesses={guesses}
+                answer={answer}
+                isGameWon={isGameWon}
+                teams={teams}
               />
-            ))
-          : null}
-      </div>
+            ) : null}
+
+            {guesses.length <= 4 && !isGameWon ? (
+              <GuessInputs
+                guessIndex={guesses.length}
+                teams={teams}
+                players={players}
+                years={years}
+                onSubmit={onSubmit}
+                correctGuesses={correctGuesses}
+              />
+            ) : null}
+          </div>
+
+          {guesses.length ? (
+            <div className={styles.previousGuesses}>
+              <span className={styles.line}></span>
+              <span className={styles.previousGuessesTitle}>
+                Previous Guesses
+              </span>
+              <span className={styles.line}></span>
+            </div>
+          ) : null}
+
+          <div className="inner-container">
+            {guesses.length
+              ? guesses.map((guess, i) => (
+                  <PreviousGuess
+                    guesses={guess}
+                    guessIndex={guesses.length - i - 1}
+                    key={`prevGuess_${i}`}
+                  />
+                ))
+              : null}
+          </div>
+        </>
+      ) : (
+        <div className={styles.loadingContainer}>
+          <PuffLoader color="#36d7b7" size={40} />
+        </div>
+      )}
     </>
   );
 };

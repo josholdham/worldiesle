@@ -1,16 +1,24 @@
-.wonBanner {
-  border: 2px solid rgb(var(--highlight-rgb));
+.banner {
   padding: 10px 5px;
   margin: 20px 0 0;
   text-align: center;
   border-radius: 5px;
 }
 
+.wonBanner {
+  border: 2px solid rgb(var(--highlight-rgb));
+}
+
+.lostBanner {
+  border: 2px solid #be6464;
+}
+
 .previousGuesses {
-  margin: 40px 0px 30px;
+  margin: 40px auto 0;
   text-align: center;
   display: flex;
   align-items: center;
+  max-width: var(--inner-width);
 }
 
 .previousGuessesTitle {
@@ -29,4 +37,11 @@
   margin: 20px 0 0;
   flex: 1;
   width: 100%;
+  font-size: 1.2rem;
+}
+
+.loadingContainer {
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: center;
 }

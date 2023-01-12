@@ -5,7 +5,7 @@ import pic3 from '../public/images/3.png';
 import pic4 from '../public/images/4.png';
 import pic5 from '../public/images/5.png';
 
-import Guess from '../components/Guess';
+import Guess from './GuessInputs';
 import styles from '../styles/ImagesBrowser.module.css';
 import { FormattedTeam } from '../custom-types';
 import { useCallback, useEffect, useMemo, useState } from 'react';
@@ -15,15 +15,19 @@ const navArr = [0, 1, 2, 3, 4];
 
 type ImagesBrowserProps = {
   guessIndex: number;
+  isGameWon: boolean;
 };
 const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
   guessIndex,
+  isGameWon,
 }) => {
   const [currentViewedIndex, setCurrentViewedIndex] = useState(0);
 
   useEffect(() => {
-    setCurrentViewedIndex(guessIndex);
-  }, [guessIndex]);
+    if (!isGameWon) {
+      setCurrentViewedIndex(Math.min(guessIndex, 4));
+    }
+  }, [guessIndex, isGameWon]);
 
   return (
     <>
@@ -106,7 +110,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
                 : ''
             }`}
             key={`imageNav_${i}`}
-            disabled={guessIndex < i}
+            disabled={!isGameWon && guessIndex < i}
             onClick={() => {
               setCurrentViewedIndex(i);
             }}
