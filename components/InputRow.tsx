@@ -87,6 +87,27 @@ const InputRow: React.FC<{
   const manuallyMatchOption = (val: string) =>
     options.find((o) => o.names[0] === val);
 
+  /** We only want to accept guesses that match a suggestion. When
+   * the input value changes (in the onChange fn), we look to see
+   * if the value matches a suggestion's first name value exactly.
+   *
+   * If the value has been selected from the autosuggest list, this
+   * will definitely be the case, as getSuggestionValue returns the
+   * first name value to pass to the input.
+   *
+   * If not, we still want to ensure a user typing the autosuggest
+   * value exactly gies a match (pertinent for years particularly).
+   *
+   * Finally, if no match is found, we want to ensure we remove any
+   * previously selected suggestion, as it may no longer reflect what
+   * the user is seeing in the input field (eg they may select a
+   * suggestion (eg 2020), then press backspace (giving 202), and then
+   * when they click guess 2020 would appear - unless we take this step).
+   *
+   * For these reasons, we handle passing guesses to the parent here,
+   * rather than by using onSuggestionSelected, as I had previously
+   * explored.
+   */
   const onChange = (
     _: React.FormEvent<HTMLElement>,
     { newValue, method }: ChangeEvent
@@ -104,10 +125,17 @@ const InputRow: React.FC<{
     placeholder: settings[inputType].placeholder,
     value,
     onChange,
-    className: styles.input,
     disabled: !!correctGuess,
+    /** NOTE: for some reason setting an input value in theme does not
+     * get auto-applied as it should, nor does specifying theme.input as
+     * the classname here. For now, fallback to styles. */
+    className: styles.input,
   };
 
+  /**
+   * Custom input renderer, required in cases where we want to pre-fill
+   * the input with a correct guess, and indicate this with a checkmark
+   * emoji. */
   const renderInputComponent = (
     inputProps: RenderInputComponentProps
   ) => (
@@ -122,7 +150,7 @@ const InputRow: React.FC<{
       />
       {correctGuess ? (
         <div style={{ position: 'absolute', top: -1, padding: 5 }}>
-          <Emoji symbol="✅" label="White Checkmark" />
+          <Emoji emojiId="correct" />
         </div>
       ) : null}
     </div>
@@ -137,29 +165,10 @@ const InputRow: React.FC<{
       getSuggestionValue={(suggestion: FormattedOption) =>
         suggestion.names[0]
       }
-      renderSuggestion={(suggestion, { isHighlighted }) => {
-        return (
-          <div
-            className={
-              isHighlighted ? styles['highlighted-suggestion'] : ''
-            }
-          >
-            {suggestion.names[0]}
-          </div>
-        );
+      renderSuggestion={(suggestion) => {
+        return <div>{suggestion.names[0]}</div>;
       }}
       inputProps={customInputProps}
-      containerProps={{
-        className: styles['input-container'],
-      }}
-      renderSuggestionsContainer={({ containerProps, children }) => (
-        <div
-          {...containerProps}
-          className={styles['suggestions-container']}
-        >
-          {children}
-        </div>
-      )}
       onSuggestionSelected={(event, { suggestion }) => {
         setSuggestions(options);
       }}

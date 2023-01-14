@@ -30,7 +30,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
   }, [guessIndex, isGameWon]);
 
   return (
-    <>
+    <div className="inner-container inner-container--image">
       <div className={styles.imagesRowOuter}>
         <div className={styles.imageContainer}>
           <Image
@@ -101,7 +101,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
           </div>
         </div>
       </div>
-      <div className={styles.imageNav}>
+      <div className={`inner-container ${styles.imageNav}`}>
         {navArr.map((i) => (
           <button
             className={`${styles.imageNavButton} ${
@@ -119,7 +119,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
           </button>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

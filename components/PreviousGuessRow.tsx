@@ -33,8 +33,7 @@ const PreviousGuessRow: React.FC<PreviousGuessRowProps> = ({
       </div>
       <div className={indicatorCellCSS}>
         <Emoji
-          symbol={guessWithFeedback?.emoji.symbol}
-          label={guessWithFeedback?.emoji.label}
+          emojiId={guessWithFeedback?.emojiId}
           id={`emoji_${guessIndex}_${guessType}`}
         />
         {guessWithFeedback?.hoverText ? (

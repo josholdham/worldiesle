@@ -36,6 +36,7 @@
     "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-modal": "^3.13.1",
     "dotenv": "^16.0.3",
+    "sass": "^1.57.1",
     "ts-node": "^10.9.1"
   }
 }

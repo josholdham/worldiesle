@@ -7,30 +7,20 @@ import {
   Suggestion,
 } from '../custom-types';
 
-const DEFAULT_FEEDBACK = {
-  emoji: {
-    symbol: '⬜',
-    label: 'White Square',
-  },
+const DEFAULT_FEEDBACK: Omit<GuessWithFeedback, 'guess'> = {
+  emojiId: 'noAnswer',
   hoverText: 'No answer was guessed.',
   isCorrect: false,
 };
 
-const CORRECT_FEEDBACK = {
-  emoji: {
-    symbol: '✅',
-    label: 'White Checkmark',
-    hoverText: '',
-  },
+const CORRECT_FEEDBACK: Omit<GuessWithFeedback, 'guess'> = {
+  emojiId: 'correct',
   isCorrect: true,
+  hoverText: '',
 };
 
-const INCORRECT_FEEDBACK = {
-  status: 'incorrect',
-  emoji: {
-    symbol: '🔴',
-    label: 'Red Circle',
-  },
+const INCORRECT_FEEDBACK: Omit<GuessWithFeedback, 'guess'> = {
+  emojiId: 'incorrect',
   hoverText: 'Incorrect Guess.',
   isCorrect: false,
 };
@@ -71,10 +61,7 @@ const getTeamGuessFeedback = (
     teamGuess?.id === answer[secondaryGuessKey] &&
     secondaryGuess?.id !== answer[secondaryGuessKey]
   ) {
-    guessWithFeedback.emoji = {
-      symbol: '🟩',
-      label: 'Green Square',
-    };
+    guessWithFeedback.emojiId = 'homeAway';
     guessWithFeedback.hoverText =
       'This team did feature in this match, but not as the home team';
   } else if (teamGuess) {
@@ -132,45 +119,27 @@ const getYearGuessFeedback = (
       ...CORRECT_FEEDBACK,
     };
   } else if (diff >= -2 && diff < 0) {
-    guessWithFeedback.emoji = {
-      symbol: '🔼',
-      label: 'Upwards Button',
-    };
+    guessWithFeedback.emojiId = 'upSmall';
     guessWithFeedback.hoverText =
       'You are within 2 years of the correct answer';
   } else if (diff <= 2 && diff > 0) {
-    guessWithFeedback.emoji = {
-      symbol: '🔽',
-      label: 'Downwards Button',
-    };
+    guessWithFeedback.emojiId = 'downSmall';
     guessWithFeedback.hoverText =
       'You are within 2 years of the correct answer';
   } else if (diff >= -5 && diff < 0) {
-    guessWithFeedback.emoji = {
-      symbol: '⏫',
-      label: 'Double Upwards Button',
-    };
+    guessWithFeedback.emojiId = 'upMedium';
     guessWithFeedback.hoverText =
       'You are within 5 years of the correct answer';
   } else if (diff <= 5 && diff > 0) {
-    guessWithFeedback.emoji = {
-      symbol: '⏬',
-      label: 'Double Downwards Button',
-    };
+    guessWithFeedback.emojiId = 'downMedium';
     guessWithFeedback.hoverText =
       'You are within 5 years of the correct answer';
   } else if (diff < 0) {
-    guessWithFeedback.emoji = {
-      symbol: '🔺',
-      label: 'Red Up Arrow',
-    };
+    guessWithFeedback.emojiId = 'upLarge';
     guessWithFeedback.hoverText =
       'You are a long way off the correct year';
   } else if (diff > 0) {
-    guessWithFeedback.emoji = {
-      symbol: '🔻',
-      label: 'Red Down Arrow',
-    };
+    guessWithFeedback.emojiId = 'downLarge';
     guessWithFeedback.hoverText =
       'You are a long way off the correct year';
   }

@@ -43,7 +43,7 @@ const Home: React.FC<HomeProps> = ({
       <main className={styles.main}>
         <Header />
         <div className={styles.bodyContent}>
-          <div className="inner-container--hero">
+          <div className="inner-container inner-container--hero">
             <h1 className={styles.heroText}>
               Guess the teams, scorer and year of this iconic or
               <span className="highlighted-text-secondary">

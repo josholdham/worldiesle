@@ -39,28 +39,12 @@ const Game: React.FC<GameProps> = ({
    * we check local storage to see if any guesses already exist */
   useEffect(() => {
     const existingBasicGuesses = getTodaysGuesses(answer.dateId);
-    const existingGuesses: SetOfGuessesWithFeedback[] =
-      existingBasicGuesses.map((guess) => {
-        // Create curried fn to get feedback for each guess type
-        const getFeedback = (guessKey: GuessType) =>
-          getGuessFeedback(guess, guessKey, answer, {});
-
-        return {
-          teamA: getFeedback('teamA'),
-          teamB: getFeedback('teamB'),
-          player: getFeedback('player'),
-          year: getFeedback('year'),
-        };
-      });
-    setGuesses(existingGuesses);
+    setGuesses(existingBasicGuesses);
     setLoaded(true);
   }, [answer]);
 
   const onSubmit = (basicGuess: SetOfGuesses) => {
     if (guesses.length > 4) return;
-
-    // Add this guess to local storage.
-    storeGuess(answer.dateId, basicGuess);
 
     // Create curried fn to get feedback for each guess type
     const getFeedback = (guessKey: GuessType) =>
@@ -72,6 +56,9 @@ const Game: React.FC<GameProps> = ({
       player: getFeedback('player'),
       year: getFeedback('year'),
     };
+
+    // Add this guess to local storage.
+    storeGuess(answer.dateId, newGuess);
 
     setGuesses([newGuess, ...guesses]);
   };

@@ -3,9 +3,11 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import styles from '../styles/Game.module.css';
 import {
   BasicAnswer,
+  FormattedTeam,
   SetOfGuessesWithFeedback,
 } from '../custom-types';
 import { useMemo } from 'react';
+import emojisMap, { EmojiId } from '../utils/emojis';
 
 type GameFinishedProps = {
   teams: FormattedTeam[];
@@ -44,10 +46,16 @@ const GameFinished: React.FC<GameFinishedProps> = ({
     const emojis = [...guesses]
       .reverse()
       .map((guess) => {
-        let row: string = guess.teamA?.emoji?.symbol || '⬛';
-        row += guess.teamB?.emoji?.symbol || '⬛';
-        row += guess.player?.emoji?.symbol || '⬛';
-        row += guess.year?.emoji?.symbol || '⬛';
+        let teamAEmoId: EmojiId = guess.teamA?.emojiId || 'noAnswer';
+        let teamBEmoId: EmojiId = guess.teamB?.emojiId || 'noAnswer';
+        let playerEmoId: EmojiId =
+          guess.player?.emojiId || 'noAnswer';
+        let yearEmoId: EmojiId = guess.year?.emojiId || 'noAnswer';
+
+        let row: string = emojisMap[teamAEmoId].symbol;
+        row += emojisMap[teamBEmoId].symbol;
+        row += emojisMap[playerEmoId].symbol;
+        row += emojisMap[yearEmoId].symbol;
 
         return row;
       })

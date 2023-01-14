@@ -35,6 +35,12 @@ body {
   padding-bottom: 20px;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
@@ -50,10 +56,9 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+p {
+  line-height: 1.75rem;
+  margin-top: 15px;
 }
 
 input {
@@ -88,8 +93,32 @@ button:hover {
 
 .inner-container--hero {
   max-width: calc(var(--inner-width) + 40px);
-  margin: 0 auto;
 }
+
+@media (max-width: 410px) {
+  .inner-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .inner-container--image {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* *****************************************************
+*
+*
+*                Third Party Overrides
+*
+*
+****************************************************** */
+
+
+/* *****************************************************
+*                     Toasts
+****************************************************** */
 
 .toast-container {
   min-height: 0;
@@ -109,6 +138,10 @@ button:hover {
   font-size: 1rem;
 }
 
+/* *****************************************************
+*                     Modals
+****************************************************** */
+
 .modal-overlay {
   background-color: rgba(var(--background-rgb), .75);
   position: fixed;
@@ -117,14 +150,15 @@ button:hover {
 
 .modal-body {
   position: absolute;
-  inset: 40px;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgb(var(--background-strong-rgb));
   overflow: auto;
   border-radius: 4px;
   outline: none;
   padding: 20px 40px;
+  overflow-y: scroll;
 }
 
 .modal-close {

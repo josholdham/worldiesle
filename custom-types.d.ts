@@ -1,3 +1,5 @@
+import { EmojiId } from './utils/emojis';
+
 export type FormattedTeam = {
   id: string;
   names: string[];
@@ -42,8 +44,6 @@ export type SetOfGuesses = {
   year: Suggestion;
 };
 
-export type StoredGuesses = Record<string, SetOfGuesses[]>;
-
 export type EmojiProps = {
   label?: string;
   symbol?: string;
@@ -51,7 +51,7 @@ export type EmojiProps = {
 
 export type GuessWithFeedback = {
   guess: Suggestion;
-  emoji: EmojiProps;
+  emojiId: EmojiId;
   hoverText: string;
   isCorrect: boolean;
 };
@@ -62,3 +62,8 @@ export type SetOfGuessesWithFeedback = {
   player?: GuessWithFeedback;
   year?: GuessWithFeedback;
 };
+
+export type StoredGuesses = Record<
+  string,
+  SetOfGuessesWithFeedback[]
+>;

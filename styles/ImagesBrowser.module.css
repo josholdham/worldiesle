@@ -1,5 +1,4 @@
 .imagesRowOuter {
-  width: 400px;
   display: flex;
   align-items: flex-start;
   margin: 30px auto 0;
@@ -20,7 +19,6 @@
 }
 
 .imageNav {
-  width: 400px;
   display: flex;
   justify-content: center;
   margin: 10px auto 0;

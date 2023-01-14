@@ -36,6 +36,41 @@
   border-top: 1px solid #bbb;
 }
 
-.statsDistributionTitle {
+.distributionContainer {
+  margin-top: 20px;
+  align-items: center;
+}
+.distributionNumber {
+  width: 20px;
+  display: flex;
+  align-items: center;
+}
+.distributionRow {
+  display: flex;
+  margin-bottom: 15px;
+}
+.distributionBarContainer {
+  flex: 1;
+  background-color: rgb(var(--background-rgb));
+  display: flex;
+  align-items: center;
+}
+.distributionBarInner {
+  padding: 0 8px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(var(--highlight-rgb));
+}
 
+.faqTitle {
+  margin-top: 25px;
+}
+
+.faqBlock {
+  margin-top: 20px;
+}
+
+.faqBlock p {
+  margin-top: 10px
 }
