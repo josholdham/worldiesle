@@ -1,7 +1,13 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import React, {
+  CSSProperties,
+  useCallback,
+  useEffect,
+  useRef,
+} from 'react';
 import ReactCanvasConfetti from 'react-canvas-confetti';
+import { CreateTypes } from 'canvas-confetti';
 
-const canvasStyles = {
+const canvasStyles: CSSProperties = {
   position: 'fixed',
   pointerEvents: 'none',
   width: '100%',
@@ -15,20 +21,23 @@ type ConfettiProps = {
 };
 
 const Confetti: React.FC<ConfettiProps> = ({ isGameWon }) => {
-  const refAnimationInstance = useRef(null);
+  const refAnimationInstance = useRef<CreateTypes | null>(null);
 
-  const getInstance = useCallback((instance) => {
+  const getInstance = useCallback((instance: CreateTypes | null) => {
     refAnimationInstance.current = instance;
   }, []);
 
-  const makeShot = useCallback((particleRatio, opts) => {
-    refAnimationInstance.current &&
-      refAnimationInstance.current({
-        ...opts,
-        origin: { y: 0.7 },
-        particleCount: Math.floor(200 * particleRatio),
-      });
-  }, []);
+  const makeShot = useCallback(
+    (particleRatio: number, opts: confetti.Options) => {
+      refAnimationInstance.current &&
+        refAnimationInstance.current({
+          ...opts,
+          origin: { y: 0.7 },
+          particleCount: Math.floor(200 * particleRatio),
+        });
+    },
+    []
+  );
 
   const fire = useCallback(() => {
     makeShot(0.25, {
