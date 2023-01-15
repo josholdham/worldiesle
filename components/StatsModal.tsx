@@ -59,7 +59,9 @@ const StatsModal: React.FC<StatsModalProps> = () => {
       }
     });
 
-    const perc = (gamesWon / gamesPlayedCount) * 100;
+    const perc = gamesPlayedCount
+      ? (gamesWon / gamesPlayedCount) * 100
+      : 0;
 
     setGamesPlayed(gamesPlayedCount);
     setGamesWonPerc(perc);

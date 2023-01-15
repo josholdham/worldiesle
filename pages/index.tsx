@@ -13,6 +13,9 @@ import {
 } from '../custom-types';
 import Header from '../components/Header';
 
+import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
+import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
+
 type HomeProps = {
   teams: FormattedTeam[];
   players: FormattedPlayer[];
@@ -66,18 +69,88 @@ const Home: React.FC<HomeProps> = ({
 };
 
 const LAUNCH_DATE = '2023-01-04';
-const START_YEAR = 1970;
+const START_YEAR = 1994;
+
+const getJsonFileFromS3 = async (fileName: string) => {
+  const clientParams = {
+    region: 'eu-west-2',
+    credentials: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string,
+    },
+  };
+  const s3Client = new S3Client(clientParams);
+  const command = new GetObjectCommand({
+    Bucket: 'worldiesle',
+    Key: fileName,
+  });
+  // return file as json object
+  const signedUrl = await getSignedUrl(s3Client, command, {
+    expiresIn: 36 * 60 * 60,
+  });
+  const response = await fetch(signedUrl);
+  const data = await response.json();
+  return data;
+};
+
+const recursivelyGetSignedS3Images = async (
+  i: number,
+  signedUrls: string[],
+  daysSinceLaunch: number,
+  s3Client: any
+): Promise<string[]> => {
+  const command = new GetObjectCommand({
+    Bucket: 'worldiesle',
+    Key: `${daysSinceLaunch}/${i}.png`,
+  });
+  const signedUrl = await getSignedUrl(s3Client, command, {
+    expiresIn: 36 * 60 * 60,
+  });
+
+  let newArray = [...signedUrls, signedUrl];
+  if (i === 5) {
+    return newArray;
+  }
+
+  return recursivelyGetSignedS3Images(
+    i + 1,
+    newArray,
+    daysSinceLaunch,
+    s3Client
+  );
+};
+
+const getSignedS3Images = async (daysSinceLaunch: number) => {
+  const clientParams = {
+    region: 'eu-west-2',
+    credentials: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string,
+    },
+  };
+  const s3Client = new S3Client(clientParams);
+
+  const signedUrls = await recursivelyGetSignedS3Images(
+    1,
+    [],
+    daysSinceLaunch,
+    s3Client
+  );
+
+  return signedUrls;
+};
 
 export async function getStaticProps() {
   const END_YEAR = dayjs().year();
   const daysSinceLaunch = dayjs().diff(LAUNCH_DATE, 'day');
 
-  //Find the absolute path of the json directory
   const jsonDirectory = path.join(process.cwd(), 'data');
+  // Get the teams for suggestions
   const teamsFile = await fs.readFile(
     jsonDirectory + '/teams.json',
     'utf8'
   );
+  // Get the players for suggestions
   const playersFile = await fs.readFile(
     jsonDirectory + '/players.json',
     'utf8'
@@ -85,7 +158,7 @@ export async function getStaticProps() {
 
   const answer: BasicAnswer = {
     dateId: 'test',
-    dayNumber: 1,
+    dayNumber: daysSinceLaunch,
     teamA: 'CHE',
     teamB: 'LIV',
     player: 'Mohamed Salah',
@@ -102,6 +175,8 @@ export async function getStaticProps() {
       names: [i.toString()],
     });
   }
+
+  const signedUrls = await getSignedS3Images(1);
 
   return {
     props: {
