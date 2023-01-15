@@ -1,7 +1,9 @@
 import { FormattedTeam } from '../../custom-types';
 import {
+  Competition,
   fetchAndProcessCompetitions,
   getAndParseExistingFile,
+  intlCompetitions,
   updateExistingFile,
 } from './utils';
 
@@ -9,6 +11,7 @@ type SimplifiedTeamsResponse = {
   name: string;
   shortName: string;
   tla: string;
+  id: string;
   crest: string;
 };
 
@@ -20,15 +23,18 @@ type SimplifiedResponse = {
 
 const processResponse = (
   json: SimplifiedResponse,
-  existing: FormattedTeam[]
+  existing: FormattedTeam[],
+  competition: Competition
 ): FormattedTeam[] => {
   json.teams.forEach((team) => {
-    const exists = existing.find((t) => t.id === team.tla);
+    const uid = `${team.tla}-${team.id}`;
+    const exists = existing.find((t) => t.id === uid);
+
     if (!exists) {
       existing.push({
-        id: team.tla,
+        id: uid,
         names: [team.name, team.shortName],
-        imgUrl: team.crest,
+        intl: intlCompetitions.includes(competition),
       });
     }
   });
@@ -42,7 +48,7 @@ const importTeams = async () => {
     FormattedTeam
   >(0, 'teams', existing, processResponse);
   await updateExistingFile(updatedJson, 'teams');
-  console.log('done', existing);
+  console.log('Done');
 };
 
 importTeams();

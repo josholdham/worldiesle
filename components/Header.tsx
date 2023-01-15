@@ -34,7 +34,7 @@ const Header: React.FC = () => {
     <>
       <div className={styles.headerRow}>
         <div className={styles.headerLeft}>
-          <div className={styles.headerIcon}>
+          {/* <div className={styles.headerIcon}>
             <svg
               version="1.2"
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               />
               <use id="Layer 8" href="#img1" x="0" y="125" />
             </svg>
-          </div>
+          </div> */}
           <h2>
             worldies<span className="highlighted-text">le</span>
           </h2>

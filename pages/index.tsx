@@ -75,8 +75,9 @@ const getJsonFileFromS3 = async (fileName: string) => {
   const clientParams = {
     region: 'eu-west-2',
     credentials: {
-      accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
-      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string,
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID_CUSTOM as string,
+      secretAccessKey: process.env
+        .AWS_SECRET_ACCESS_KEY_CUSTOM as string,
     },
   };
   const s3Client = new S3Client(clientParams);
@@ -124,8 +125,9 @@ const getSignedS3Images = async (daysSinceLaunch: number) => {
   const clientParams = {
     region: 'eu-west-2',
     credentials: {
-      accessKeyId: process.env.AWS_ACCESS_KEY_ID as string,
-      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY as string,
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID_CUSTOM as string,
+      secretAccessKey: process.env
+        .AWS_SECRET_ACCESS_KEY_CUSTOM as string,
     },
   };
   const s3Client = new S3Client(clientParams);

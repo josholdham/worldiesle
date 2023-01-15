@@ -19,10 +19,7 @@
   transform: rotate(-10deg);
   position: relative;
   top: 2px;
-}
-
-.headerLeft h2 {
-  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .headerIcons {

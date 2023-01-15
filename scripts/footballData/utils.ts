@@ -4,20 +4,18 @@ import { promises as fs } from 'fs';
 
 export const competitions = [
   'PL', // Premier League
-  'CL', // Champions League
-  'EC', // Euros
-  'WC', // World Cup
-  'PD', // La Liga
+  // 'CL', // Champions League
+  // 'EC', // Euros
+  // 'WC', // World Cup
+  // 'PD', // La Liga
 ];
+
+export const intlCompetitions = ['EC', 'WC'];
 
 const MIN_YEAR = 2020;
 const MAX_YEAR = 2022;
 
-type Competition = typeof competitions[number];
-type UniversalResponse = {
-  errorCode?: number;
-  error?: number;
-};
+export type Competition = typeof competitions[number];
 
 export const getAndParseExistingFile = async (
   filename: 'teams' | 'players'
@@ -41,7 +39,7 @@ export const updateExistingFile = async (
 };
 
 const URL_BASE = 'https://api.football-data.org/v4/competitions/';
-const URL_PARAMS = '?limit=100season=';
+const URL_PARAMS = '?limit=200season=';
 
 const getSeason = async function (
   competition: Competition,
@@ -52,7 +50,6 @@ const getSeason = async function (
   url += competition;
   url += `/${endpoint}`;
   url += URL_PARAMS;
-  console.log(url);
   url += season;
 
   console.log('getting', url);
@@ -75,14 +72,16 @@ export const fetchAndProcessSeasons = async <
   existing: Tidied[],
   processResponse: (
     res: SimplifiedResponse,
-    existing: Tidied[]
+    existing: Tidied[],
+    competition: Competition
   ) => Tidied[]
 ): Promise<Tidied[]> => {
   let updatedItems = [...existing];
   const res = await getSeason(competition, endpoint, season);
+  console.log('res', res);
 
   if (!res.errorCode && !res.error) {
-    updatedItems = processResponse(res, existing);
+    updatedItems = processResponse(res, existing, competition);
   }
 
   if (season >= MAX_YEAR) {
@@ -113,7 +112,8 @@ export const fetchAndProcessCompetitions = async <
   existing: Tidied[],
   processResponse: (
     res: SimplifiedResponse,
-    existing: Tidied[]
+    existing: Tidied[],
+    competition: Competition
   ) => Tidied[]
 ): Promise<Tidied[]> => {
   const competition = competitions[competitionIndex];

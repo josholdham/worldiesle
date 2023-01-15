@@ -3,7 +3,7 @@ import { EmojiId } from './utils/emojis';
 export type FormattedTeam = {
   id: string;
   names: string[];
-  imgUrl: string;
+  intl: boolean;
 };
 
 export type FormattedPlayer = {

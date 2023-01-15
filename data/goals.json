@@ -1,8 +1,8 @@
 [
   {
-    "teamA": "FCB",
-    "teamB": "RMA",
-    "goalScoredFor": "RMA",
+    "teamA": "FCB-81",
+    "teamB": "RMA-86",
+    "goalScoredFor": "RMA-86",
     "player": "Gareth Bale",
     "year": "2014",
     "competition": "CDR",
@@ -10,9 +10,9 @@
     "homeTeamMatters": false
   },
   {
-    "teamA": "ARS",
+    "teamA": "ARS-57",
     "teamB": "NOR", // Todo
-    "goalScoredFor": "ARS",
+    "goalScoredFor": "ARS-57",
     "player": "Jack Wilshere", // TODO
     "year": "2013",
     "competition": "PL",
@@ -20,9 +20,9 @@
     "homeTeamMatters": true
   },
   {
-    "teamA": "MCI",
+    "teamA": "MCI-65",
     "teamB": "QPR", // TODO
-    "goalScoredFor": "MCI",
+    "goalScoredFor": "MCI-65",
     "player": "Sergio Aguero",
     "year": "2012",
     "competition": "PL",
