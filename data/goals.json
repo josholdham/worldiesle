@@ -11,9 +11,9 @@
   },
   {
     "teamA": "ARS-57",
-    "teamB": "NOR", // Todo
+    "teamB": "NOR-68",
     "goalScoredFor": "ARS-57",
-    "player": "Jack Wilshere", // TODO
+    "player": "Jack Wilshere",
     "year": "2013",
     "competition": "PL",
     "url": "https://www.youtube.com/watch?v=h4ta8GUS688",
@@ -21,12 +21,62 @@
   },
   {
     "teamA": "MCI-65",
-    "teamB": "QPR", // TODO
+    "teamB": "QPR-69",
     "goalScoredFor": "MCI-65",
-    "player": "Sergio Aguero",
+    "player": "Sergio Agüero",
     "year": "2012",
     "competition": "PL",
     "url": "https://youtu.be/U1fhiP2fjYc?t=118",
+    "homeTeamMatters": true
+  },
+  {
+    "teamA": "FCB-81",
+    "teamB": "CHE-61",
+    "goalScoredFor": "CHE-61",
+    "player": "Fernando Torres",
+    "year": "2012",
+    "competition": "CL",
+    "url": "https://www.youtube.com/watch?v=SCmSJvT0Z1Y&ab_channel=ChelseaF.C.Lookback",
+    "homeTeamMatters": true
+  },
+  {
+    "teamA": "LIV-64",
+    "teamB": "MCI-65",
+    "goalScoredFor": "LIV-64",
+    "player": "Mohamed Salah",
+    "year": "2021",
+    "competition": "PL",
+    "url": "https://www.youtube.com/watch?v=0kosAiIxeec&ab_channel=SkySportsPremierLeague",
+    "homeTeamMatters": true
+  },
+  {
+    "teamA": "MCI-65",
+    "teamB": "RMA-86",
+    "goalScoredFor": "RMA-86",
+    "player": "Karim Benzema",
+    "year": "2022",
+    "competition": "CL",
+    "url": "https://youtu.be/0bg4wvctqfg?t=622",
+    "homeTeamMatters": true
+  },
+  {
+    "teamA": "LIV-64",
+    "teamB": "FCB-81",
+    "goalScoredFor": "LIV-64",
+    "player": "Divock Origi",
+    "year": "2019",
+    "competition": "CL",
+    "url": "https://youtu.be/7HldRlTZj_g?t=341",
+    "homeTeamMatters": true
+  },
+  {
+    "teamA": "MUN-66",
+    "teamB": "MIL-98",
+    "goalScoredFor": "MIL-98",
+    "player": "Kaká",
+    "year": "2007",
+    "competition": "CL",
+    "url": "https://youtu.be/uotVLA0LBIs?t=125",
     "homeTeamMatters": true
   }
 ]

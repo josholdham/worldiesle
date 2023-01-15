@@ -4,10 +4,10 @@ import { promises as fs } from 'fs';
 
 export const competitions = [
   'PL', // Premier League
-  // 'CL', // Champions League
-  // 'EC', // Euros
-  // 'WC', // World Cup
-  // 'PD', // La Liga
+  'CL', // Champions League
+  'EC', // Euros
+  'WC', // World Cup
+  'PD', // La Liga
 ];
 
 export const intlCompetitions = ['EC', 'WC'];
@@ -39,7 +39,7 @@ export const updateExistingFile = async (
 };
 
 const URL_BASE = 'https://api.football-data.org/v4/competitions/';
-const URL_PARAMS = '?limit=200season=';
+const URL_PARAMS = '?limit=200&season=';
 
 const getSeason = async function (
   competition: Competition,
@@ -78,7 +78,6 @@ export const fetchAndProcessSeasons = async <
 ): Promise<Tidied[]> => {
   let updatedItems = [...existing];
   const res = await getSeason(competition, endpoint, season);
-  console.log('res', res);
 
   if (!res.errorCode && !res.error) {
     updatedItems = processResponse(res, existing, competition);

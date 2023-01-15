@@ -589,5 +589,15 @@
     "id": "CEL-558",
     "names": ["RC Celta de Vigo", "Celta"],
     "intl": false
+  },
+  {
+    "id": "QPR-69",
+    "names": ["Queens Park Rangers FC", "QPR"],
+    "intl": false
+  },
+  {
+    "id": "NOR-68",
+    "names": ["Norwich City FC", "Norwich"],
+    "intl": false
   }
 ]

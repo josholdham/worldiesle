@@ -27,7 +27,6 @@ const processResponse = (
   existing: FormattedPlayer[],
   competition: Competition
 ): FormattedPlayer[] => {
-  console.log(json);
   json.scorers.forEach(({ player }) => {
     const exists = existing.find((p) => p.id === player.name);
 
@@ -53,7 +52,7 @@ const importPlayers = async () => {
     FormattedPlayer
   >(0, 'scorers', existing, processResponse);
   await updateExistingFile(updatedJson, 'players');
-  console.log('Done', updatedJson);
+  console.log('Done');
 };
 
 importPlayers();
