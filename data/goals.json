@@ -11,17 +11,6 @@
     "homeTeamMatters": true
   },
   {
-    "id": "FCB-81-RMA-86-2014-CDR",
-    "teamA": "FCB-81",
-    "teamB": "RMA-86",
-    "goalScoredFor": "RMA-86",
-    "player": "Gareth Bale",
-    "year": "2014",
-    "competition": "CDR",
-    "url": "https://www.youtube.com/watch?v=1J0UcFlw9W0&ab_channel=SoccerAM",
-    "homeTeamMatters": false
-  },
-  {
     "id": "MCI-65-QPR-69-2012-PL",
     "teamA": "MCI-65",
     "teamB": "QPR-69",
@@ -32,6 +21,18 @@
     "url": "https://youtu.be/U1fhiP2fjYc?t=118",
     "homeTeamMatters": true
   },
+  {
+    "id": "FCB-81-RMA-86-2014-CDR",
+    "teamA": "FCB-81",
+    "teamB": "RMA-86",
+    "goalScoredFor": "RMA-86",
+    "player": "Gareth Bale",
+    "year": "2014",
+    "competition": "CDR",
+    "url": "https://www.youtube.com/watch?v=1J0UcFlw9W0&ab_channel=SoccerAM",
+    "homeTeamMatters": false
+  },
+
   {
     "id": "FCB-81-CHE-61-2012-CL",
     "teamA": "FCB-81",

@@ -1,0 +1,17 @@
+# Calls the re-validate api endpoint at midnight each day
+name: Trigger NextJS revalidation on a CRON Schedule, by sending GET request to endpoint
+
+on:
+  schedule:
+    # Runs "at minute 55 past every hour" (see https://crontab.guru)
+    - cron: '38 * * * *'
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+      - name: curl
+        env:
+          WORLDIESLE_SECRET: ${{ secrets.WORLDIESLE_SECRET }}
+        uses: wei/curl@v1
+        with:
+          args: -X GET https://worldiesle.vercel.app/api/revalidate?secret=$WORLDIESLE_SECRET
