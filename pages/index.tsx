@@ -146,7 +146,7 @@ const getSignedS3Images = async (goalId: string) => {
 };
 
 export async function getStaticProps() {
-  console.log('RE-VALIDATING');
+  console.log('RE-VALIDATING in index');
   const END_YEAR = dayjs().year();
   const daysSinceLaunch = dayjs().diff(LAUNCH_DATE, 'day');
 
