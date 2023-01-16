@@ -21,6 +21,7 @@ type HomeProps = {
   players: FormattedPlayer[];
   years: FormattedYear[];
   answer: BasicAnswer;
+  imageUrls: string[];
 };
 
 const Home: React.FC<HomeProps> = ({
@@ -28,6 +29,7 @@ const Home: React.FC<HomeProps> = ({
   players,
   answer,
   years,
+  imageUrls,
 }) => {
   return (
     <>
@@ -61,6 +63,7 @@ const Home: React.FC<HomeProps> = ({
             players={players}
             years={years}
             answer={answer}
+            imageUrls={imageUrls}
           />
         </div>
       </main>
@@ -68,7 +71,7 @@ const Home: React.FC<HomeProps> = ({
   );
 };
 
-const LAUNCH_DATE = '2023-01-04';
+const LAUNCH_DATE = '2023-01-16';
 const START_YEAR = 1994;
 
 const getJsonFileFromS3 = async (fileName: string) => {
@@ -97,12 +100,12 @@ const getJsonFileFromS3 = async (fileName: string) => {
 const recursivelyGetSignedS3Images = async (
   i: number,
   signedUrls: string[],
-  daysSinceLaunch: number,
+  goalId: string,
   s3Client: any
 ): Promise<string[]> => {
   const command = new GetObjectCommand({
     Bucket: 'worldiesle',
-    Key: `${daysSinceLaunch}/${i}.png`,
+    Key: `${goalId}/${i}.png`,
   });
   const signedUrl = await getSignedUrl(s3Client, command, {
     expiresIn: 36 * 60 * 60,
@@ -116,12 +119,12 @@ const recursivelyGetSignedS3Images = async (
   return recursivelyGetSignedS3Images(
     i + 1,
     newArray,
-    daysSinceLaunch,
+    goalId,
     s3Client
   );
 };
 
-const getSignedS3Images = async (daysSinceLaunch: number) => {
+const getSignedS3Images = async (goalId: string) => {
   const clientParams = {
     region: 'eu-west-2',
     credentials: {
@@ -135,7 +138,7 @@ const getSignedS3Images = async (daysSinceLaunch: number) => {
   const signedUrls = await recursivelyGetSignedS3Images(
     1,
     [],
-    daysSinceLaunch,
+    goalId,
     s3Client
   );
 
@@ -143,6 +146,7 @@ const getSignedS3Images = async (daysSinceLaunch: number) => {
 };
 
 export async function getStaticProps() {
+  console.log('RE-VALIDATING');
   const END_YEAR = dayjs().year();
   const daysSinceLaunch = dayjs().diff(LAUNCH_DATE, 'day');
 
@@ -158,18 +162,6 @@ export async function getStaticProps() {
     'utf8'
   );
 
-  const answer: BasicAnswer = {
-    dateId: 'test',
-    dayNumber: daysSinceLaunch,
-    teamA: 'CHE',
-    teamB: 'LIV',
-    player: 'Mohamed Salah',
-    year: 2020,
-    competition: 'Premier League',
-    link: 'http://youtube.com',
-    homeTeamMatters: true,
-  };
-
   const years: FormattedYear[] = [];
   for (let i = START_YEAR; i <= END_YEAR; i++) {
     years.push({
@@ -178,7 +170,15 @@ export async function getStaticProps() {
     });
   }
 
-  const signedUrls = await getSignedS3Images(1);
+  // TODO: type expected response?
+  const answers = await getJsonFileFromS3('goals.json');
+  const answer = answers[daysSinceLaunch];
+  answer.dateId = dayjs().format('YYYY-MM-DD');
+  answer.dayNumber = daysSinceLaunch;
+  console.log('answer', answer);
+
+  const signedUrls = await getSignedS3Images(answer.id);
+  console.log('signedUrls', signedUrls);
 
   return {
     props: {
@@ -186,6 +186,7 @@ export async function getStaticProps() {
       players: JSON.parse(playersFile),
       years,
       answer,
+      imageUrls: signedUrls,
     },
   };
 }

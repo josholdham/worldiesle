@@ -1,15 +1,6 @@
 [
   {
-    "teamA": "FCB-81",
-    "teamB": "RMA-86",
-    "goalScoredFor": "RMA-86",
-    "player": "Gareth Bale",
-    "year": "2014",
-    "competition": "CDR",
-    "url": "https://www.youtube.com/watch?v=1J0UcFlw9W0&ab_channel=SoccerAM",
-    "homeTeamMatters": false
-  },
-  {
+    "id": "ARS-57-NOR-68-2013-PL",
     "teamA": "ARS-57",
     "teamB": "NOR-68",
     "goalScoredFor": "ARS-57",
@@ -20,6 +11,18 @@
     "homeTeamMatters": true
   },
   {
+    "id": "FCB-81-RMA-86-2014-CDR",
+    "teamA": "FCB-81",
+    "teamB": "RMA-86",
+    "goalScoredFor": "RMA-86",
+    "player": "Gareth Bale",
+    "year": "2014",
+    "competition": "CDR",
+    "url": "https://www.youtube.com/watch?v=1J0UcFlw9W0&ab_channel=SoccerAM",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "MCI-65-QPR-69-2012-PL",
     "teamA": "MCI-65",
     "teamB": "QPR-69",
     "goalScoredFor": "MCI-65",
@@ -30,6 +33,7 @@
     "homeTeamMatters": true
   },
   {
+    "id": "FCB-81-CHE-61-2012-CL",
     "teamA": "FCB-81",
     "teamB": "CHE-61",
     "goalScoredFor": "CHE-61",
@@ -40,6 +44,7 @@
     "homeTeamMatters": true
   },
   {
+    "id": "LIV-64-MCI-65-2021-PL",
     "teamA": "LIV-64",
     "teamB": "MCI-65",
     "goalScoredFor": "LIV-64",
@@ -50,6 +55,7 @@
     "homeTeamMatters": true
   },
   {
+    "id": "MCI-65-RMA-86-2022-CL",
     "teamA": "MCI-65",
     "teamB": "RMA-86",
     "goalScoredFor": "RMA-86",
@@ -60,6 +66,7 @@
     "homeTeamMatters": true
   },
   {
+    "id": "LIV-64-FCB-81-2019-CL",
     "teamA": "LIV-64",
     "teamB": "FCB-81",
     "goalScoredFor": "LIV-64",
@@ -70,6 +77,7 @@
     "homeTeamMatters": true
   },
   {
+    "id": "MUN-66-MIL-98-2007-CL",
     "teamA": "MUN-66",
     "teamB": "MIL-98",
     "goalScoredFor": "MIL-98",

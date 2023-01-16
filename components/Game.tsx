@@ -23,12 +23,14 @@ type GameProps = {
   players: FormattedPlayer[];
   answer: BasicAnswer;
   years: FormattedYear[];
+  imageUrls: string[];
 };
 const Game: React.FC<GameProps> = ({
   teams,
   players,
   answer,
   years,
+  imageUrls,
 }) => {
   const [guesses, setGuesses] = useState<SetOfGuessesWithFeedback[]>(
     []
@@ -93,6 +95,7 @@ const Game: React.FC<GameProps> = ({
       <ImagesBrowser
         guessIndex={guesses.length}
         isGameWon={isGameWon}
+        imageUrls={imageUrls}
       />
 
       <Confetti isGameWon={isGameWon} />

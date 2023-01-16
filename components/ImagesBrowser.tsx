@@ -1,25 +1,19 @@
 import Image from 'next/image';
-import pic1 from '../public/images/1.png';
-import pic2 from '../public/images/2.png';
-import pic3 from '../public/images/3.png';
-import pic4 from '../public/images/4.png';
-import pic5 from '../public/images/5.png';
 
-import Guess from './GuessInputs';
 import styles from '../styles/ImagesBrowser.module.css';
-import { FormattedTeam } from '../custom-types';
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import PreviousGuess from './PreviousGuess';
+import { useEffect, useState } from 'react';
 
 const navArr = [0, 1, 2, 3, 4];
 
 type ImagesBrowserProps = {
   guessIndex: number;
   isGameWon: boolean;
+  imageUrls: string[];
 };
 const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
   guessIndex,
   isGameWon,
+  imageUrls,
 }) => {
   const [currentViewedIndex, setCurrentViewedIndex] = useState(0);
 
@@ -34,12 +28,13 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
       <div className={styles.imagesRowOuter}>
         <div className={styles.imageContainer}>
           <Image
-            src={pic1}
-            alt="First Screenshot Dummy"
+            src={imageUrls[0]}
+            alt={`Image ${0 + 1}`}
+            width={400}
+            height={0.56 * 400}
             style={{
               width: '100%',
               height: 'auto',
-              visibility: 'hidden',
             }}
           />
         </div>
@@ -49,7 +44,21 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
             left: `-${currentViewedIndex * 100}%`,
           }}
         >
-          <div className={styles.imageContainer}>
+          {navArr.map((i) => (
+            <div className={styles.imageContainer} key={`image_${i}`}>
+              <Image
+                src={imageUrls[i]}
+                alt={`Image ${i + 1}`}
+                width={400}
+                height={0.56 * 400}
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
+              />
+            </div>
+          ))}
+          {/* <div className={styles.imageContainer}>
             <Image
               src={pic1}
               alt="First Screenshot"
@@ -98,7 +107,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
                 height: 'auto',
               }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={`inner-container ${styles.imageNav}`}>
