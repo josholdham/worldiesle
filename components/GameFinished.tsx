@@ -8,6 +8,7 @@ import {
 } from '../custom-types';
 import { useMemo } from 'react';
 import emojisMap, { EmojiId } from '../utils/emojis';
+import { SETTINGS } from '../utils/settings';
 
 type GameFinishedProps = {
   teams: FormattedTeam[];
@@ -41,7 +42,7 @@ const GameFinished: React.FC<GameFinishedProps> = ({
   const textToShare = useMemo(() => {
     const guessCount = isGameWon ? guesses.length : 'x';
 
-    const title = `#Worldiesle #${answer.dayNumber} ${guessCount}/5`;
+    const title = `#Worldiesle #${answer.dayNumber} ${guessCount}/${SETTINGS.maxGuesses}`;
 
     const emojis = [...guesses]
       .reverse()
@@ -61,9 +62,7 @@ const GameFinished: React.FC<GameFinishedProps> = ({
       })
       .join('\n');
 
-    return [title, emojis, 'https://worldiesle.vercel.app/'].join(
-      '\n'
-    );
+    return [title, emojis, 'https://worldiesle.com'].join('\n');
   }, [answer, isGameWon, guesses]);
 
   const share = () => {
@@ -86,9 +85,13 @@ const GameFinished: React.FC<GameFinishedProps> = ({
           lineHeight: '1.5rem',
         }}
       >
-        Today&apos;s Worldiesle was the {answer.year} goal scored by{' '}
-        {answer.player} in the {answer.competition} match between{' '}
-        {teamAName} and {teamBName}.{' '}
+        Today&apos;s Worldiesle was the{' '}
+        <span className="highlighted-answer">{answer.year}</span> goal
+        scored by{' '}
+        <span className="highlighted-answer">{answer.player}</span> in
+        the {answer.competition} match between{' '}
+        <span className="highlighted-answer">{teamAName}</span> and{' '}
+        <span className="highlighted-answer">{teamBName}</span>.{' '}
         {answer.url ? (
           <>
             <span>You should be able to watch the goal </span>

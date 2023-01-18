@@ -15,6 +15,21 @@
   align-items: center;
 }
 
+.headerLeft h2 {
+  position: relative;
+}
+
+.headerBeta {
+  position: absolute;
+  right: -3px;
+  bottom: 3px;
+  text-transform: uppercase;
+  font-size: .85rem;
+  padding: 1px 3px;
+  transform: translateX(100%);
+  background-color: #e74c3c;
+}
+
 .headerIcon {
   transform: rotate(-10deg);
   position: relative;
@@ -69,5 +84,10 @@
   }
   .bodyContent {
     margin-top: 10px;
+  }
+  .headerRow {
+    padding: 10px 8px 10px 10px;
+    display: flex;
+    justify-content: space-between;
   }
 }

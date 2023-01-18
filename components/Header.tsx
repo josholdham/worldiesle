@@ -5,6 +5,7 @@ import { useState } from 'react';
 import StatsModal from './StatsModal';
 import SupportModal from './SupportModal';
 import HelpModal from './HelpModal';
+import { BasicAnswer } from '../custom-types';
 
 const MODAL_SETTINGS: {
   [key: string]: {
@@ -22,9 +23,10 @@ const MODAL_SETTINGS: {
   },
 };
 
+// The following line is for aria accessibility
 Modal.setAppElement('#__next');
 
-const Header: React.FC = () => {
+const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
   const [modalIsOpen, setModalIsOpen] = useState<string | undefined>(
     undefined
   );
@@ -36,6 +38,7 @@ const Header: React.FC = () => {
         <div className={styles.headerLeft}>
           <h2>
             worldies<span className="highlighted-text">le</span>
+            <span className={styles.headerBeta}>Beta</span>
           </h2>
         </div>
         <div className={styles.headerIcons}>
@@ -77,7 +80,9 @@ const Header: React.FC = () => {
         <div className="modal-close" onClick={closeModal}>
           &times;
         </div>
-        {modalIsOpen === 'stats' ? <StatsModal /> : null}
+        {modalIsOpen === 'stats' ? (
+          <StatsModal answer={answer} />
+        ) : null}
         {modalIsOpen === 'support' ? <SupportModal /> : null}
         {modalIsOpen === 'help' ? <HelpModal /> : null}
       </Modal>

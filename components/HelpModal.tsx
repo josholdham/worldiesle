@@ -1,9 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Tooltip } from 'react-tooltip';
-import { GuessType, GuessWithFeedback } from '../custom-types';
+import React, { useState } from 'react';
 import styles from '../styles/Modals.module.css';
-import { loadAllGuesses } from '../utils/storage';
-import Emoji from './Emoji';
 import Icon from './Icon';
 
 const labels = {
@@ -20,6 +16,14 @@ const HelpModal: React.FC<HelpModalProps> = () => {
   return (
     <>
       <h1 className={styles.header}>How To Play</h1>
+
+      <div className={styles.betaWarning}>
+        <span className={styles.betaBold}>NOTE:</span> Worldiesle is
+        in beta until mid-Feb. We are testing some features, and
+        working on getting more data. It may also mean some of the
+        goals you see during this period may be repeated at a later
+        date. Thanks!
+      </div>
 
       <div className={styles.howToPlayContainer}>
         <div className={styles.howToPlayBlock}>

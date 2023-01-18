@@ -67,8 +67,23 @@
   background-color: rgb(var(--highlight-rgb));
 }
 
+.betaWarning {
+  border: 2px solid rgb(231, 76, 60);
+  background-color: rgba(231, 76, 60, .2);
+  border-radius: 6px;
+  font-size: .9rem;
+  line-height: 1.3rem;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.betaBold {
+  font-weight: 800;
+}
+
 .howToPlayContainer {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .howToPlayBlock {
@@ -91,6 +106,15 @@
   margin-top: 0;
   opacity: .9;
   font-size: 1.1rem
+}
+
+@media (max-width: 410px) {
+  .howToPlayBlockIcon {
+    transform: scale(.8);
+  }
+  .howToPlayBlockBody {
+    padding-left: 15px;
+  }
 }
 
 .faqLink {

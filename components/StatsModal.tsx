@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Tooltip } from 'react-tooltip';
-import { GuessType, GuessWithFeedback } from '../custom-types';
 import styles from '../styles/Modals.module.css';
 import { loadAllGuesses } from '../utils/storage';
-import Emoji from './Emoji';
+import { BasicAnswer } from '../custom-types';
 
-const labels = {
-  teamA: 'Home',
-  teamB: 'Away',
-  player: 'Player',
-  year: 'Year',
+type StatsModalProps = {
+  answer: BasicAnswer;
 };
-
-type StatsModalProps = {};
-const StatsModal: React.FC<StatsModalProps> = () => {
+const StatsModal: React.FC<StatsModalProps> = ({ answer }) => {
   const [gamesPlayed, setGamesPlayed] = useState(0);
   const [gamesWonPerc, setGamesWonPerc] = useState(0);
   const [maxStreak, setMaxStreak] = useState(0);
@@ -36,7 +29,11 @@ const StatsModal: React.FC<StatsModalProps> = () => {
     let hasLost = false;
     const guessDistributionCount = [0, 0, 0, 0, 0];
 
+    let lastKey = '';
+
     keys.forEach((key) => {
+      // TODO: check days are consecutive?
+      // TODO: check there's a full set of guesses?
       gamesPlayedCount++;
       const setOfGuesses = guesses[key];
       const lastGuess = setOfGuesses[0];

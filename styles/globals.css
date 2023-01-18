@@ -114,6 +114,10 @@ button:disabled:hover {
   color: rgb(var(--highlight-secondary-rgb))
 }
 
+.highlighted-answer {
+  
+}
+
 .inner-container {
   max-width: var(--inner-width);
   margin: 0 auto;
@@ -136,6 +140,11 @@ button:disabled:hover {
   .inner-container--image {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .inner-container--hero {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -201,9 +210,10 @@ button:disabled:hover {
   overflow: auto;
   border-radius: 4px;
   outline: none;
-  padding: 40px 40px;
+  padding: 40px;
   overflow-y: scroll;
   max-height: calc(100% - 80px);
+  max-width: calc(100% - 10px);
 }
 
 .modal-close {
@@ -218,6 +228,12 @@ button:disabled:hover {
 .modal-close:hover {
   cursor: pointer;
   opacity: .8;
+}
+
+@media (max-width: 410px) {
+  .modal-body {
+    padding: 15px;
+  }
 }
 
 .overflow-hidden {

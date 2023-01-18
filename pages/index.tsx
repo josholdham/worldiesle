@@ -48,6 +48,26 @@ const Home: React.FC<HomeProps> = ({
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
+        <meta
+          property="og:title"
+          content="worldiesle | a wordle-inspired guess the goal game"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.worldiesle.com/"
+        />
+        <meta property="og:image" content={imageUrls[0]} />
+        <meta
+          name="twitter:title"
+          content="worldiesle | a wordle-inspired guess the goal game"
+        />
+        <meta
+          name="twitter:description"
+          content=" Guess the teams, scorer and year of a daily iconic goal from a series of pictures."
+        />
+        <meta name="twitter:image" content={imageUrls[0]} />
+        <meta name="twitter:card" content="summary_large_image" />
         <link
           rel="icon"
           href={`/favicons/${
@@ -85,7 +105,7 @@ const Home: React.FC<HomeProps> = ({
         ></link>
       </Head>
       <main className={styles.main}>
-        <Header />
+        <Header answer={answer} />
         <div className={styles.bodyContent}>
           <div className="inner-container inner-container--hero">
             <h1 className={styles.heroText}>
@@ -110,7 +130,7 @@ const Home: React.FC<HomeProps> = ({
   );
 };
 
-const LAUNCH_DATE = '2023-01-16';
+const LAUNCH_DATE = '2023-01-18';
 const START_YEAR = 1994;
 
 const getJsonFileFromS3 = async (fileName: string) => {
@@ -127,9 +147,9 @@ const getJsonFileFromS3 = async (fileName: string) => {
     Bucket: 'worldiesle',
     Key: fileName,
   });
-  // return file as json object
+  // Set expiry to 1 hours
   const signedUrl = await getSignedUrl(s3Client, command, {
-    expiresIn: 36 * 60 * 60,
+    expiresIn: 1 * 60 * 60,
   });
   const response = await fetch(signedUrl);
   const data = await response.json();
@@ -211,7 +231,6 @@ export async function getStaticProps() {
   // TODO: type expected response?
   const answers = await getJsonFileFromS3('goals.json');
   const answer = answers[daysSinceLaunch];
-  console.log(daysSinceLaunch, answer);
   answer.dateId = dayjs().format('YYYY-MM-DD');
   answer.dayNumber = daysSinceLaunch;
   console.log('answer', answer);

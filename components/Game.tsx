@@ -17,6 +17,7 @@ import { getGuessFeedback } from '../utils/evaluateGuesses';
 import { getTodaysGuesses, storeGuess } from '../utils/storage';
 import PuffLoader from 'react-spinners/PuffLoader';
 import GameFinished from './GameFinished';
+import { SETTINGS } from '../utils/settings';
 
 type GameProps = {
   teams: FormattedTeam[];
@@ -46,7 +47,7 @@ const Game: React.FC<GameProps> = ({
   }, [answer]);
 
   const onSubmit = (basicGuess: SetOfGuesses) => {
-    if (guesses.length > 4) return;
+    if (guesses.length >= SETTINGS.maxGuesses) return;
 
     // Create curried fn to get feedback for each guess type
     const getFeedback = (guessKey: GuessType) =>
@@ -103,7 +104,7 @@ const Game: React.FC<GameProps> = ({
       {loaded ? (
         <>
           <div className="inner-container">
-            {isGameWon || guesses.length > 4 ? (
+            {isGameWon || guesses.length >= SETTINGS.maxGuesses ? (
               <GameFinished
                 guesses={guesses}
                 answer={answer}
@@ -112,7 +113,7 @@ const Game: React.FC<GameProps> = ({
               />
             ) : null}
 
-            {guesses.length <= 4 && !isGameWon ? (
+            {guesses.length < SETTINGS.maxGuesses && !isGameWon ? (
               <GuessInputs
                 guessIndex={guesses.length}
                 teams={teams}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { SetOfGuessesWithFeedback } from '../custom-types';
 import styles from '../styles/PreviousGuess.module.css';
+import { SETTINGS } from '../utils/settings';
 import PreviousGuessRow from './PreviousGuessRow';
 
 type PreviousGuessProps = {
@@ -14,7 +15,7 @@ const PreviousGuess: React.FC<PreviousGuessProps> = ({
   return (
     <div className={styles['guess-container']}>
       <div className={styles['guess-title']}>
-        Guess {guessIndex + 1}/5
+        Guess {guessIndex + 1}/{SETTINGS.maxGuesses}
       </div>
       <div className={styles['guess-table']}>
         <PreviousGuessRow

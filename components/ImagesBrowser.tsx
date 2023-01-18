@@ -2,8 +2,12 @@ import Image from 'next/image';
 
 import styles from '../styles/ImagesBrowser.module.css';
 import { useEffect, useState } from 'react';
+import { SETTINGS } from '../utils/settings';
 
-const navArr = [0, 1, 2, 3, 4];
+const navArr = Array.from(
+  { length: SETTINGS.maxGuesses },
+  (_, i) => i
+);
 
 type ImagesBrowserProps = {
   guessIndex: number;
@@ -19,7 +23,9 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
 
   useEffect(() => {
     if (!isGameWon) {
-      setCurrentViewedIndex(Math.min(guessIndex, 4));
+      setCurrentViewedIndex(
+        Math.min(guessIndex, SETTINGS.maxGuesses - 1)
+      );
     }
   }, [guessIndex, isGameWon]);
 

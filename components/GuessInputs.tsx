@@ -8,6 +8,7 @@ import {
   Suggestion,
 } from '../custom-types';
 import styles from '../styles/GuessInputs.module.css';
+import { SETTINGS } from '../utils/settings';
 import InputRow from './InputRow';
 
 type GuessInputsProps = {
@@ -47,7 +48,7 @@ const GuessInputs: React.FC<GuessInputsProps> = ({
   return (
     <div className={styles['guess-container']}>
       <div className={styles['guess-title']}>
-        Guess {guessIndex + 1}/5
+        Guess {guessIndex + 1}/{SETTINGS.maxGuesses}
       </div>
       <InputRow
         options={teams}
