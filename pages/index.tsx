@@ -164,14 +164,14 @@ const recursivelyGetSignedS3Images = async (
 ): Promise<string[]> => {
   const command = new GetObjectCommand({
     Bucket: 'worldiesle',
-    Key: `${goalId}/${i}.png`,
+    Key: `${goalId}/${i}.jpeg`,
   });
   const signedUrl = await getSignedUrl(s3Client, command, {
     expiresIn: 36 * 60 * 60,
   });
 
   let newArray = [...signedUrls, signedUrl];
-  if (i === 5) {
+  if (i === 6) {
     return newArray;
   }
 
