@@ -73,7 +73,7 @@ const StatsModal: React.FC<StatsModalProps> = () => {
 
   return (
     <>
-      <h1 className={styles.h2}>Statistics</h1>
+      <h1 className={styles.header}>Statistics</h1>
 
       <div className={styles.statsRow}>
         <div className={styles.statsBlock}>

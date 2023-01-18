@@ -149,7 +149,7 @@ const InputRow: React.FC<{
         }
       />
       {correctGuess ? (
-        <div style={{ position: 'absolute', top: -1, padding: 5 }}>
+        <div className={styles.correctEmoji}>
           <Emoji emojiId="correct" />
         </div>
       ) : null}
@@ -175,7 +175,6 @@ const InputRow: React.FC<{
       theme={theme}
       renderInputComponent={renderInputComponent}
       shouldRenderSuggestions={() => true}
-      highlightFirstSuggestion
     />
   );
 };

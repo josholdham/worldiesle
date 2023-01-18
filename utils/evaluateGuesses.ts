@@ -107,12 +107,14 @@ const getYearGuessFeedback = (
     ...DEFAULT_FEEDBACK,
   };
 
+  const answerAsNumber = parseInt(answer.year, 10);
+
   /** NOTE: this will always be parse-int-able as there is validation
    * on the guess submit function (well... TODO) */
-  const yearAsNumber = yearGuess ? parseInt(yearGuess.id) : 0;
-  const diff = yearAsNumber - answer.year;
+  const yearAsNumber = yearGuess ? parseInt(yearGuess.id, 10) : 0;
+  const diff = yearAsNumber - answerAsNumber;
 
-  if (yearAsNumber === answer.year) {
+  if (yearAsNumber === answerAsNumber) {
     // The correct year was guessed
     guessWithFeedback = {
       ...guessWithFeedback,

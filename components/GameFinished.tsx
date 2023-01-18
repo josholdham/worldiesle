@@ -89,10 +89,10 @@ const GameFinished: React.FC<GameFinishedProps> = ({
         Today&apos;s Worldiesle was the {answer.year} goal scored by{' '}
         {answer.player} in the {answer.competition} match between{' '}
         {teamAName} and {teamBName}.{' '}
-        {answer.link ? (
+        {answer.url ? (
           <>
             <span>You should be able to watch the goal </span>
-            <a target="_blank" href={answer.link} rel="noreferrer">
+            <a target="_blank" href={answer.url} rel="noreferrer">
               here
             </a>
             <span>.</span>

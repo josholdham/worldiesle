@@ -77,7 +77,10 @@ const GuessInputs: React.FC<GuessInputsProps> = ({
         guessIndex={guessIndex}
         correctGuess={correctGuesses.year?.guess}
       />
-      <button className={`button`} onClick={onGuessClick}>
+      <button
+        className={`button button-highlight`}
+        onClick={onGuessClick}
+      >
         Guess
       </button>
     </div>

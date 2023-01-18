@@ -25,9 +25,9 @@ export type BasicAnswer = {
   teamA: string;
   teamB: string;
   player: string;
-  year: number;
+  year: string;
   competition: string;
-  link?: string;
+  url?: string;
   homeTeamMatters?: boolean;
 };
 

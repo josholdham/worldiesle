@@ -1,4 +1,12 @@
 .input {
-  padding: 5px;
   width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.correctEmoji {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
 }

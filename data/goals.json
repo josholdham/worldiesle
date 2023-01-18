@@ -87,5 +87,71 @@
     "competition": "CL",
     "url": "https://youtu.be/uotVLA0LBIs?t=125",
     "homeTeamMatters": true
+  },
+  {
+    "id": "MUN-66-MCI-65-2023-PL",
+    "teamA": "MUN-66",
+    "teamB": "MCI-65",
+    "goalScoredFor": "MUN-66",
+    "player": "Bruno Fernandes",
+    "year": "2023",
+    "competition": "PL",
+    "url": "https://youtu.be/ZNTNQv2191g?t=89",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "CHE-61-LIV-64-2022-PL",
+    "teamA": "CHE-61",
+    "teamB": "LIV-64",
+    "goalScoredFor": "CHE-61",
+    "player": "Mateo Kovačić",
+    "year": "2022",
+    "competition": "PL",
+    "url": "https://youtu.be/8Y4IXH-thHU?t=94",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "WHU-563-AVL-58-2022-PL",
+    "teamA": "WHU-563",
+    "teamB": "AVL-58",
+    "goalScoredFor": "WHU-563",
+    "player": "Andriy Yarmolenko",
+    "year": "2022",
+    "competition": "PL",
+    "url": "https://youtu.be/gyo-fh-mVWg?t=71",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "CHE-61-BRE-402-2022-PL",
+    "teamA": "CHE-61",
+    "teamB": "BRE-402",
+    "goalScoredFor": "BRE-402",
+    "player": "Christian Eriksen",
+    "year": "2022",
+    "competition": "PL",
+    "url": "https://www.youtube.com/watch?v=hF7RSffysjI",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "AVL-58-MCI-65-2022-PL",
+    "teamA": "AVL-58",
+    "teamB": "MCI-65",
+    "goalScoredFor": "MCI-65",
+    "player": "Bernardo Silva",
+    "year": "2021",
+    "competition": "PL",
+    "url": "https://youtu.be/gCsHfXwobb8?t=31",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "TOT-73-ARS-57-2023-PL",
+    "teamA": "TOT-73",
+    "teamB": "ARS-57",
+    "goalScoredFor": "ARS-57",
+    "player": "Martin Ødegaard",
+    "year": "2023",
+    "competition": "PL",
+    "url": "https://youtu.be/zkxPRDFyGBI?t=110",
+    "homeTeamMatters": true
   }
 ]

@@ -63,19 +63,25 @@ p {
 
 input {
   border-style: solid;
+  height: 2.5rem;
 }
 
 button {
   border-width: 0;
+  color:rgba(var(--foreground-rgb), 1)
 }
 
 button:hover {
   cursor: pointer;
 }
 
+.button-highlight {
+  background-color: rgb(var(--highlight-rgb));
+}
+
 .button {
   width: 100%;
-  padding: 7px;
+  padding: 12px;
 }
 
 .highlighted-text {
@@ -166,14 +172,14 @@ button:hover {
   position: absolute;
   top: 0px;
   right: 0px;
-  padding-right: 20px;
-  color: #ccc;
-  font-size: 40px;
+  padding-right: 10px;
+  color: rgb(var(--foreground-rgb));
+  font-size: 30px;
 }
 
 .modal-close:hover {
   cursor: pointer;
-  color: #fff;
+  opacity: .8;
 }
 
 .overflow-hidden {

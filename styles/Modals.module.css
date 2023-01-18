@@ -1,5 +1,6 @@
-.h2 {
+.header {
   text-align: center;
+  font-weight: 400;
 }
 
 .statsRow {
@@ -61,6 +62,30 @@
   display: flex;
   align-items: center;
   background-color: rgb(var(--highlight-rgb));
+}
+
+.howToPlayContainer {
+  padding-top: 10px;
+}
+
+.howToPlayBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+
+.howToPlayBlockIcon {
+  opacity: .5;
+}
+
+.howToPlayBlockBody {
+  padding-left: 20px;
+}
+
+.howToPlayBlockBody p {
+  margin-top: 0;
 }
 
 .faqTitle {
