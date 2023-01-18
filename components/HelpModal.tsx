@@ -59,6 +59,11 @@ const HelpModal: React.FC<HelpModalProps> = () => {
           </div>
         </div>
 
+        <p className={styles.faqLink}>
+          For more information on how to play, check out the{' '}
+          <a href="">Worldiesle FAQ</a>
+        </p>
+
         {/* <p>
           Each day a new iconic goal is chosen, and your aim is to
           guess the player who scored it, the teams involved, and the

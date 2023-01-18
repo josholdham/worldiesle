@@ -12,29 +12,32 @@
 .statsBlock {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 5px;
+  background-color: rgb(var(--background-rgb));
+  border-radius: 3px;
+  padding: 12px;
+  flex: 1;
+  flex-direction: column-reverse;
 }
 
 .statsValue {
   font-size: 2.5rem;
-  font-weight: bold;
 }
 
 .statsLabel {
-  text-transform: uppercase;
   font-weight: 300;
   font-size: .9rem;
-  margin-top: 5px;
+  padding-bottom: 8px;
   max-width: 100px;
-  text-align: center;
+  text-align: left;
+  opacity: .8
 }
 
 .statsDivider {
   width: 400px;
-  margin: 40px auto;
-  border-top: 1px solid #bbb;
+  padding: 40px;
 }
 
 .distributionContainer {
@@ -73,7 +76,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .howToPlayBlockIcon {
@@ -84,8 +87,15 @@
   padding-left: 20px;
 }
 
-.howToPlayBlockBody p {
+.howToPlayContainer p {
   margin-top: 0;
+  opacity: .9;
+  font-size: 1.1rem
+}
+
+.faqLink {
+  padding-top: 50px;
+  text-align: center;
 }
 
 .faqTitle {

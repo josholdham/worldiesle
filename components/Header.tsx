@@ -18,7 +18,7 @@ const MODAL_SETTINGS: {
     w: 700,
   },
   help: {
-    w: 500,
+    w: 600,
   },
 };
 
