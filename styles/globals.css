@@ -1,20 +1,26 @@
 :root {
   --max-width: 980px;
     --inner-width: 400px;
+    --image-width: 600px;
+
     --foreground-rgb: 255, 255, 255;
     --background-rgb: 39, 39, 42;
     --background-strong-rgb: 19, 19, 21;
+    --background-weak-rgb: 59, 59, 62;
+    --neutral-rgb: 91,91,103;
+
     --highlight-rgb: 62 202 150;
     --highlight-secondary-rgb: 136 85 245;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --max-width: 980px;
-    --inner-width: 400px;
     --foreground-rgb: 255, 255, 255;
     --background-rgb: 39, 39, 42;
     --background-strong-rgb: 19, 19, 21;
+    --background-weak-rgb: 59, 59, 62;
+    --neutral-rgb: 91,91,103;
+
     --highlight-rgb: 62 202 150;
     --highlight-secondary-rgb: 136 85 245;
   }
@@ -64,16 +70,31 @@ p {
 input {
   border-style: solid;
   height: 2.5rem;
+  background-color: rgb(var(--background-weak-rgb));
+  border: 2px solid rgb(var(--neutral-rgb));
+  font-size: 1rem;
 }
 
 button {
   border-width: 0;
-  color:rgba(var(--foreground-rgb), 1)
+  color:rgba(var(--foreground-rgb), 1);
+  background-color: rgb(var(--neutral-rgb));
+  font-size: 1rem;
 }
 
 button:hover {
   cursor: pointer;
 }
+
+button:disabled {
+  opacity: .4;
+  background-color: rgb(var(--background-strong-rgb));
+}
+
+button:disabled:hover {
+  cursor: default;
+}
+
 
 .button-highlight {
   background-color: rgb(var(--highlight-rgb));
@@ -83,6 +104,7 @@ button:hover {
   width: 100%;
   padding: 12px;
 }
+
 
 .highlighted-text {
   color: rgb(var(--highlight-rgb))
@@ -99,6 +121,22 @@ button:hover {
 
 .inner-container--hero {
   max-width: calc(var(--inner-width) + 40px);
+}
+
+.inner-container--image {
+  max-width: var(--image-width);
+}
+
+@media (max-width: 600px) {
+  :root {
+    --image-width: 100%;
+  }
+
+
+  .inner-container--image {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: 410px) {

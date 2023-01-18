@@ -1,21 +1,20 @@
 .imagesRowOuter {
-  display: flex;
-  align-items: flex-start;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   position: relative;
   overflow: hidden;
+  width: var(--image-width);
+  padding: calc(.56 * 50%) 0;
 }
 
-.imagesRowInner {
-  display: flex;
-  align-items: flex-start;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 .imageContainer {
-  width: 400px;
+  width: var(--image-width);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .imageNav {

@@ -26,89 +26,18 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
   return (
     <div className="inner-container inner-container--image">
       <div className={styles.imagesRowOuter}>
-        <div className={styles.imageContainer}>
-          <Image
-            src={imageUrls[0]}
-            alt={`Image ${0 + 1}`}
-            width={400}
-            height={0.56 * 400}
+        {navArr.map((i) => (
+          <div
+            className={styles.imageContainer}
+            key={`image_${i}`}
             style={{
-              width: '100%',
-              height: 'auto',
+              visibility:
+                i === currentViewedIndex ? 'visible' : 'hidden',
             }}
-          />
-        </div>
-        <div
-          className={styles.imagesRowInner}
-          style={{
-            left: `-${currentViewedIndex * 100}%`,
-          }}
-        >
-          {navArr.map((i) => (
-            <div className={styles.imageContainer} key={`image_${i}`}>
-              <Image
-                src={imageUrls[i]}
-                alt={`Image ${i + 1}`}
-                width={400}
-                height={0.56 * 400}
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                }}
-              />
-            </div>
-          ))}
-          {/* <div className={styles.imageContainer}>
-            <Image
-              src={pic1}
-              alt="First Screenshot"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
+          >
+            <Image src={imageUrls[i]} alt={`Image ${i + 1}`} fill />
           </div>
-          <div className={styles.imageContainer}>
-            <Image
-              src={pic2}
-              alt="Second Screenshot"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-          </div>
-          <div className={styles.imageContainer}>
-            <Image
-              src={pic3}
-              alt="Third Screenshot"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-          </div>
-          <div className={styles.imageContainer}>
-            <Image
-              src={pic4}
-              alt="Fourth Screenshot"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-          </div>
-          <div className={styles.imageContainer}>
-            <Image
-              src={pic5}
-              alt="Fifth Screenshot"
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
-          </div> */}
-        </div>
+        ))}
       </div>
       <div className={`inner-container ${styles.imageNav}`}>
         {navArr.map((i) => (
