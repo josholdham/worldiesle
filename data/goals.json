@@ -153,5 +153,49 @@
     "competition": "PL",
     "url": "https://youtu.be/zkxPRDFyGBI?t=110",
     "homeTeamMatters": true
+  },
+  {
+    "id": "WAT-346-LIV-64-2021-PL",
+    "teamA": "WAT-346",
+    "teamB": "LIV-64",
+    "goalScoredFor": "LIV-64",
+    "player": "Mohamed Salah",
+    "year": "2021",
+    "competition": "PL",
+    "url": "https://www.youtube.com/watch?v=CWmZm-EIAsg",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "CRY-354-MUN-66-2023-PL",
+    "teamA": "CRY-354",
+    "teamB": "MUN-66",
+    "goalScoredFor": "CRY-354",
+    "player": "Michael Olise",
+    "year": "2023",
+    "competition": "PL",
+    "url": "https://youtu.be/Ah0WDWgvw98?t=127",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "LEE-341-CAR-715-2023-FAC",
+    "teamA": "LEE-341",
+    "teamB": "CAR-715",
+    "goalScoredFor": "LEE-341",
+    "player": "Degnand Gnonto",
+    "year": "2023",
+    "competition": "FAC",
+    "url": "https://www.youtube.com/watch?v=LLO3O6Xpy7s",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "TOT-73-NOR-68-2021-PL",
+    "teamA": "TOT-73",
+    "teamB": "NOR-68",
+    "goalScoredFor": "TOT-73",
+    "player": "Lucas Moura",
+    "year": "2021",
+    "competition": "PL",
+    "url": "https://youtu.be/IztKMxV6Nk8?t=21",
+    "homeTeamMatters": true
   }
 ]

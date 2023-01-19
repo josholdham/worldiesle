@@ -1,9 +1,7 @@
-import { FormattedPlayer, FormattedTeam } from '../../custom-types';
+import { Competition, FormattedPlayer } from '../../custom-types';
 import {
-  Competition,
   fetchAndProcessCompetitions,
   getAndParseExistingFile,
-  intlCompetitions,
   updateExistingFile,
 } from './utils';
 

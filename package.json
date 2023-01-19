@@ -19,6 +19,7 @@
     "dayjs": "^1.11.7",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "fs": "^0.0.1-security",
     "fuse.js": "^6.6.2",
     "next": "13.1.1",
     "react": "18.2.0",

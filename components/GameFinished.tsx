@@ -89,7 +89,7 @@ const GameFinished: React.FC<GameFinishedProps> = ({
         <span className="highlighted-answer">{answer.year}</span> goal
         scored by{' '}
         <span className="highlighted-answer">{answer.player}</span> in
-        the {answer.competition} match between{' '}
+        the {SETTINGS.competitions[answer.competition]} match between{' '}
         <span className="highlighted-answer">{teamAName}</span> and{' '}
         <span className="highlighted-answer">{teamBName}</span>.{' '}
         {answer.url ? (

@@ -1767,7 +1767,11 @@
   },
   {
     "id": "Degnand Gnonto",
-    "names": ["Degnand Gnonto", "Degnand Wilfried"],
+    "names": [
+      "Degnand Gnonto",
+      "Degnand Wilfried",
+      "Wilfried Gnonto"
+    ],
     "nationality": "Italy"
   },
   {

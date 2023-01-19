@@ -42,7 +42,7 @@
   },
   {
     "id": "TOT-73",
-    "names": ["Tottenham Hotspur FC", "Tottenham"],
+    "names": ["Tottenham Hotspur FC", "Tottenham", "Spurs"],
     "intl": false
   },
   {
@@ -598,6 +598,11 @@
   {
     "id": "NOR-68",
     "names": ["Norwich City FC", "Norwich"],
+    "intl": false
+  },
+  {
+    "id": "WAT-346",
+    "names": ["Watford FC", "Watford"],
     "intl": false
   }
 ]

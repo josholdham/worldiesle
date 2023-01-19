@@ -1,4 +1,5 @@
 import { EmojiId } from './utils/emojis';
+import { SETTINGS } from './utils/settings';
 
 export type FormattedTeam = {
   id: string;
@@ -19,6 +20,8 @@ export type FormattedYear = {
 
 export type GuessType = 'teamA' | 'teamB' | 'player' | 'year';
 
+export type Competition = keyof typeof SETTINGS.competitions;
+
 export type BasicAnswer = {
   dateId: string;
   dayNumber: number;
@@ -26,7 +29,7 @@ export type BasicAnswer = {
   teamB: string;
   player: string;
   year: string;
-  competition: string;
+  competition: Competition;
   url?: string;
   homeTeamMatters?: boolean;
 };

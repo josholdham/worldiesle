@@ -1,21 +1,19 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
 import { promises as fs } from 'fs';
+import { Competition } from '../../custom-types';
 
-export const competitions = [
-  'PL', // Premier League
-  'CL', // Champions League
-  'EC', // Euros
-  'WC', // World Cup
-  'PD', // La Liga
+export const competitionsToImport: Partial<Competition>[] = [
+  'PL',
+  'CL',
+  'EC',
+  'WC',
+  'PD',
 ];
-
 export const intlCompetitions = ['EC', 'WC'];
 
 const MIN_YEAR = 2020;
 const MAX_YEAR = 2022;
-
-export type Competition = typeof competitions[number];
 
 export const getAndParseExistingFile = async (
   filename: 'teams' | 'players'
@@ -115,7 +113,7 @@ export const fetchAndProcessCompetitions = async <
     competition: Competition
   ) => Tidied[]
 ): Promise<Tidied[]> => {
-  const competition = competitions[competitionIndex];
+  const competition = competitionsToImport[competitionIndex];
   const updatedJson = await fetchAndProcessSeasons(
     competition,
     endpoint,
@@ -124,7 +122,7 @@ export const fetchAndProcessCompetitions = async <
     processResponse
   );
 
-  if (competitionIndex >= competitions.length - 1) {
+  if (competitionIndex >= competitionsToImport.length - 1) {
     return updatedJson;
   }
 
