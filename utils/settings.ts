@@ -8,5 +8,6 @@ export const SETTINGS = {
     PD: 'La Liga',
     FAC: 'FA Cup',
     CDR: 'Copa del Rey',
+    FRI: 'Friendly',
   },
 };

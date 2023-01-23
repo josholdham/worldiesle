@@ -105,7 +105,12 @@ button:disabled:hover {
   width: 100%;
   padding: 12px;
 }
-
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 footer {
   background-color: rgba(var(--background-rgb), 1);
   padding: 10px;

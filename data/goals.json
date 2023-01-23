@@ -285,5 +285,71 @@
     "competition": "WC",
     "url": "https://youtu.be/ffAYByv2pLc?t=90",
     "homeTeamMatters": false
+  },
+  {
+    "id": "LIV-64-TOT-73-2018-PL",
+    "teamA": "LIV-64",
+    "teamB": "TOT-73",
+    "goalScoredFor": "TOT-73",
+    "player": "Victor Wanyama",
+    "year": "2018",
+    "competition": "PL",
+    "url": "https://youtu.be/0TMOaNwyAmA?t=31",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "CHE-61-TOT-73-2016-PL",
+    "teamA": "CHE-61",
+    "teamB": "TOT-73",
+    "goalScoredFor": "CHE-61",
+    "player": "Eden Hazard",
+    "year": "2016",
+    "competition": "PL",
+    "url": "https://youtu.be/bkMfz7hkIZI?t=108",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "CRO-799-DEN-782-1996-EC",
+    "teamA": "CRO-799",
+    "teamB": "DEN-782",
+    "goalScoredFor": "CRO-799",
+    "player": "Davor Šuker",
+    "year": "1996",
+    "competition": "EC",
+    "url": "https://youtu.be/_IRH22BWvf4?t=566",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "SWE-752x-ENG-770-2006-WC",
+    "teamA": "SWE-752x",
+    "teamB": "ENG-770",
+    "goalScoredFor": "ENG-770",
+    "player": "Joe Cole",
+    "year": "2006",
+    "competition": "WC",
+    "url": "https://www.youtube.com/watch?v=OJ29PgBD130",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "SWE-752x-ENG-770-2012-FRI",
+    "teamA": "SWE-752x",
+    "teamB": "ENG-770",
+    "goalScoredFor": "SWE-752x",
+    "player": "Zlatan Ibrahimović",
+    "year": "2012",
+    "competition": "FRI",
+    "url": "https://www.youtube.com/watch?v=weViOPghw1w",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "TOT-73-BUR-328-2019-PL",
+    "teamA": "TOT-73",
+    "teamB": "BUR-328",
+    "goalScoredFor": "TOT-73",
+    "player": "Son Heungmin",
+    "year": "2019",
+    "competition": "PL",
+    "url": "https://youtu.be/Bp9UZkZQ_cc?t=97",
+    "homeTeamMatters": true
   }
 ]

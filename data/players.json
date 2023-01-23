@@ -21,7 +21,7 @@
   },
   {
     "id": "Son Heungmin",
-    "names": ["Son Heungmin", "Heungmin Son"],
+    "names": ["Son Heungmin", "Heungmin Son", "Son Heung-min"],
     "nationality": "Korea Republic"
   },
   {
@@ -568,11 +568,6 @@
     "nationality": "Brazil"
   },
   {
-    "id": "Jeff Hendrick",
-    "names": ["Jeff Hendrick", "Jeffrey Patrick"],
-    "nationality": "Ireland"
-  },
-  {
     "id": "Timothy Castagne",
     "names": ["Timothy Castagne", "Timothy"],
     "nationality": "Belgium"
@@ -586,16 +581,6 @@
     "id": "Aaron Connolly",
     "names": ["Aaron Connolly", "Aaron Anthony"],
     "nationality": "Ireland"
-  },
-  {
-    "id": "James Justin",
-    "names": ["James Justin", "James"],
-    "nationality": "England"
-  },
-  {
-    "id": "Ezri Konsa",
-    "names": ["Ezri Konsa", "Ezri"],
-    "nationality": "England"
   },
   {
     "id": "Solomon March",
@@ -5706,5 +5691,25 @@
     "id": "Ao Tanaka",
     "names": ["Ao Tanaka"],
     "nationality": "Japan"
+  },
+  {
+    "id": "Victor Wanyama",
+    "names": ["Victor Wanyama", "Victor Mugubi Wanyama"],
+    "nationality": "Kenya"
+  },
+  {
+    "id": "Davor Šuker",
+    "names": ["Davor Šuker", "Davor Suker"],
+    "nationality": "Croatia"
+  },
+  {
+    "id": "Joe Cole",
+    "names": ["Joe Cole", "Joseph John Cole"],
+    "nationality": "England"
+  },
+  {
+    "id": "Zlatan Ibrahimović",
+    "names": ["Zlatan Ibrahimović", "Zlatan Ibrahimovic"],
+    "nationality": "Sweden"
   }
 ]

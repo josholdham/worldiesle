@@ -230,21 +230,6 @@
     "intl": false
   },
   {
-    "id": "MHA-884",
-    "names": ["Maccabi Haifa FC", "Maccabi Haifa"],
-    "intl": false
-  },
-  {
-    "id": "F91-1875",
-    "names": ["F91 Diddeleng", "F91 Dudelange"],
-    "intl": false
-  },
-  {
-    "id": "KOB-1876",
-    "names": ["FC København", "København"],
-    "intl": false
-  },
-  {
     "id": "RBS-1877",
     "names": ["FC Red Bull Salzburg", "RB Salzburg"],
     "intl": false
@@ -252,11 +237,6 @@
   {
     "id": "SHE-1880",
     "names": ["FC Sheriff Tiraspol", "Sheriff"],
-    "intl": false
-  },
-  {
-    "id": "PLZ-1881",
-    "names": ["FC Viktoria Plzeň", "Viktoria Plzeň"],
     "intl": false
   },
   {
@@ -330,11 +310,6 @@
     "intl": false
   },
   {
-    "id": "null-5123",
-    "names": ["Helsingin JK", "HJK"],
-    "intl": false
-  },
-  {
     "id": "FCZ-5273",
     "names": ["FC Zürich", "FC Zürich"],
     "intl": false
@@ -357,62 +332,6 @@
   {
     "id": "FK-5721",
     "names": ["FK Bodø/Glimt", "Bodø/Glimt"],
-    "intl": false
-  },
-  {
-    "id": "RFS-5823",
-    "names": ["FK Rīgas Futbola Skola", "FK Rīgas FS"],
-    "intl": false
-  },
-  {
-    "id": "VIK-5946",
-    "names": ["KF Víkingur", "Víkingur"],
-    "intl": false
-  },
-  {
-    "id": "KRR-5947",
-    "names": ["KR Reykjavík", "KR"],
-    "intl": false
-  },
-  {
-    "id": "FTC-5954",
-    "names": ["Ferencvárosi TC", "Ferencváros"],
-    "intl": false
-  },
-  {
-    "id": "LIN-7281",
-    "names": ["Lincoln Red Imps FC", "Lincoln"],
-    "intl": false
-  },
-  {
-    "id": "CRV-7283",
-    "names": ["FK Crvena Zvezda", "Crvena Zvedza"],
-    "intl": false
-  },
-  {
-    "id": "SUT-7284",
-    "names": ["FK Sutjeska Nikšić", "Sutjeska Nik"],
-    "intl": false
-  },
-  { "id": "KÍ-7472", "names": ["KÍ", "KÍ"], "intl": false },
-  {
-    "id": "APO-7483",
-    "names": ["Apollon FC Lemesós", "Apollon"],
-    "intl": false
-  },
-  {
-    "id": "SHK-7485",
-    "names": ["FK Shkupi Skopje", "Shkupi Skopje"],
-    "intl": false
-  },
-  {
-    "id": "PYU-7497",
-    "names": ["FC Pyunik Yerevan", "Pyunik"],
-    "intl": false
-  },
-  {
-    "id": "SOL-7498",
-    "names": ["FK Šachcior Salihorsk", "Šachcior S."],
     "intl": false
   },
   {
@@ -440,12 +359,6 @@
     "names": ["KF Tirana", "Tirana"],
     "intl": false
   },
-  {
-    "id": "null-9417",
-    "names": ["Tobol Kostanay", null],
-    "intl": false
-  },
-  { "id": "null-10062", "names": ["Ballkani", null], "intl": false },
   { "id": "URU-758", "names": ["Uruguay", "Uruguay"], "intl": true },
   { "id": "GER-759", "names": ["Germany", "Germany"], "intl": true },
   { "id": "ESP-760", "names": ["Spain", "Spain"], "intl": true },
@@ -601,8 +514,13 @@
     "intl": false
   },
   {
-    "id": "WAT-346",
-    "names": ["Watford FC", "Watford"],
+    "id": "SWE-752x",
+    "names": ["Sweden"],
+    "intl": true
+  },
+  {
+    "id": "BUR-328",
+    "names": ["Burnley FC", "Burnley"],
     "intl": false
   }
 ]

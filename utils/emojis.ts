@@ -12,8 +12,8 @@ const emojisMap = {
     label: 'Red Circle',
   },
   homeAway: {
-    symbol: '🟩',
-    label: 'Green Square',
+    symbol: '🟦',
+    label: 'Blue Square',
   },
   upSmall: {
     symbol: '🔼',
@@ -38,6 +38,10 @@ const emojisMap = {
   downLarge: {
     symbol: '🔻',
     label: 'Red Down Arrow',
+  },
+  correctNationality: {
+    symbol: '🟨',
+    label: 'Yellow Square',
   },
 };
 

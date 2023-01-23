@@ -69,12 +69,20 @@ const Game: React.FC<GameProps> = ({
     // Add this guess to local storage.
     storeGuess(answer.dateId, newGuess);
 
+    // Add this guess to state
+    setGuesses([newGuess, ...guesses]);
+
     // Track guess with analytics
     const umami = window.umami;
     umami.trackEvent('Guess', newGuess);
-
-    // Add this guess to state
-    setGuesses([newGuess, ...guesses]);
+    if (
+      newGuess.teamA?.isCorrect &&
+      newGuess.teamB?.isCorrect &&
+      newGuess.player?.isCorrect &&
+      newGuess.year?.isCorrect
+    ) {
+      umami.trackEvent('Correct Guess', {});
+    }
   };
 
   const isGameWon = useMemo(() => {

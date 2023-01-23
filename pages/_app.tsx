@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
           font-family: ${inter.style.fontFamily};
         }
       `}</style>
-      <main className={inter.className}>
+      <main className={`${inter.className} main-container`}>
         <Component {...pageProps} />
       </main>
       <ToastContainer
