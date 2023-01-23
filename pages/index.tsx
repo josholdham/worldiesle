@@ -135,6 +135,14 @@ const Home: React.FC<HomeProps> = ({
       <footer>
         <a
           target="_blank"
+          href="https://josholdham.github.io/worldiesle/privacy"
+          rel="noreferrer"
+        >
+          Privacy Policy
+        </a>{' '}
+        |{' '}
+        <a
+          target="_blank"
           href="https://josholdham.github.io/worldiesle/faq"
           rel="noreferrer"
         >

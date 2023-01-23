@@ -4,7 +4,6 @@ import type { AppProps } from 'next/app';
 import { Inter } from '@next/font/google';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, Slide } from 'react-toastify';
-import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
