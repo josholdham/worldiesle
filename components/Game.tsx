@@ -19,6 +19,12 @@ import PuffLoader from 'react-spinners/PuffLoader';
 import GameFinished from './GameFinished';
 import { SETTINGS } from '../utils/settings';
 
+declare global {
+  var umami: {
+    trackEvent: (eventName: string, data: any) => void;
+  };
+}
+
 type GameProps = {
   teams: FormattedTeam[];
   players: FormattedPlayer[];
@@ -63,6 +69,11 @@ const Game: React.FC<GameProps> = ({
     // Add this guess to local storage.
     storeGuess(answer.dateId, newGuess);
 
+    // Track guess with analytics
+    const umami = window.umami;
+    umami.trackEvent('Guess', newGuess);
+
+    // Add this guess to state
     setGuesses([newGuess, ...guesses]);
   };
 
