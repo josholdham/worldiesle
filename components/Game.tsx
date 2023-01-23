@@ -73,15 +73,17 @@ const Game: React.FC<GameProps> = ({
     setGuesses([newGuess, ...guesses]);
 
     // Track guess with analytics
-    const umami = window.umami;
-    umami.trackEvent('Guess', newGuess);
-    if (
-      newGuess.teamA?.isCorrect &&
-      newGuess.teamB?.isCorrect &&
-      newGuess.player?.isCorrect &&
-      newGuess.year?.isCorrect
-    ) {
-      umami.trackEvent('Correct Guess', {});
+    if (process.env.NODE_ENV !== 'development') {
+      const umami = window.umami;
+      umami.trackEvent('Guess', newGuess);
+      if (
+        newGuess.teamA?.isCorrect &&
+        newGuess.teamB?.isCorrect &&
+        newGuess.player?.isCorrect &&
+        newGuess.year?.isCorrect
+      ) {
+        umami.trackEvent('Correct Guess', {});
+      }
     }
   };
 
