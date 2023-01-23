@@ -1,5 +1,6 @@
 import {
   BasicAnswer,
+  FormattedPlayer,
   GuessType,
   GuessWithFeedback,
   SetOfGuesses,
@@ -74,8 +75,9 @@ const getTeamGuessFeedback = (
 };
 
 const getPlayerGuessFeedback = (
-  playerGuess: Suggestion,
-  answer: BasicAnswer
+  playerGuess: FormattedPlayer,
+  answer: BasicAnswer,
+  fullPlayerAnswer: FormattedPlayer | undefined
 ): GuessWithFeedback => {
   let guessWithFeedback: GuessWithFeedback = {
     guess: playerGuess,
@@ -88,6 +90,13 @@ const getPlayerGuessFeedback = (
       ...guessWithFeedback,
       ...CORRECT_FEEDBACK,
     };
+  } else if (
+    playerGuess?.nationality &&
+    playerGuess?.nationality === fullPlayerAnswer?.nationality
+  ) {
+    guessWithFeedback.emojiId = 'correctNationality';
+    guessWithFeedback.hoverText =
+      'The correct player has the same nationality as your guessed player';
   } else if (playerGuess?.id) {
     guessWithFeedback = {
       ...guessWithFeedback,
@@ -153,7 +162,8 @@ export const getGuessFeedback = (
   guess: SetOfGuesses,
   guessKey: GuessType,
   answer: BasicAnswer,
-  correctGuesses: SetOfGuessesWithFeedback
+  correctGuesses: SetOfGuessesWithFeedback,
+  fullPlayerAnswer: FormattedPlayer | undefined
 ): GuessWithFeedback => {
   /** If there is already a correct guess for this guessType, we want to
    * return that as this round's guess as well (persisting correct answers
@@ -175,7 +185,11 @@ export const getGuessFeedback = (
   }
 
   if (guessKey === 'player') {
-    return getPlayerGuessFeedback(guess.player, answer);
+    return getPlayerGuessFeedback(
+      guess.player as FormattedPlayer,
+      answer,
+      fullPlayerAnswer
+    );
   }
 
   return getYearGuessFeedback(guess.year, answer);

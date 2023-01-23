@@ -27,18 +27,21 @@ Currently, goals can come from the following tournaments:
 - European Championships
 - La Liga
 - Copa Del Rey
+- Friendlies
 
 We might expand this in future to more tournaments / leagues.
 
+Also - it is probably fair to say Premier League, Champions League and the World Cup are the biggest source of goals.
+
 ### Time Period
 
-We are currently limiting goals to those from 1994 to present, given the difficulty in finding good quality videos and stills for games prior to this.
+We are currently limiting goals to those from 1994 to present, given the difficulty in finding good quality videos and stills for games prior to this. There is a bias towards recent years for similar reasons.
 
 ### Vibes
 
 If you have been playing the game a while, you may notice that not all goals are 'worldies'. I am largely picking goals based on their memorability - a very subjective measure that is unfortunately filtered through my own viewing memories and experiences - so all sorts of types of goal can sneak in. For instance, they may have just been a really important goal for the club or competition. They may just have been memorable because of the commentary surrounding them. Or because of the backstory leading up to them. Or they may have just been a bit silly and/or funny.
 
-All in all, the fun of the game is not only in instantly recognising goals, but also in figuring them out from team kits, the make-up of the crowd, advertising hoardings, and so on.
+All in all, the fun of the game is not only in instantly recognising goals, but also in figuring them out from team kits, the make-up of the crowd, advertising hoardings, and so on. So if you don't recognise a goal, just... start guessing
 
 If you'd like to suggest new goals, feel free to contact me [on Twitter](https://twitter.com/worldiesle).
 
@@ -58,7 +61,7 @@ Yes. No. Maybe. I don't k-
 
 Sort of. For most games, it does. It's an extra element of the quiz in remembering the goals, and I find it fun to try figure out the stadium from the images as well as anything else.
 
-However, for international matches, and for some tournament matches (ie cup matches played on neutral grounds) the home/away team distinction doesn't matter, and won't be factored in to determining a correct guess.
+However, for most international matches (non-qualifier ones), and for some tournament matches (ie cup matches played on neutral grounds) the home/away team distinction doesn't matter, and won't be factored in to determining a correct guess.
 
 ## How come I never see any useful clues next to my previous guesses.
 

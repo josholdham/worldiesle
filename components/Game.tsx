@@ -52,12 +52,22 @@ const Game: React.FC<GameProps> = ({
     setLoaded(true);
   }, [answer]);
 
+  const fullPlayerAnswer = useMemo(() => {
+    return players.find((o) => o.id === answer.player);
+  }, [answer, players]);
+
   const onSubmit = (basicGuess: SetOfGuesses) => {
     if (guesses.length >= SETTINGS.maxGuesses) return;
 
     // Create curried fn to get feedback for each guess type
     const getFeedback = (guessKey: GuessType) =>
-      getGuessFeedback(basicGuess, guessKey, answer, correctGuesses);
+      getGuessFeedback(
+        basicGuess,
+        guessKey,
+        answer,
+        correctGuesses,
+        fullPlayerAnswer
+      );
 
     const newGuess = {
       teamA: getFeedback('teamA'),
