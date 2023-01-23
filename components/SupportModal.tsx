@@ -22,10 +22,10 @@ const SupportModal: React.FC<SupportModalProps> = () => {
         Worldiesle is a small hobby project created by Josh{' '}
         <a
           target="_blank"
-          href="https://twitter.com/worldies4"
+          href="https://twitter.com/worldiesle"
           rel="noreferrer"
         >
-          @worldies4
+          @worldiesle
         </a>
       </p>
 
@@ -53,10 +53,10 @@ const SupportModal: React.FC<SupportModalProps> = () => {
         contact me is on Twitter,{' '}
         <a
           target="_blank"
-          href="https://twitter.com/worldies4"
+          href="https://twitter.com/worldiesle"
           rel="noreferrer"
         >
-          @worldies4
+          @worldiesle
         </a>
       </p>
     </>

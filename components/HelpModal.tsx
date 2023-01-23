@@ -65,7 +65,11 @@ const HelpModal: React.FC<HelpModalProps> = () => {
 
         <p className={styles.faqLink}>
           For more information on how to play, check out the{' '}
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href="https://josholdham.github.io/worldiesle/faq"
+            rel="noreferrer"
+          >
             Worldiesle FAQ
           </a>
         </p>

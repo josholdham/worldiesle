@@ -36,11 +36,11 @@ We are currently limiting goals to those from 1994 to present, given the difficu
 
 ### Vibes
 
-If you have been playing the game a while, you may notice that not all goals are 'worldies'. I am largely picking goals based on their memorability - a very subjective measure that is unfortunately filtered through my own viewing memories and experiences - so unfortunately all sorts of types of goal can sneak in. For instance, they may have just been a really important goal for the club or competition. They may just have been memorable because of the commentary surrounding them. Or because of the backstory leading up to them.
+If you have been playing the game a while, you may notice that not all goals are 'worldies'. I am largely picking goals based on their memorability - a very subjective measure that is unfortunately filtered through my own viewing memories and experiences - so all sorts of types of goal can sneak in. For instance, they may have just been a really important goal for the club or competition. They may just have been memorable because of the commentary surrounding them. Or because of the backstory leading up to them. Or they may have just been a bit silly and/or funny.
 
 All in all, the fun of the game is not only in instantly recognising goals, but also in figuring them out from team kits, the make-up of the crowd, advertising hoardings, and so on.
 
-If you'd like to suggest new goals, feel free to contact me [on Twitter](https://twitter.com/worldies4).
+If you'd like to suggest new goals, feel free to contact me [on Twitter](https://twitter.com/worldiesle).
 
 ## I can't find a certain player/team in the drop-down menus when guessing
 
@@ -52,21 +52,21 @@ _NOTE:_ Team and player guess MUST match an item in the dropdown lists, otherwis
 
 ## Does the home/away team distinction matter?
 
-Yes. No. Maybe. I don't k
+Yes. No. Maybe. I don't k-
 
 ## Does the home/away team distinction matter?
 
 Sort of. For most games, it does. It's an extra element of the quiz in remembering the goals, and I find it fun to try figure out the stadium from the images as well as anything else.
 
-However, for international matches, and for some tournament matches (ie cup matches played on neutral grounds) the home/away team or doesn't matter, and won't be factored in to determining a correct guess.
+However, for international matches, and for some tournament matches (ie cup matches played on neutral grounds) the home/away team distinction doesn't matter, and won't be factored in to determining a correct guess.
 
 ## How come I never see any useful clues next to my previous guesses.
 
 OK, I'll level with you: part of this game's conception was in fact working backwards from the questionable pun in the title to a viable and workable game.
 
-As much as I'd like to copy the good example of Wordle and Worldiesly by sprinkling past guesses with useful clues as to the correct answer, it's a bit less clear how I'd do that when comparing teams and players (years I think works well - it's a higher or lower type thing).
+As much as I'd like to copy the good example of Wordle and Worldle by sprinkling past guesses with useful clues as to the correct answer, it's a bit less clear how I'd do that when comparing teams and players ('years' I think works well - it's a higher or lower type thing).
 
-I'll keep thinking of ways to improve this, and to see if the data is there to support it, but for now... sorry.
+I'll keep thinking of ways to improve this, and to see if the data is there to support it, but for now... please accept my apologies.
 
 ## Can I save my scores/stats across devices, or if I get a new computer/phone?
 
@@ -85,13 +85,13 @@ Well done, he's 13
 
 ## But seriously?
 
-No. But of course if you have a little coding knowledge it is quite easy to inspect the code of the site and see the answer, or upcoming pictures, or what have you. If you want to do that that's fine - my thinking is that you're only cheating yourself. 😇
+No. Of course if you have a little coding knowledge it is quite easy to inspect the code of the site and see the answer, or upcoming pictures, or what have you. If you want to do that that's fine - my thinking is that you're only cheating yourself. 😇
 
 Worldiesle is a small hobby project, and the code is public over on [Github](https://github.com/josholdham/worldiesle) if you want to check it out. Although please don't rip me off.
 
 ## What do I do if I have found a bug, or want to suggest an improvement?
 
-At the moment, the best way to contact me is via [Twitter](https://twitter.com/worldies4). Any feedback is gratefully received.
+At the moment, the best way to contact me is via [Twitter](https://twitter.com/worldiesle). Any feedback is gratefully received.
 
 ## How can I support Worldiesle?
 

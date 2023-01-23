@@ -38,7 +38,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   font-size: 13.5px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,9 +47,10 @@ body {
   }
 }
 
-body {
+html, body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  min-height: 100vh;
 }
 
 a {
@@ -103,6 +104,21 @@ button:disabled:hover {
 .button {
   width: 100%;
   padding: 12px;
+}
+
+footer {
+  background-color: rgba(var(--background-rgb), 1);
+  padding: 10px;
+  border-top: 1px solid rgb(var(--background-weak-rgb));
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  color:rgba(var(--foreground-rgb), .5)
+}
+
+footer a {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 

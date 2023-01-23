@@ -109,6 +109,12 @@ const Home: React.FC<HomeProps> = ({
             darkOrLight === 'dark' ? 'dark' : 'light'
           }/site.webmanifest`}
         ></link>
+        <script
+          async
+          defer
+          src="https://analytics.umami.is/script.js"
+          data-website-id="c75ff393-d8c9-4808-8f12-c53675e135cd"
+        ></script>
       </Head>
       <main className={styles.main}>
         <Header answer={answer} />
@@ -132,6 +138,23 @@ const Home: React.FC<HomeProps> = ({
           />
         </div>
       </main>
+      <footer>
+        <a
+          target="_blank"
+          href="https://josholdham.github.io/worldiesle/faq"
+          rel="noreferrer"
+        >
+          FAQ
+        </a>{' '}
+        |{' '}
+        <a
+          target="_blank"
+          href="https://twitter.com/worldiesle"
+          rel="noreferrer"
+        >
+          @worldiesle
+        </a>
+      </footer>
     </>
   );
 };

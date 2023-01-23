@@ -67,17 +67,6 @@
     "homeTeamMatters": true
   },
   {
-    "id": "LIV-64-FCB-81-2019-CL",
-    "teamA": "LIV-64",
-    "teamB": "FCB-81",
-    "goalScoredFor": "LIV-64",
-    "player": "Divock Origi",
-    "year": "2019",
-    "competition": "CL",
-    "url": "https://youtu.be/7HldRlTZj_g?t=341",
-    "homeTeamMatters": true
-  },
-  {
     "id": "MUN-66-MIL-98-2007-CL",
     "teamA": "MUN-66",
     "teamB": "MIL-98",
@@ -197,5 +186,104 @@
     "competition": "PL",
     "url": "https://youtu.be/IztKMxV6Nk8?t=21",
     "homeTeamMatters": true
+  },
+  {
+    "id": "LEI-338-MUN-66-2015-PL",
+    "teamA": "LEI-338",
+    "teamB": "MUN-66",
+    "goalScoredFor": "LEI-338",
+    "player": "Jamie Vardy",
+    "year": "2015",
+    "competition": "PL",
+    "url": "https://www.youtube.com/watch?v=FAfYXU2Zo0c&list=PLdACzaBbxIbf7VlNFoiHO523w4xRglG1P&index=12&t=72s",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "LIV-64-MIL-98-2005-CL",
+    "teamA": "LIV-64",
+    "teamB": "MIL-98",
+    "goalScoredFor": "MIL-98",
+    "player": "Hernán Crespo",
+    "year": "2015",
+    "competition": "CL",
+    "url": "https://youtu.be/PWErN627Il8?list=PLdACzaBbxIbf7VlNFoiHO523w4xRglG1P&t=402",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "LIV-64-MIL-98-2005-CL-2",
+    "teamA": "LIV-64",
+    "teamB": "MIL-98",
+    "goalScoredFor": "LIV-64",
+    "player": "Steven Gerrard",
+    "year": "2015",
+    "competition": "CL",
+    "url": "https://youtu.be/PWErN627Il8?list=PLdACzaBbxIbf7VlNFoiHO523w4xRglG1P&t=402",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "LIV-64-CHE-61-2014-PL",
+    "teamA": "LIV-64",
+    "teamB": "CHE-61",
+    "goalScoredFor": "CHE-61",
+    "player": "Demba Ba",
+    "year": "2015",
+    "competition": "PL",
+    "url": "https://youtu.be/2HWs5z5n1sY?list=PLdACzaBbxIbf7VlNFoiHO523w4xRglG1P&t=18",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "ARG-762-KSA-801-2022-WC",
+    "teamA": "ARG-762",
+    "teamB": "KSA-801",
+    "goalScoredFor": "KSA-801",
+    "player": "Salem Al-Dawsari",
+    "year": "2022",
+    "competition": "WC",
+    "url": "https://www.youtube.com/watch?v=0zIdoBvkiRk",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "BRA-764-KOR-772-2022-WC",
+    "teamA": "BRA-764",
+    "teamB": "KOR-772",
+    "goalScoredFor": "BRA-764",
+    "player": "Richarlison",
+    "year": "2022",
+    "competition": "WC",
+    "url": "https://youtu.be/0zIdoBvkiRk?t=202",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "ARG-762-FRA-773-2022-WC",
+    "teamA": "ARG-762",
+    "teamB": "FRA-773",
+    "goalScoredFor": "FRA-773",
+    "player": "Kylian Mbappé",
+    "year": "2022",
+    "competition": "WC",
+    "url": "https://youtu.be/sA-nmPB0z18?t=167",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "JPN-766-ESP-760-2022-WC",
+    "teamA": "JPN-766",
+    "teamB": "ESP-760",
+    "goalScoredFor": "JPN-766",
+    "player": "Ao Tanaka",
+    "year": "2022",
+    "competition": "WC",
+    "url": "https://youtu.be/QnESv9md1IM?t=187",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "GER-759-ARG-762-2014-WC",
+    "teamA": "GER-759",
+    "teamB": "ARG-762",
+    "goalScoredFor": "GER-759",
+    "player": "Mario Götze",
+    "year": "2014",
+    "competition": "WC",
+    "url": "https://youtu.be/ffAYByv2pLc?t=90",
+    "homeTeamMatters": false
   }
 ]
