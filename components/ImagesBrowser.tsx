@@ -41,7 +41,12 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
                 i === currentViewedIndex ? 'visible' : 'hidden',
             }}
           >
-            <Image src={imageUrls[i]} alt={`Image ${i + 1}`} fill />
+            <Image
+              src={imageUrls[i]}
+              alt={`Image ${i + 1}`}
+              fill
+              priority={i <= 0 ? true : false}
+            />
           </div>
         ))}
       </div>

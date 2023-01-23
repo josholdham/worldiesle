@@ -103,12 +103,6 @@ const Home: React.FC<HomeProps> = ({
             darkOrLight === 'dark' ? 'dark' : 'light'
           }/favicon-16x16.png`}
         />
-        <link
-          rel="manifest"
-          href={`/favicons/${
-            darkOrLight === 'dark' ? 'dark' : 'light'
-          }/site.webmanifest`}
-        ></link>
         <script
           async
           defer
