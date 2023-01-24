@@ -238,7 +238,7 @@ const getSignedS3Images = async (goalId: string) => {
 export async function getStaticProps() {
   const END_YEAR = dayjs().year();
   const daysSinceLaunch = dayjs()
-    .add(13, 'hours')
+    .add(37, 'hours')
     .add(62, 'minutes')
     .diff(LAUNCH_DATE, 'day');
 
