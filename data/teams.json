@@ -1,4 +1,21 @@
 [
+  { "id": "MIL-98", "names": ["AC Milan", "Milan"], "intl": false },
+  { "id": "AJA-678", "names": ["AFC Ajax", "Ajax"], "intl": false },
+  {
+    "id": "BOU-1044",
+    "names": ["AFC Bournemouth", "Bournemouth"],
+    "intl": false
+  },
+  {
+    "id": "ASM-548",
+    "names": ["AS Monaco FC", "Monaco"],
+    "intl": false
+  },
+  {
+    "id": "ARG-762",
+    "names": ["Argentina", "Argentina"],
+    "intl": true
+  },
   {
     "id": "ARS-57",
     "names": ["Arsenal FC", "Arsenal"],
@@ -10,69 +27,35 @@
     "intl": false
   },
   {
-    "id": "CHE-61",
-    "names": ["Chelsea FC", "Chelsea"],
+    "id": "ATH-77",
+    "names": ["Athletic Club", "Athletic"],
     "intl": false
   },
   {
-    "id": "EVE-62",
-    "names": ["Everton FC", "Everton"],
-    "intl": false
-  },
-  { "id": "FUL-63", "names": ["Fulham FC", "Fulham"], "intl": false },
-  {
-    "id": "LIV-64",
-    "names": ["Liverpool FC", "Liverpool"],
-    "intl": false
+    "id": "AUS-779",
+    "names": ["Australia", "Australia"],
+    "intl": true
   },
   {
-    "id": "MCI-65",
-    "names": ["Manchester City FC", "Man City"],
+    "id": "AEK-7517",
+    "names": ["AÉK Lárnaka", "AÉK Lárnaka"],
     "intl": false
   },
   {
-    "id": "MUN-66",
-    "names": ["Manchester United FC", "Man United"],
+    "id": "B04-3",
+    "names": ["Bayer 04 Leverkusen", "Leverkusen"],
     "intl": false
   },
+  { "id": "BEL-805", "names": ["Belgium", "Belgium"], "intl": true },
   {
-    "id": "NEW-67",
-    "names": ["Newcastle United FC", "Newcastle"],
+    "id": "BVB-4",
+    "names": ["Borussia Dortmund", "Dortmund"],
     "intl": false
   },
+  { "id": "BRA-764", "names": ["Brazil", "Brazil"], "intl": true },
   {
-    "id": "TOT-73",
-    "names": ["Tottenham Hotspur FC", "Tottenham", "Spurs"],
-    "intl": false
-  },
-  {
-    "id": "WOL-76",
-    "names": ["Wolverhampton Wanderers FC", "Wolverhampton"],
-    "intl": false
-  },
-  {
-    "id": "LEI-338",
-    "names": ["Leicester City FC", "Leicester City"],
-    "intl": false
-  },
-  {
-    "id": "SOU-340",
-    "names": ["Southampton FC", "Southampton"],
-    "intl": false
-  },
-  {
-    "id": "LEE-341",
-    "names": ["Leeds United FC", "Leeds United"],
-    "intl": false
-  },
-  {
-    "id": "NOT-351",
-    "names": ["Nottingham Forest FC", "Nottingham"],
-    "intl": false
-  },
-  {
-    "id": "CRY-354",
-    "names": ["Crystal Palace FC", "Crystal Palace"],
+    "id": "BRE-402",
+    "names": ["Brentford FC", "Brentford"],
     "intl": false
   },
   {
@@ -81,38 +64,29 @@
     "intl": false
   },
   {
-    "id": "BRE-402",
-    "names": ["Brentford FC", "Brentford"],
+    "id": "BUR-328",
+    "names": ["Burnley FC", "Burnley"],
     "intl": false
   },
   {
-    "id": "WHU-563",
-    "names": ["West Ham United FC", "West Ham"],
+    "id": "OSA-79",
+    "names": ["CA Osasuna", "Osasuna"],
     "intl": false
   },
   {
-    "id": "BOU-1044",
-    "names": ["AFC Bournemouth", "Bournemouth"],
+    "id": "CMR-781",
+    "names": ["Cameroon", "Cameroon"],
+    "intl": true
+  },
+  { "id": "CAN-828", "names": ["Canada", "Canada"], "intl": true },
+  {
+    "id": "CEL-732",
+    "names": ["Celtic FC", "Celtic"],
     "intl": false
   },
   {
-    "id": "B04-3",
-    "names": ["Bayer 04 Leverkusen", "Leverkusen"],
-    "intl": false
-  },
-  {
-    "id": "BVB-4",
-    "names": ["Borussia Dortmund", "Dortmund"],
-    "intl": false
-  },
-  {
-    "id": "FCB-5",
-    "names": ["FC Bayern München", "Bayern"],
-    "intl": false
-  },
-  {
-    "id": "SGE-19",
-    "names": ["Eintracht Frankfurt", "Frankfurt"],
+    "id": "CHE-61",
+    "names": ["Chelsea FC", "Chelsea"],
     "intl": false
   },
   {
@@ -121,114 +95,72 @@
     "intl": false
   },
   {
+    "id": "CLU-851",
+    "names": ["Club Brugge KV", "Club Brugge"],
+    "intl": false
+  },
+  { "id": "COL-170x", "names": ["Colombia"], "intl": true },
+  {
+    "id": "CRC-793",
+    "names": ["Costa Rica", "Costa Rica"],
+    "intl": true
+  },
+  { "id": "CRO-799", "names": ["Croatia", "Croatia"], "intl": true },
+  {
+    "id": "CRY-354",
+    "names": ["Crystal Palace FC", "Crystal Palace"],
+    "intl": false
+  },
+  {
+    "id": "CAD-264",
+    "names": ["Cádiz CF", "Cádiz CF"],
+    "intl": false
+  },
+  { "id": "DEN-782", "names": ["Denmark", "Denmark"], "intl": true },
+  { "id": "ECU-791", "names": ["Ecuador", "Ecuador"], "intl": true },
+  {
+    "id": "SGE-19",
+    "names": ["Eintracht Frankfurt", "Frankfurt"],
+    "intl": false
+  },
+  { "id": "ELC-285", "names": ["Elche CF", "Elche"], "intl": false },
+  { "id": "ENG-770", "names": ["England", "England"], "intl": true },
+  {
+    "id": "EVE-62",
+    "names": ["Everton FC", "Everton"],
+    "intl": false
+  },
+  {
     "id": "FCB-81",
     "names": ["FC Barcelona", "Barça"],
     "intl": false
   },
   {
-    "id": "RMA-86",
-    "names": ["Real Madrid CF", "Real Madrid"],
+    "id": "FCB-5",
+    "names": ["FC Bayern München", "Bayern"],
     "intl": false
   },
-  { "id": "MIL-98", "names": ["AC Milan", "Milan"], "intl": false },
+  {
+    "id": "CLU-5515",
+    "names": ["FC CFR 1907 Cluj", "CFR Cluj"],
+    "intl": false
+  },
+  {
+    "id": "BAT-8904",
+    "names": ["FC Dinamo Batumi", "Dinamo Batumi"],
+    "intl": false
+  },
   {
     "id": "INT-108",
     "names": ["FC Internazionale Milano", "Inter"],
     "intl": false
   },
   {
-    "id": "JUV-109",
-    "names": ["Juventus FC", "Juventus"],
-    "intl": false
-  },
-  {
-    "id": "NAP-113",
-    "names": ["SSC Napoli", "Napoli"],
-    "intl": false
-  },
-  {
-    "id": "SPO-498",
-    "names": ["Sporting Clube de Portugal", "Sporting CP"],
+    "id": "MID-4485",
+    "names": ["FC Midtjylland", "Midtjylland"],
     "intl": false
   },
   { "id": "FCP-503", "names": ["FC Porto", "Porto"], "intl": false },
-  {
-    "id": "MAR-516",
-    "names": ["Olympique de Marseille", "Marseille"],
-    "intl": false
-  },
-  {
-    "id": "PSG-524",
-    "names": ["Paris Saint-Germain FC", "PSG"],
-    "intl": false
-  },
-  {
-    "id": "ASM-548",
-    "names": ["AS Monaco FC", "Monaco"],
-    "intl": false
-  },
-  {
-    "id": "SEV-559",
-    "names": ["Sevilla FC", "Sevilla FC"],
-    "intl": false
-  },
-  {
-    "id": "TRA-602",
-    "names": ["Trabzonspor", "Trabzonspor"],
-    "intl": false
-  },
-  {
-    "id": "QAR-611",
-    "names": ["Qarabağ Ağdam FK", "Qarabağ Ağdam"],
-    "intl": false
-  },
-  {
-    "id": "FEN-613",
-    "names": ["Fenerbahçe SK", "Fenerbahçe"],
-    "intl": false
-  },
-  {
-    "id": "OLY-654",
-    "names": ["PAE Olympiakos SFP", "Olympiakos"],
-    "intl": false
-  },
-  { "id": "PSV-674", "names": ["PSV", "PSV"], "intl": false },
-  { "id": "AJA-678", "names": ["AFC Ajax", "Ajax"], "intl": false },
-  {
-    "id": "RBL-721",
-    "names": ["RB Leipzig", "RB Leipzig"],
-    "intl": false
-  },
-  {
-    "id": "CEL-732",
-    "names": ["Celtic FC", "Celtic"],
-    "intl": false
-  },
-  {
-    "id": "MAR-734",
-    "names": ["NK Maribor", "Maribor"],
-    "intl": false
-  },
-  {
-    "id": "MAL-749",
-    "names": ["Malmö FF", "Malmö FF"],
-    "intl": false
-  },
-  {
-    "id": "DIN-755",
-    "names": ["GNK Dinamo Zagreb", "Dinamo Zagreb"],
-    "intl": false
-  },
-  {
-    "id": "DYN-842",
-    "names": ["FK Dynamo Kyiv", "Dynamo Kyiv"],
-    "intl": false
-  },
-  {
-    "id": "CLU-851",
-    "names": ["Club Brugge KV", "Club Brugge"],
-    "intl": false
-  },
   {
     "id": "RBS-1877",
     "names": ["FC Red Bull Salzburg", "RB Salzburg"],
@@ -237,6 +169,26 @@
   {
     "id": "SHE-1880",
     "names": ["FC Sheriff Tiraspol", "Sheriff"],
+    "intl": false
+  },
+  {
+    "id": "FCZ-5273",
+    "names": ["FC Zürich", "FC Zürich"],
+    "intl": false
+  },
+  {
+    "id": "LEV-5102",
+    "names": ["FCI Levadia", "FCI Levadia"],
+    "intl": false
+  },
+  {
+    "id": "FK-5721",
+    "names": ["FK Bodø/Glimt", "Bodø/Glimt"],
+    "intl": false
+  },
+  {
+    "id": "DYN-842",
+    "names": ["FK Dynamo Kyiv", "Dynamo Kyiv"],
     "intl": false
   },
   {
@@ -250,6 +202,26 @@
     "intl": false
   },
   {
+    "id": "FEN-613",
+    "names": ["Fenerbahçe SK", "Fenerbahçe"],
+    "intl": false
+  },
+  { "id": "FRA-773", "names": ["France", "France"], "intl": true },
+  { "id": "FUL-63", "names": ["Fulham FC", "Fulham"], "intl": false },
+  {
+    "id": "DIN-755",
+    "names": ["GNK Dinamo Zagreb", "Dinamo Zagreb"],
+    "intl": false
+  },
+  { "id": "GER-759", "names": ["Germany", "Germany"], "intl": true },
+  { "id": "GET-82", "names": ["Getafe CF", "Getafe"], "intl": false },
+  { "id": "GHA-763", "names": ["Ghana", "Ghana"], "intl": true },
+  {
+    "id": "GIR-298",
+    "names": ["Girona FC", "Girona"],
+    "intl": false
+  },
+  {
     "id": "HIB-1892",
     "names": ["Hibernians FC", "Hibernians"],
     "intl": false
@@ -260,68 +232,20 @@
     "intl": false
   },
   {
-    "id": "LIN-1896",
-    "names": ["Linfield FC", "Linfield"],
+    "id": "INT-8912",
+    "names": ["Inter Club d'Escaldes", "Inter Club"],
+    "intl": false
+  },
+  { "id": "IRN-840", "names": ["Iran", "Iran"], "intl": true },
+  { "id": "JPN-766", "names": ["Japan", "Japan"], "intl": true },
+  {
+    "id": "JUV-109",
+    "names": ["Juventus FC", "Juventus"],
     "intl": false
   },
   {
-    "id": "LUD-1901",
-    "names": ["PFK Ludogorets 1945 Razgrad", "Ludogorets"],
-    "intl": false
-  },
-  {
-    "id": "LAF-1902",
-    "names": ["SP La Fiorita", "La Fiorita"],
-    "intl": false
-  },
-  {
-    "id": "BEN-1903",
-    "names": ["Sport Lisboa e Benfica", "SL Benfica"],
-    "intl": false
-  },
-  {
-    "id": "TNS-1904",
-    "names": ["The New Saints FC", "The New Saints"],
-    "intl": false
-  },
-  {
-    "id": "STU-2021",
-    "names": ["SK Sturm Graz", "Sturm Graz"],
-    "intl": false
-  },
-  {
-    "id": "SHR-2921",
-    "names": ["Shamrock Rovers FC", "Shamrock Rov"],
-    "intl": false
-  },
-  {
-    "id": "USG-3929",
-    "names": ["Royale Union Saint-Gilloise", "Union SG"],
-    "intl": false
-  },
-  {
-    "id": "MID-4485",
-    "names": ["FC Midtjylland", "Midtjylland"],
-    "intl": false
-  },
-  {
-    "id": "LEV-5102",
-    "names": ["FCI Levadia", "FCI Levadia"],
-    "intl": false
-  },
-  {
-    "id": "FCZ-5273",
-    "names": ["FC Zürich", "FC Zürich"],
-    "intl": false
-  },
-  {
-    "id": "RAN-5376",
-    "names": ["Rangers FC", "Rangers"],
-    "intl": false
-  },
-  {
-    "id": "CLU-5515",
-    "names": ["FC CFR 1907 Cluj", "CFR Cluj"],
+    "id": "TIR-8984",
+    "names": ["KF Tirana", "Tirana"],
     "intl": false
   },
   {
@@ -330,182 +254,55 @@
     "intl": false
   },
   {
-    "id": "FK-5721",
-    "names": ["FK Bodø/Glimt", "Bodø/Glimt"],
+    "id": "LEE-341",
+    "names": ["Leeds United FC", "Leeds United"],
     "intl": false
   },
   {
-    "id": "SBA-7509",
-    "names": ["ŠK Slovan Bratislava", "Sl. Bratislava"],
+    "id": "LEI-338",
+    "names": ["Leicester City FC", "Leicester City"],
     "intl": false
   },
   {
-    "id": "AEK-7517",
-    "names": ["AÉK Lárnaka", "AÉK Lárnaka"],
+    "id": "LIN-1896",
+    "names": ["Linfield FC", "Linfield"],
     "intl": false
   },
   {
-    "id": "BAT-8904",
-    "names": ["FC Dinamo Batumi", "Dinamo Batumi"],
+    "id": "LIV-64",
+    "names": ["Liverpool FC", "Liverpool"],
     "intl": false
   },
   {
-    "id": "INT-8912",
-    "names": ["Inter Club d'Escaldes", "Inter Club"],
+    "id": "MAL-749",
+    "names": ["Malmö FF", "Malmö FF"],
     "intl": false
   },
   {
-    "id": "TIR-8984",
-    "names": ["KF Tirana", "Tirana"],
+    "id": "MCI-65",
+    "names": ["Manchester City FC", "Man City"],
     "intl": false
   },
-  { "id": "URU-758", "names": ["Uruguay", "Uruguay"], "intl": true },
-  { "id": "GER-759", "names": ["Germany", "Germany"], "intl": true },
-  { "id": "ESP-760", "names": ["Spain", "Spain"], "intl": true },
   {
-    "id": "ARG-762",
-    "names": ["Argentina", "Argentina"],
-    "intl": true
+    "id": "MUN-66",
+    "names": ["Manchester United FC", "Man United"],
+    "intl": false
   },
-  { "id": "GHA-763", "names": ["Ghana", "Ghana"], "intl": true },
-  { "id": "BRA-764", "names": ["Brazil", "Brazil"], "intl": true },
-  {
-    "id": "POR-765",
-    "names": ["Portugal", "Portugal"],
-    "intl": true
-  },
-  { "id": "JPN-766", "names": ["Japan", "Japan"], "intl": true },
   { "id": "MEX-769", "names": ["Mexico", "Mexico"], "intl": true },
-  { "id": "ENG-770", "names": ["England", "England"], "intl": true },
-  {
-    "id": "USA-771",
-    "names": ["United States", "USA"],
-    "intl": true
-  },
-  {
-    "id": "KOR-772",
-    "names": ["South Korea", "Korea Republic"],
-    "intl": true
-  },
-  { "id": "FRA-773", "names": ["France", "France"], "intl": true },
-  {
-    "id": "AUS-779",
-    "names": ["Australia", "Australia"],
-    "intl": true
-  },
-  { "id": "SRB-780", "names": ["Serbia", "Serbia"], "intl": true },
-  {
-    "id": "CMR-781",
-    "names": ["Cameroon", "Cameroon"],
-    "intl": true
-  },
-  { "id": "DEN-782", "names": ["Denmark", "Denmark"], "intl": true },
-  {
-    "id": "SUI-788",
-    "names": ["Switzerland", "Switzerland"],
-    "intl": true
-  },
-  { "id": "ECU-791", "names": ["Ecuador", "Ecuador"], "intl": true },
-  {
-    "id": "CRC-793",
-    "names": ["Costa Rica", "Costa Rica"],
-    "intl": true
-  },
-  { "id": "POL-794", "names": ["Poland", "Poland"], "intl": true },
-  { "id": "CRO-799", "names": ["Croatia", "Croatia"], "intl": true },
-  {
-    "id": "KSA-801",
-    "names": ["Saudi Arabia", "Saudi Arabia"],
-    "intl": true
-  },
-  { "id": "TUN-802", "names": ["Tunisia", "Tunisia"], "intl": true },
-  { "id": "SEN-804", "names": ["Senegal", "Senegal"], "intl": true },
-  { "id": "BEL-805", "names": ["Belgium", "Belgium"], "intl": true },
   { "id": "MAR-815", "names": ["Morocco", "Morocco"], "intl": true },
-  { "id": "CAN-828", "names": ["Canada", "Canada"], "intl": true },
-  { "id": "WAL-833", "names": ["Wales", "Wales"], "intl": true },
-  { "id": "IRN-840", "names": ["Iran", "Iran"], "intl": true },
-  { "id": "QAT-8030", "names": ["Qatar", "Qatar"], "intl": true },
+  {
+    "id": "MAR-734",
+    "names": ["NK Maribor", "Maribor"],
+    "intl": false
+  },
   {
     "id": "NED-8601",
     "names": ["Netherlands", "Netherlands"],
     "intl": true
   },
   {
-    "id": "ATH-77",
-    "names": ["Athletic Club", "Athletic"],
-    "intl": false
-  },
-  {
-    "id": "OSA-79",
-    "names": ["CA Osasuna", "Osasuna"],
-    "intl": false
-  },
-  {
-    "id": "ESP-80",
-    "names": ["RCD Espanyol de Barcelona", "Espanyol"],
-    "intl": false
-  },
-  { "id": "GET-82", "names": ["Getafe CF", "Getafe"], "intl": false },
-  {
-    "id": "RAY-87",
-    "names": ["Rayo Vallecano de Madrid", "Rayo Vallecano"],
-    "intl": false
-  },
-  {
-    "id": "MAL-89",
-    "names": ["RCD Mallorca", "Mallorca"],
-    "intl": false
-  },
-  {
-    "id": "BET-90",
-    "names": ["Real Betis Balompié", "Real Betis"],
-    "intl": false
-  },
-  {
-    "id": "RSO-92",
-    "names": ["Real Sociedad de Fútbol", "Real Sociedad"],
-    "intl": false
-  },
-  {
-    "id": "VIL-94",
-    "names": ["Villarreal CF", "Villarreal"],
-    "intl": false
-  },
-  {
-    "id": "VAL-95",
-    "names": ["Valencia CF", "Valencia"],
-    "intl": false
-  },
-  {
-    "id": "VDD-250",
-    "names": ["Real Valladolid CF", "Valladolid"],
-    "intl": false
-  },
-  {
-    "id": "CAD-264",
-    "names": ["Cádiz CF", "Cádiz CF"],
-    "intl": false
-  },
-  {
-    "id": "ALM-267",
-    "names": ["UD Almería", "Almería"],
-    "intl": false
-  },
-  { "id": "ELC-285", "names": ["Elche CF", "Elche"], "intl": false },
-  {
-    "id": "GIR-298",
-    "names": ["Girona FC", "Girona"],
-    "intl": false
-  },
-  {
-    "id": "CEL-558",
-    "names": ["RC Celta de Vigo", "Celta"],
-    "intl": false
-  },
-  {
-    "id": "QPR-69",
-    "names": ["Queens Park Rangers FC", "QPR"],
+    "id": "NEW-67",
+    "names": ["Newcastle United FC", "Newcastle"],
     "intl": false
   },
   {
@@ -514,23 +311,218 @@
     "intl": false
   },
   {
-    "id": "SWE-752x",
-    "names": ["Sweden"],
-    "intl": true
-  },
-  {
-    "id": "BUR-328",
-    "names": ["Burnley FC", "Burnley"],
+    "id": "NOT-351",
+    "names": ["Nottingham Forest FC", "Nottingham"],
     "intl": false
-  },
-  {
-    "id": "COL-170x",
-    "names": ["Colombia"],
-    "intl": true
   },
   {
     "id": "OLD-7113x",
     "names": ["Oldham Athletic AFC", "Oldham Athletic", "Oldham"],
+    "intl": false
+  },
+  {
+    "id": "MAR-516",
+    "names": ["Olympique de Marseille", "Marseille"],
+    "intl": false
+  },
+  {
+    "id": "OLY-654",
+    "names": ["PAE Olympiakos SFP", "Olympiakos"],
+    "intl": false
+  },
+  {
+    "id": "LUD-1901",
+    "names": ["PFK Ludogorets 1945 Razgrad", "Ludogorets"],
+    "intl": false
+  },
+  { "id": "PSV-674", "names": ["PSV", "PSV"], "intl": false },
+  {
+    "id": "PSG-524",
+    "names": ["Paris Saint-Germain FC", "PSG"],
+    "intl": false
+  },
+  { "id": "POL-794", "names": ["Poland", "Poland"], "intl": true },
+  {
+    "id": "POR-765",
+    "names": ["Portugal", "Portugal"],
+    "intl": true
+  },
+  {
+    "id": "QAR-611",
+    "names": ["Qarabağ Ağdam FK", "Qarabağ Ağdam"],
+    "intl": false
+  },
+  { "id": "QAT-8030", "names": ["Qatar", "Qatar"], "intl": true },
+  {
+    "id": "QPR-69",
+    "names": ["Queens Park Rangers FC", "QPR"],
+    "intl": false
+  },
+  {
+    "id": "RBL-721",
+    "names": ["RB Leipzig", "RB Leipzig"],
+    "intl": false
+  },
+  {
+    "id": "CEL-558",
+    "names": ["RC Celta de Vigo", "Celta"],
+    "intl": false
+  },
+  {
+    "id": "ESP-80",
+    "names": ["RCD Espanyol de Barcelona", "Espanyol"],
+    "intl": false
+  },
+  {
+    "id": "MAL-89",
+    "names": ["RCD Mallorca", "Mallorca"],
+    "intl": false
+  },
+  {
+    "id": "RAN-5376",
+    "names": ["Rangers FC", "Rangers"],
+    "intl": false
+  },
+  {
+    "id": "RAY-87",
+    "names": ["Rayo Vallecano de Madrid", "Rayo Vallecano"],
+    "intl": false
+  },
+  {
+    "id": "BET-90",
+    "names": ["Real Betis Balompié", "Real Betis"],
+    "intl": false
+  },
+  {
+    "id": "RMA-86",
+    "names": ["Real Madrid CF", "Real Madrid"],
+    "intl": false
+  },
+  {
+    "id": "RSO-92",
+    "names": ["Real Sociedad de Fútbol", "Real Sociedad"],
+    "intl": false
+  },
+  {
+    "id": "VDD-250",
+    "names": ["Real Valladolid CF", "Valladolid"],
+    "intl": false
+  },
+  {
+    "id": "USG-3929",
+    "names": ["Royale Union Saint-Gilloise", "Union SG"],
+    "intl": false
+  },
+  {
+    "id": "STU-2021",
+    "names": ["SK Sturm Graz", "Sturm Graz"],
+    "intl": false
+  },
+  {
+    "id": "LAF-1902",
+    "names": ["SP La Fiorita", "La Fiorita"],
+    "intl": false
+  },
+  {
+    "id": "NAP-113",
+    "names": ["SSC Napoli", "Napoli"],
+    "intl": false
+  },
+  {
+    "id": "KSA-801",
+    "names": ["Saudi Arabia", "Saudi Arabia"],
+    "intl": true
+  },
+  { "id": "SEN-804", "names": ["Senegal", "Senegal"], "intl": true },
+  { "id": "SRB-780", "names": ["Serbia", "Serbia"], "intl": true },
+  {
+    "id": "SEV-559",
+    "names": ["Sevilla FC", "Sevilla FC"],
+    "intl": false
+  },
+  {
+    "id": "SHR-2921",
+    "names": ["Shamrock Rovers FC", "Shamrock Rov"],
+    "intl": false
+  },
+  {
+    "id": "KOR-772",
+    "names": ["South Korea", "Korea Republic"],
+    "intl": true
+  },
+  {
+    "id": "SOU-340",
+    "names": ["Southampton FC", "Southampton"],
+    "intl": false
+  },
+  { "id": "ESP-760", "names": ["Spain", "Spain"], "intl": true },
+  {
+    "id": "BEN-1903",
+    "names": ["Sport Lisboa e Benfica", "SL Benfica"],
+    "intl": false
+  },
+  {
+    "id": "SPO-498",
+    "names": ["Sporting Clube de Portugal", "Sporting CP"],
+    "intl": false
+  },
+  { "id": "SWE-752x", "names": ["Sweden"], "intl": true },
+  {
+    "id": "SUI-788",
+    "names": ["Switzerland", "Switzerland"],
+    "intl": true
+  },
+  {
+    "id": "TNS-1904",
+    "names": ["The New Saints FC", "The New Saints"],
+    "intl": false
+  },
+  {
+    "id": "TOT-73",
+    "names": ["Tottenham Hotspur FC", "Tottenham", "Spurs"],
+    "intl": false
+  },
+  {
+    "id": "TRA-602",
+    "names": ["Trabzonspor", "Trabzonspor"],
+    "intl": false
+  },
+  { "id": "TUN-802", "names": ["Tunisia", "Tunisia"], "intl": true },
+  {
+    "id": "ALM-267",
+    "names": ["UD Almería", "Almería"],
+    "intl": false
+  },
+  {
+    "id": "USA-771",
+    "names": ["United States", "USA"],
+    "intl": true
+  },
+  { "id": "URU-758", "names": ["Uruguay", "Uruguay"], "intl": true },
+  {
+    "id": "VAL-95",
+    "names": ["Valencia CF", "Valencia"],
+    "intl": false
+  },
+  {
+    "id": "VIL-94",
+    "names": ["Villarreal CF", "Villarreal"],
+    "intl": false
+  },
+  { "id": "WAL-833", "names": ["Wales", "Wales"], "intl": true },
+  {
+    "id": "WHU-563",
+    "names": ["West Ham United FC", "West Ham"],
+    "intl": false
+  },
+  {
+    "id": "WOL-76",
+    "names": ["Wolverhampton Wanderers FC", "Wolverhampton"],
+    "intl": false
+  },
+  {
+    "id": "SBA-7509",
+    "names": ["ŠK Slovan Bratislava", "Sl. Bratislava"],
     "intl": false
   }
 ]

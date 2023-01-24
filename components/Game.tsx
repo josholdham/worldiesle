@@ -59,6 +59,8 @@ const Game: React.FC<GameProps> = ({
   const onSubmit = (basicGuess: SetOfGuesses) => {
     if (guesses.length >= SETTINGS.maxGuesses) return;
 
+    const guessNumber = guesses.length + 1;
+
     // Create curried fn to get feedback for each guess type
     const getFeedback = (guessKey: GuessType) =>
       getGuessFeedback(
@@ -92,7 +94,9 @@ const Game: React.FC<GameProps> = ({
         newGuess.player?.isCorrect &&
         newGuess.year?.isCorrect
       ) {
-        umami.trackEvent('Correct Guess', {});
+        umami.trackEvent('Correct Guess', {
+          guessNumber,
+        });
       }
     }
   };

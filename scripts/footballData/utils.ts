@@ -16,7 +16,7 @@ const MIN_YEAR = 2020;
 const MAX_YEAR = 2022;
 
 export const getAndParseExistingFile = async (
-  filename: 'teams' | 'players'
+  filename: 'teams' | 'players' | 'goals'
 ) => {
   const rawdata = await fs.readFile(
     `./data/${filename}.json`,
@@ -27,7 +27,7 @@ export const getAndParseExistingFile = async (
 
 export const updateExistingFile = async (
   updatedJson: any[],
-  filename: 'teams' | 'players'
+  filename: 'teams' | 'players' | 'goals'
 ) => {
   const status = await fs.writeFile(
     `./data/${filename}.json`,
