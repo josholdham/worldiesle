@@ -236,7 +236,7 @@ const getSignedS3Images = async (goalId: string) => {
 };
 
 export async function getStaticProps() {
-  const END_YEAR = dayjs().add(62, 'minutes').year();
+  const END_YEAR = dayjs().add(13, 'hours').add(62, 'minutes').year();
   const daysSinceLaunch = dayjs().diff(LAUNCH_DATE, 'day');
 
   const jsonDirectory = path.join(process.cwd(), 'data');
@@ -264,7 +264,7 @@ export async function getStaticProps() {
   const answer = answers[daysSinceLaunch];
   answer.dateId = dayjs().format('YYYY-MM-DD');
   answer.dayNumber = daysSinceLaunch;
-  console.log('answer', answer);
+  console.log(daysSinceLaunch, 'answer', answer);
 
   const signedUrls = await getSignedS3Images(answer.id);
   console.log('#### signedUrls', signedUrls);
