@@ -248,11 +248,6 @@
     "nationality": "England"
   },
   {
-    "id": "Bertrand Traoré",
-    "names": ["Bertrand Traoré", "Bertrand Isidore"],
-    "nationality": "Burkina Faso"
-  },
-  {
     "id": "James Rodríguez",
     "names": ["James Rodríguez", "James David Rodríguez Rubio"],
     "nationality": "Colombia"
@@ -296,11 +291,6 @@
     "id": "Raphinha",
     "names": ["Raphinha", "Raphael"],
     "nationality": "Brazil"
-  },
-  {
-    "id": "Gylfi Þór Sigurðsson",
-    "names": ["Gylfi Þór Sigurðsson", "Gylfi Þór"],
-    "nationality": "Iceland"
   },
   {
     "id": "Leandro Trossard",
@@ -1621,16 +1611,6 @@
     "nationality": "Brazil"
   },
   {
-    "id": "Ben Davies",
-    "names": ["Ben Davies", "Benjamin Thomas"],
-    "nationality": "Wales"
-  },
-  {
-    "id": "Reiss Nelson",
-    "names": ["Reiss Nelson", "Reiss"],
-    "nationality": "England"
-  },
-  {
     "id": "Adam Lallana",
     "names": ["Adam Lallana", "Adam Lallana"],
     "nationality": "England"
@@ -1638,11 +1618,6 @@
   {
     "id": "Morgan Gibbs-White",
     "names": ["Morgan Gibbs-White", "Morgan"],
-    "nationality": "England"
-  },
-  {
-    "id": "Marcus Tavernier",
-    "names": ["Marcus Tavernier", "Marcus"],
     "nationality": "England"
   },
   {
@@ -1676,11 +1651,6 @@
     "nationality": "England"
   },
   {
-    "id": "Romeo Lavia",
-    "names": ["Romeo Lavia", null],
-    "nationality": "Belgium"
-  },
-  {
     "id": "Marc Roca",
     "names": ["Marc Roca", "Marc"],
     "nationality": "Spain"
@@ -1689,26 +1659,6 @@
     "id": "Moisés Caicedo",
     "names": ["Moisés Caicedo", "Moisés Isaac"],
     "nationality": "Ecuador"
-  },
-  {
-    "id": "Tosin Adarabioyo",
-    "names": ["Tosin Adarabioyo", "Oluwatosin"],
-    "nationality": "England"
-  },
-  {
-    "id": "Lewis O'Brien",
-    "names": ["Lewis O'Brien", "Lewis"],
-    "nationality": "England"
-  },
-  {
-    "id": "Fabio Vieira",
-    "names": ["Fabio Vieira", " Fábio Vieira"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Ryan Christie",
-    "names": ["Ryan Christie", "Ryan"],
-    "nationality": "Scotland"
   },
   {
     "id": "Ashley Young",
@@ -1739,16 +1689,6 @@
     "id": "Alejandro Garnacho",
     "names": ["Alejandro Garnacho", null],
     "nationality": "Argentina"
-  },
-  {
-    "id": "Tim Ream",
-    "names": ["Tim Ream", "Timothy Michael"],
-    "nationality": "United States"
-  },
-  {
-    "id": "Stefan Bajcetic",
-    "names": ["Stefan Bajcetic", null],
-    "nationality": "Spain"
   },
   {
     "id": "Degnand Gnonto",
@@ -1830,16 +1770,6 @@
     "nationality": "Poland"
   },
   {
-    "id": "Dominik Szoboszlai",
-    "names": ["Dominik Szoboszlai", "Dominik"],
-    "nationality": "Hungary"
-  },
-  {
-    "id": "Mërgim Berisha",
-    "names": ["Mërgim Berisha", "Mërgim"],
-    "nationality": "Germany"
-  },
-  {
     "id": "Federico Chiesa",
     "names": ["Federico Chiesa", "Federico"],
     "nationality": "Italy"
@@ -1848,36 +1778,6 @@
     "id": "Maxim Choupo-Moting",
     "names": ["Maxim Choupo-Moting", "Jean-Eric Maxim Choupo-Moting"],
     "nationality": "Cameroon"
-  },
-  {
-    "id": "Myrto Uzuni",
-    "names": ["Myrto Uzuni", "Myrto"],
-    "nationality": "Albania"
-  },
-  {
-    "id": "Anders Dreyer",
-    "names": ["Anders Dreyer", "Anders"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Rémy Cabella",
-    "names": ["Rémy Cabella", "Rémy Cabella"],
-    "nationality": "France"
-  },
-  {
-    "id": "Franck Boli",
-    "names": ["Franck Boli", "Bi Sylvestre Franck"],
-    "nationality": "Côte d’Ivoire"
-  },
-  {
-    "id": "Carlos De Pena",
-    "names": ["Carlos De Pena", "Carlos María"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Alexander Scholz",
-    "names": ["Alexander Scholz", "Alexander"],
-    "nationality": "Denmark"
   },
   {
     "id": "Ousmane Dembélé",
@@ -1908,11 +1808,6 @@
     "id": "Luis Muriel",
     "names": ["Luis Muriel", "Luis Fernando"],
     "nationality": "Colombia"
-  },
-  {
-    "id": "Anton Miranchuk",
-    "names": ["Anton Miranchuk", "Anton"],
-    "nationality": "Russia"
   },
   {
     "id": "João Félix",
@@ -2020,11 +1915,6 @@
     "nationality": "Netherlands"
   },
   {
-    "id": "Viktor Tsyhankov",
-    "names": ["Viktor Tsyhankov", "Viktor"],
-    "nationality": "Ukraine"
-  },
-  {
     "id": "Lars Stindl",
     "names": ["Lars Stindl", "Lars"],
     "nationality": "Germany"
@@ -2049,11 +1939,7 @@
     "names": ["Ivan Rakitić", "Ivan Rakitić"],
     "nationality": "Croatia"
   },
-  {
-    "id": "Marco Parolo",
-    "names": ["Marco Parolo", "Marco Parolo"],
-    "nationality": "Italy"
-  },
+
   {
     "id": "Antoine Griezmann",
     "names": ["Antoine Griezmann", "Antoine Griezmann"],
@@ -2078,31 +1964,6 @@
     "id": "Marco Asensio",
     "names": ["Marco Asensio", " Marco Asensio"],
     "nationality": "Spain"
-  },
-  {
-    "id": "Mykola Shaparenko",
-    "names": ["Mykola Shaparenko", "Mykola"],
-    "nationality": "Ukraine"
-  },
-  {
-    "id": "Dimitris Giannoulis",
-    "names": ["Dimitris Giannoulis", "Dimitris"],
-    "nationality": "Greece"
-  },
-  {
-    "id": "Andrija Živković",
-    "names": ["Andrija Živković", "Andrija"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Rafa Silva",
-    "names": ["Rafa Silva", " Rafa Silva"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Niklas Dorsch",
-    "names": ["Niklas Dorsch", "Niklas"],
-    "nationality": "Germany"
   },
   {
     "id": "Roman Yaremchuk",
@@ -2140,31 +2001,6 @@
     "nationality": "Sweden"
   },
   {
-    "id": "Leke James",
-    "names": ["Leke James", "Leke"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Magnus Wolff Eikrem",
-    "names": ["Magnus Wolff Eikrem", "Magnus"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Martin Ellingsen",
-    "names": ["Martin Ellingsen", "Martin"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Vladyslav Supriaha",
-    "names": ["Vladyslav Supriaha", "Vladyslav"],
-    "nationality": "Ukraine"
-  },
-  {
-    "id": "Tim Kleindienst",
-    "names": ["Tim Kleindienst", "Tim Kleindienst"],
-    "nationality": "Germany"
-  },
-  {
     "id": "Mathieu Valbuena",
     "names": ["Mathieu Valbuena", "Mathieu Valbuena"],
     "nationality": "France"
@@ -2198,24 +2034,6 @@
     "id": "Frank Onyeka",
     "names": ["Frank Onyeka", "Frank Onyeka"],
     "nationality": "Nigeria"
-  },
-  {
-    "id": "Eden Karzev",
-    "names": ["Eden Karzev", "Eden"],
-    "nationality": "Israel"
-  },
-  {
-    "id": "Cristian Ramírez",
-    "names": ["Cristian Ramírez", "Cristian Leonel"],
-    "nationality": "Ecuador"
-  },
-  {
-    "id": "Jean-Daniel Akpa Akpro",
-    "names": [
-      "Jean-Daniel Akpa Akpro",
-      "Jean-Daniel Dave Lewis Akpa Akpro"
-    ],
-    "nationality": "Cote d'Ivoire"
   },
   {
     "id": "Ansu Fati",
@@ -2295,11 +2113,7 @@
     ],
     "nationality": "Burkina Faso"
   },
-  {
-    "id": "Tokmac Nguen",
-    "names": ["Tokmac Nguen", "Tokmac Chol"],
-    "nationality": "South Sudan"
-  },
+
   {
     "id": "José Maria Giménez",
     "names": ["José Maria Giménez", "José Maria Giménez de Vargas"],
@@ -2330,11 +2144,7 @@
     "names": ["Rodrygo", " Rodrygo"],
     "nationality": "Brazil"
   },
-  {
-    "id": "Aleksandr Erokhin",
-    "names": ["Aleksandr Erokhin", "Aleksandr"],
-    "nationality": "Russia"
-  },
+
   {
     "id": "Felipe Caicedo",
     "names": ["Felipe Caicedo", "Felipe Salvador Caicedo Corozo"],
@@ -2350,11 +2160,7 @@
     "names": ["Edin Višća", "Edin Višća"],
     "nationality": "Bosnia-Herzegovina"
   },
-  {
-    "id": "Shapi Suleimanov",
-    "names": ["Shapi Suleimanov", "Magomed-Shapi"],
-    "nationality": "Russia"
-  },
+
   {
     "id": "Thorgan Hazard",
     "names": ["Thorgan Hazard", "Thorgan"],
@@ -2386,11 +2192,6 @@
     "nationality": "Sweden"
   },
   {
-    "id": "Wanderson",
-    "names": ["Wanderson", "Wanderson"],
-    "nationality": "Brazil"
-  },
-  {
     "id": "Munir El Haddadi",
     "names": ["Munir El Haddadi", "Munir"],
     "nationality": "Morocco"
@@ -2409,16 +2210,6 @@
     "id": "Deniz Türüç",
     "names": ["Deniz Türüç", "Deniz"],
     "nationality": "Turkey"
-  },
-  {
-    "id": "Nico Elvedi",
-    "names": ["Nico Elvedi", "Nico"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Breel Embolo",
-    "names": ["Breel Embolo", "Breel"],
-    "nationality": "Switzerland"
   },
   {
     "id": "Oscar Wendt",
@@ -2736,154 +2527,6 @@
     "nationality": null
   },
   {
-    "id": "Filip Valenčič",
-    "names": ["Filip Valenčič", "Filip"],
-    "nationality": "Slovenia"
-  },
-  {
-    "id": "Billel Omrani",
-    "names": ["Billel Omrani", "Abdel Billel"],
-    "nationality": "Algeria"
-  },
-  {
-    "id": "Panagiotis Moraitis",
-    "names": ["Panagiotis Moraitis", "Panagiotis"],
-    "nationality": "Greece"
-  },
-  {
-    "id": "Rúnar Már Sigurjónsson",
-    "names": [
-      "Rúnar Már Sigurjónsson",
-      "Rúnar Már Sigurlaugarson Sigurjónsson"
-    ],
-    "nationality": "Iceland"
-  },
-  {
-    "id": "Luka Bobičanec",
-    "names": ["Luka Bobičanec", "Luka"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Namig Alasgarov",
-    "names": ["Namig Alasgarov", null],
-    "nationality": null
-  },
-  {
-    "id": "Emin Makhmudov",
-    "names": ["Emin Makhmudov", null],
-    "nationality": null
-  },
-  {
-    "id": "Luquinhas",
-    "names": ["Luquinhas", " Luquinhas"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Mahir Emreli",
-    "names": ["Mahir Emreli", "Mahir Mahir oğlu"],
-    "nationality": "Azerbaijan"
-  },
-  {
-    "id": "Rafael Ratão",
-    "names": ["Rafael Ratão", " Rafael Ratão"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Arijan Ademi",
-    "names": ["Arijan Ademi", "Arijan"],
-    "nationality": "North Macedonia"
-  },
-  {
-    "id": "Lovro Majer",
-    "names": ["Lovro Majer", "Lovro"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Cauly Oliveira Souza",
-    "names": ["Cauly Oliveira Souza", null],
-    "nationality": null
-  },
-  {
-    "id": "Frank Castañeda",
-    "names": ["Frank Castañeda", "Frank Andersson"],
-    "nationality": "Colombia"
-  },
-  {
-    "id": "David Khurtsidze",
-    "names": ["David Khurtsidze", "David"],
-    "nationality": "Russia"
-  },
-  {
-    "id": "Tjay De Barr",
-    "names": ["Tjay De Barr", "Andre Tjay"],
-    "nationality": "Gibraltar"
-  },
-  {
-    "id": "Liam Walker",
-    "names": ["Liam Walker", "Liam"],
-    "nationality": "Gibraltar"
-  },
-  {
-    "id": "Mihael Klepac",
-    "names": ["Mihael Klepac", "Mihael"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Kiril Despodov",
-    "names": ["Kiril Despodov", "Kiril"],
-    "nationality": "Bulgaria"
-  },
-  {
-    "id": "Gabriel Debeljuh",
-    "names": ["Gabriel Debeljuh", "Gabriel"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Christoph Knasmüllner",
-    "names": ["Christoph Knasmüllner", "Christoph"],
-    "nationality": "Austria"
-  },
-  {
-    "id": "Anders Christiansen",
-    "names": ["Anders Christiansen", "Anders Christiansen"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Rafael Lopes",
-    "names": ["Rafael Lopes", "Rafael"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Noni Madueke",
-    "names": ["Noni Madueke", null],
-    "nationality": "England"
-  },
-  {
-    "id": "Ulisses Garcia",
-    "names": ["Ulisses Garcia", "Ulisses Alexandre"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "David Moberg-Karlsson",
-    "names": ["David Moberg-Karlsson", "David"],
-    "nationality": "Sweden"
-  },
-  {
-    "id": "Aleksandar Katai",
-    "names": ["Aleksandar Katai", "Aleksandar"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Loïs Diony",
-    "names": ["Loïs Diony", "Loïs"],
-    "nationality": "France"
-  },
-  {
-    "id": "Søren Rieks",
-    "names": ["Søren Rieks", "Søren Rieks"],
-    "nationality": "Denmark"
-  },
-  {
     "id": "Cody Gakpo",
     "names": ["Cody Gakpo", "Cody"],
     "nationality": "Netherlands"
@@ -2893,51 +2536,7 @@
     "names": ["Gilberto", " Gilberto"],
     "nationality": "Brazil"
   },
-  {
-    "id": "Nicolas Ngamaleu",
-    "names": ["Nicolas Ngamaleu", "Nicolas Brice"],
-    "nationality": "Cameroon"
-  },
-  {
-    "id": "Meschack Elia",
-    "names": ["Meschack Elia", null],
-    "nationality": null
-  },
-  {
-    "id": "Wissam Ben Yedder",
-    "names": ["Wissam Ben Yedder", "Wissam"],
-    "nationality": "France"
-  },
-  {
-    "id": "Mats Rits",
-    "names": ["Mats Rits", "Mats"],
-    "nationality": "Belgium"
-  },
-  {
-    "id": "Claudinho",
-    "names": ["Claudinho", null],
-    "nationality": null
-  },
-  {
-    "id": "Renato Steffen",
-    "names": ["Renato Steffen", "Renato"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Sebastián Coates",
-    "names": ["Sebastián Coates", "Sebastián Coates"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Pablo Sarabia",
-    "names": ["Pablo Sarabia", " Pablo Sarabia"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Lukas Nmecha",
-    "names": ["Lukas Nmecha", "Lukas"],
-    "nationality": "Germany"
-  },
+
   {
     "id": "Gerard Moreno",
     "names": ["Gerard Moreno", "Gerard"],
@@ -2973,662 +2572,25 @@
     "names": ["Ibrahima Konaté", "Ibrahima Konaté"],
     "nationality": "France"
   },
-  {
-    "id": "Jordi Betriu",
-    "names": ["Jordi Betriu", "Jordi"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Miha Blažič",
-    "names": ["Miha Blažič", "Miha"],
-    "nationality": "Slovenia"
-  },
-  {
-    "id": "Janne Saksela",
-    "names": ["Janne Saksela", "Janne"],
-    "nationality": "Finland"
-  },
-  {
-    "id": "Miloš Raičković",
-    "names": ["Miloš Raičković", "Miloš"],
-    "nationality": "Montenegro"
-  },
-  {
-    "id": "Ciprian Deac",
-    "names": ["Ciprian Deac", "Ciprian Ioan"],
-    "nationality": "Romania"
-  },
-  {
-    "id": "Hugo Vidémont",
-    "names": ["Hugo Vidémont", "Hugo"],
-    "nationality": "France"
-  },
-  {
-    "id": "Tomislav Kiš",
-    "names": ["Tomislav Kiš", "Tomislav"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Christy Manzinga",
-    "names": ["Christy Manzinga", "Christy"],
-    "nationality": "Congo DR"
-  },
-  {
-    "id": "Jakub Sylvestr",
-    "names": ["Jakub Sylvestr", "Jakub"],
-    "nationality": "Slovakia"
-  },
-  {
-    "id": "Fernando Carralero",
-    "names": ["Fernando Carralero", "Fernando"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Ethan Britto",
-    "names": ["Ethan Britto", "Ethan"],
-    "nationality": "Gibraltar"
-  },
-  {
-    "id": "Stefano Bensi",
-    "names": ["Stefano Bensi", "Stefano"],
-    "nationality": "Luxembourg"
-  },
-  {
-    "id": "Denis Ahmetxhekaj",
-    "names": ["Denis Ahmetxhekaj", null],
-    "nationality": null
-  },
-  {
-    "id": "Zoran Marušić",
-    "names": ["Zoran Marušić", "Zoran"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Erik Botheim",
-    "names": ["Erik Botheim", "Erik"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Edson Pernambuco",
-    "names": ["Edson Pernambuco", "Edson Carlos"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Kristinn Freyr Sigurdsson",
-    "names": ["Kristinn Freyr Sigurdsson", null],
-    "nationality": null
-  },
-  {
-    "id": "Andri Adolphsson",
-    "names": ["Andri Adolphsson", "Andri"],
-    "nationality": "Iceland"
-  },
-  {
-    "id": "Omer Atzili",
-    "names": ["Omer Atzili", null],
-    "nationality": null
-  },
-  {
-    "id": "Nuraly Alip",
-    "names": ["Nuraly Alip", "Nuraly"],
-    "nationality": "Kazakhstan"
-  },
-  {
-    "id": "Craig Curran",
-    "names": ["Craig Curran", "Craig"],
-    "nationality": "England"
-  },
-  {
-    "id": "George Horan",
-    "names": ["George Horan", "George"],
-    "nationality": "England"
-  },
-  {
-    "id": "Sergei Zenjov",
-    "names": ["Sergei Zenjov", "Sergei"],
-    "nationality": "Estonia"
-  },
-  {
-    "id": "Sten Reinkort",
-    "names": ["Sten Reinkort", "Sten"],
-    "nationality": "Estonia"
-  },
-  {
-    "id": "Ivan Paurević",
-    "names": ["Ivan Paurević", "Ivan"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Kian Ronan",
-    "names": ["Kian Ronan", "Kian"],
-    "nationality": "Gibraltar"
-  },
-  {
-    "id": "Nino Kouter",
-    "names": ["Nino Kouter", "Nino"],
-    "nationality": "Slovenia"
-  },
-  {
-    "id": "Žiga Kous",
-    "names": ["Žiga Kous", "Žiga"],
-    "nationality": "Slovenia"
-  },
-  {
-    "id": "Stojan Vranješ",
-    "names": ["Stojan Vranješ", "Stojan"],
-    "nationality": "Bosnia and Herzegovina"
-  },
-  {
-    "id": "Alexandru Chipciu",
-    "names": ["Alexandru Chipciu", "Alexandru Mihăiţă"],
-    "nationality": "Romania"
-  },
-  { "id": "Jair", "names": ["Jair", null], "nationality": null },
-  {
-    "id": "Saulius Mikoliūnas",
-    "names": ["Saulius Mikoliūnas", "Saulius"],
-    "nationality": "Lithuania"
-  },
-  {
-    "id": "Ogenyi Onazi",
-    "names": ["Ogenyi Onazi", "Ogenyi Eddy Onazi"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Chris Shields",
-    "names": ["Chris Shields", "Chris"],
-    "nationality": "Republic of Ireland"
-  },
-  {
-    "id": "Graham Burke",
-    "names": ["Graham Burke", "Graham"],
-    "nationality": "Republic of Ireland"
-  },
-  {
-    "id": "Richie Towell",
-    "names": ["Richie Towell", "Richard"],
-    "nationality": "Republic of Ireland"
-  },
-  {
-    "id": "Vladimír Weiss",
-    "names": ["Vladimír Weiss", "Vladimír Weiss"],
-    "nationality": "Slovakia"
-  },
-  {
-    "id": "Luka Ivanušec",
-    "names": ["Luka Ivanušec", "Luka"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Mislav Oršić",
-    "names": ["Mislav Oršić", "Mislav"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Vágner Love",
-    "names": ["Vágner Love", "Vágner"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Aibol Abiken",
-    "names": ["Aibol Abiken", "Aibol"],
-    "nationality": "Kazakhstan"
-  },
-  {
-    "id": "Vincent Bezecourt",
-    "names": ["Vincent Bezecourt", "Vincent"],
-    "nationality": "France"
-  },
-  {
-    "id": "Milan Radin",
-    "names": ["Milan Radin", "Milan"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Tomáš Pekhart",
-    "names": ["Tomáš Pekhart", "Tomáš Pekhart"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Marco Rosa",
-    "names": ["Marco Rosa", "Marco"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Kristijan Jakić",
-    "names": ["Kristijan Jakić", "Kristijan Jakić"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Ladislav Krejčí",
-    "names": ["Ladislav Krejčí", "Ladislav"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Liel Abada",
-    "names": ["Liel Abada", "Liel"],
-    "nationality": "Israel"
-  },
-  {
-    "id": "Evander",
-    "names": ["Evander", "Evander"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "José Kanté",
-    "names": ["José Kanté", "José"],
-    "nationality": "Guinea"
-  },
-  {
-    "id": "Macky Bagnack",
-    "names": ["Macky Bagnack", "Macky Frank"],
-    "nationality": "Cameroon"
-  },
-  {
-    "id": "Bartosz Kapustka",
-    "names": ["Bartosz Kapustka", "Bartosz Kapustka"],
-    "nationality": "Poland"
-  },
-  {
-    "id": "Emre Kılınç",
-    "names": ["Emre Kılınç", "Emre"],
-    "nationality": "Turkey"
-  },
-  {
-    "id": "Miro Tenho",
-    "names": ["Miro Tenho", "Miro"],
-    "nationality": "Finland"
-  },
-  {
-    "id": "Riku Riski",
-    "names": ["Riku Riski", "Riku"],
-    "nationality": "Finland"
-  },
-  {
-    "id": "Luka Menalo",
-    "names": ["Luka Menalo", "Luka"],
-    "nationality": "Bosnia-Herzegovina"
-  },
-  {
-    "id": "El Hadji Pape Diaw",
-    "names": ["El Hadji Pape Diaw", "El Hadji Pape Djibril"],
-    "nationality": "Senegal"
-  },
-  {
-    "id": "Róbert Mak",
-    "names": ["Róbert Mak", "Róbert"],
-    "nationality": "Slovakia"
-  },
-  {
-    "id": "Aleksandar Glišić",
-    "names": ["Aleksandar Glišić", "Aleksandar"],
-    "nationality": "Bosnia and Herzegovina"
-  },
-  {
-    "id": "Gustavo Dulanto",
-    "names": ["Gustavo Dulanto", "Gustavo Alfonso"],
-    "nationality": "Peru"
-  },
-  {
-    "id": "Giorgos Masouras",
-    "names": ["Giorgos Masouras", "Giorgos"],
-    "nationality": "Greece"
-  },
-  {
-    "id": "Mike Cestor",
-    "names": ["Mike Cestor", "Mike"],
-    "nationality": "Congo DR"
-  },
-  {
-    "id": "Callum McGregor",
-    "names": ["Callum McGregor", "Callum"],
-    "nationality": "Scotland"
-  },
-  {
-    "id": "Raphael Nwadike",
-    "names": ["Raphael Nwadike", null],
-    "nationality": null
-  },
-  {
-    "id": "Marco van Ginkel",
-    "names": ["Marco van Ginkel", "Marco"],
-    "nationality": "Netherlands"
-  },
-  {
-    "id": "Tomi Horvat",
-    "names": ["Tomi Horvat", "Tomi"],
-    "nationality": "Slovenia"
-  },
-  {
-    "id": "Elvis Manu",
-    "names": ["Elvis Manu", "Elvis"],
-    "nationality": "Netherlands"
-  },
-  {
-    "id": "Michel Aebischer",
-    "names": ["Michel Aebischer", "Michel"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Ezekiel Henty",
-    "names": ["Ezekiel Henty", "Ezekiel"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Jakub Pešek",
-    "names": ["Jakub Pešek", "Jakub"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Filippo Falco",
-    "names": ["Filippo Falco", "Filippo"],
-    "nationality": "Italy"
-  },
-  {
-    "id": "Aurélien Tchouameni",
-    "names": ["Aurélien Tchouameni", "Aurélien Djani"],
-    "nationality": "France"
-  },
-  {
-    "id": "Victor Boniface",
-    "names": ["Victor Boniface", "Victor Okoh"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Kady Malinowski",
-    "names": ["Kady Malinowski", null],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Frantzdy Pierrot",
-    "names": ["Frantzdy Pierrot", "Frantzdy Pierrot"],
-    "nationality": "Haiti"
-  },
-  {
-    "id": "Gonçalo Ramos",
-    "names": ["Gonçalo Ramos", " Gonçalo Ramos"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Ibrahima Wadji",
-    "names": ["Ibrahima Wadji", "Ibrahima"],
-    "nationality": "Senegal"
-  },
-  {
-    "id": "Bruno Petković",
-    "names": ["Bruno Petković", "Bruno"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Tomáš Chorý",
-    "names": ["Tomáš Chorý", "Tomáš"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Jan Kliment",
-    "names": ["Jan Kliment", "Jan"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Amahl Pellegrino",
-    "names": ["Amahl Pellegrino", "Amahl William"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Tjaronn Chery",
-    "names": ["Tjaronn Chery", "Tjaronn"],
-    "nationality": "Netherlands"
-  },
+
   {
     "id": "Jude Bellingham",
     "names": ["Jude Bellingham", "Jude"],
     "nationality": "England"
   },
-  {
-    "id": "Mohammed Kudus",
-    "names": ["Mohammed Kudus", "Mohammed"],
-    "nationality": "Ghana"
-  },
-  {
-    "id": "Giovanni Simeone",
-    "names": ["Giovanni Simeone", "Giovanni Pablo"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Giacomo Raspadori",
-    "names": ["Giacomo Raspadori", "Giacomo"],
-    "nationality": "Italy"
-  },
-  {
-    "id": "João Mário",
-    "names": ["João Mário", " João Mário"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Kristall Máni Ingason",
-    "names": ["Kristall Máni Ingason", "Kristall Máni"],
-    "nationality": "Iceland"
-  },
-  {
-    "id": "Jan Sýkora",
-    "names": ["Jan Sýkora", "Jan"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Runar Espejord",
-    "names": ["Runar Espejord", "Runar"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Osman Bukari",
-    "names": ["Osman Bukari", "Osman"],
-    "nationality": "Ghana"
-  },
+
   {
     "id": "Mykhailo Mudryk",
     "names": ["Mykhailo Mudryk", "Mykhailo"],
     "nationality": "Ukraine"
   },
-  {
-    "id": "Piotr Zieliński",
-    "names": ["Piotr Zieliński", "Piotr"],
-    "nationality": "Poland"
-  },
-  {
-    "id": "Daichi Kamada",
-    "names": ["Daichi Kamada", "Daichi Kamada"],
-    "nationality": "Japan"
-  },
-  {
-    "id": "Genís Soldevila",
-    "names": ["Genís Soldevila", "Genís"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Nikolaj Hansen",
-    "names": ["Nikolaj Hansen", "Nikolaj"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Helgi Gudjonsson",
-    "names": ["Helgi Gudjonsson", null],
-    "nationality": "Iceland"
-  },
-  {
-    "id": "Mohcine Hassan",
-    "names": ["Mohcine Hassan", "Mohcine"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Filip Ozobić",
-    "names": ["Filip Ozobić", "Filip"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Mathias Oyewusi",
-    "names": ["Mathias Oyewusi", null],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Karl Fridleifur Gunnarsson",
-    "names": ["Karl Fridleifur Gunnarsson", null],
-    "nationality": null
-  },
-  {
-    "id": "Tigran Barseghyan",
-    "names": ["Tigran Barseghyan", "Tigran"],
-    "nationality": "Armenia"
-  },
-  {
-    "id": "Roko Baturina",
-    "names": ["Roko Baturina", "Roko"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Jákup Andreasen",
-    "names": ["Jákup Andreasen", "Jákup Biskopstø"],
-    "nationality": "Faroe Islands"
-  },
-  {
-    "id": "Aïssa Laïdouni",
-    "names": ["Aïssa Laïdouni", "Aïssa"],
-    "nationality": "France"
-  },
-  {
-    "id": "Fortune Bassey",
-    "names": ["Fortune Bassey", "Fortune Akpay"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Zoran Gajić",
-    "names": ["Zoran Gajić", "Zoran"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Jan Kopic",
-    "names": ["Jan Kopic", "Jan"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Kristoffer Zachariassen",
-    "names": ["Kristoffer Zachariassen", "Kristoffer"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Yusuf Otubanjo",
-    "names": ["Yusuf Otubanjo", "Yusuf"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Luka Juričić",
-    "names": ["Luka Juričić", "Luka"],
-    "nationality": "Bosnia and Herzegovina"
-  },
-  {
-    "id": "Hugo Vetlesen",
-    "names": ["Hugo Vetlesen", "Hugo Vegard"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Oleksandr Karavaiev",
-    "names": ["Oleksandr Karavaiev", "Oleksandr"],
-    "nationality": "Ukraine"
-  },
-  {
-    "id": "Ivan Santini",
-    "names": ["Ivan Santini", "Ivan"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Owusu Kwabena",
-    "names": ["Owusu Kwabena", "Owusu"],
-    "nationality": "Ghana"
-  },
-  {
-    "id": "Joey Veerman",
-    "names": ["Joey Veerman", "Joey"],
-    "nationality": "Netherlands"
-  },
+
   {
     "id": "Enzo Fernández",
     "names": ["Enzo Fernández", "Enzo Fernández"],
     "nationality": "Argentina"
   },
-  {
-    "id": "Pione Sisto",
-    "names": ["Pione Sisto", "Pione"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Ali Mohamed",
-    "names": ["Ali Mohamed", "Ali Mohamed Mohamed"],
-    "nationality": "Niger"
-  },
-  {
-    "id": "Guélor Kanga",
-    "names": ["Guélor Kanga", "Guélor"],
-    "nationality": "Gabon"
-  },
-  {
-    "id": "Henrique Araujo",
-    "names": ["Henrique Araujo", " Henrique Araújo"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Josip Drmić",
-    "names": ["Josip Drmić", "Josip Drmić "],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Kostyantyn Vivcharenko",
-    "names": ["Kostyantyn Vivcharenko", null],
-    "nationality": "Ukraine"
-  },
-  {
-    "id": "James Tavernier",
-    "names": ["James Tavernier", "James Henry"],
-    "nationality": "England"
-  },
-  {
-    "id": "Aleksandar Pešić",
-    "names": ["Aleksandar Pešić", "Aleksandar"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Alexis Saelemaekers",
-    "names": ["Alexis Saelemaekers", "Alexis"],
-    "nationality": "Belgium"
-  },
-  {
-    "id": "Marian Shved",
-    "names": ["Marian Shved", "Marian"],
-    "nationality": "Ukraine"
-  },
-  {
-    "id": "Alejandro Grimaldo",
-    "names": ["Alejandro Grimaldo", "Alejandro"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Marcus Edwards",
-    "names": ["Marcus Edwards", "Marcus Edwards"],
-    "nationality": "England"
-  },
-  {
-    "id": "Arthur Gomes",
-    "names": ["Arthur Gomes", " Arthur Gomes"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Ferran Jutglà",
-    "names": ["Ferran Jutglà", "Ferran"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Kamal Deen Sowah",
-    "names": ["Kamal Deen Sowah", "Kamal Deen"],
-    "nationality": "Ghana"
-  },
+
   {
     "id": "Moussa Diaby",
     "names": ["Moussa Diaby", "Moussa"],
@@ -3649,31 +2611,13 @@
     "names": ["Alexis Sánchez", "Alexis Alejandro Sánchez Sánchez"],
     "nationality": "Chile"
   },
-  {
-    "id": "Chancel Mbemba",
-    "names": ["Chancel Mbemba", "Chancel Mbemba"],
-    "nationality": "DR Congo"
-  },
-  {
-    "id": "Khvicha Kvaratskhelia",
-    "names": ["Khvicha Kvaratskhelia", "Khvicha"],
-    "nationality": "Georgia"
-  },
-  {
-    "id": "Wenderson Galeno",
-    "names": ["Wenderson Galeno", null],
-    "nationality": null
-  },
+
   {
     "id": "Jota",
     "names": ["Jota", "João Pedro Neves"],
     "nationality": "Portugal"
   },
-  {
-    "id": "Oleksandr Zubkov",
-    "names": ["Oleksandr Zubkov", "Oleksandr"],
-    "nationality": "Ukraine"
-  },
+
   {
     "id": "Adrien Rabiot",
     "names": ["Adrien Rabiot", "Adrien"],
@@ -3689,381 +2633,13 @@
     "names": ["Abdoulaye Seck", "Abdoulaye"],
     "nationality": "Senegal"
   },
-  {
-    "id": "Stephen Eustáquio",
-    "names": ["Stephen Eustáquio", "Stephen Eustáquio"],
-    "nationality": "Canada"
-  },
+
   {
     "id": "Benjamin Pavard",
     "names": ["Benjamin Pavard", "Benjamin"],
     "nationality": "France"
   },
-  {
-    "id": "Randal Kolo Muani",
-    "names": ["Randal Kolo Muani", "Randal Kolo"],
-    "nationality": "France"
-  },
-  {
-    "id": "Danilo Ezequiel Rinaldi",
-    "names": ["Danilo Ezequiel Rinaldi", null],
-    "nationality": "San Marino"
-  },
-  {
-    "id": "Zakaria Beglarisvili",
-    "names": ["Zakaria Beglarisvili", null],
-    "nationality": "Georgia"
-  },
-  {
-    "id": "Kyle McLagan",
-    "names": ["Kyle McLagan", "Kyle"],
-    "nationality": "United States"
-  },
-  {
-    "id": "Halldor Smari Sigurdsson",
-    "names": ["Halldor Smari Sigurdsson", null],
-    "nationality": "Iceland"
-  },
-  {
-    "id": "Júlíus Magnússon",
-    "names": ["Júlíus Magnússon", "Júlíus"],
-    "nationality": "Iceland"
-  },
-  {
-    "id": "Martin Olsson",
-    "names": ["Martin Olsson", "Martin Olsson"],
-    "nationality": "Sweden"
-  },
-  {
-    "id": "Ola Toivonen",
-    "names": ["Ola Toivonen", "Ola Toivonen"],
-    "nationality": "Sweden"
-  },
-  {
-    "id": "Alex Santana",
-    "names": ["Alex Santana", "Alex Paulo"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Matías Tissera",
-    "names": ["Matías Tissera", "Matías"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Mikael Ishak",
-    "names": ["Mikael Ishak", "Mikael"],
-    "nationality": "Sweden"
-  },
-  {
-    "id": "Ryan Brobbel",
-    "names": ["Ryan Brobbel", "Ryan"],
-    "nationality": "Northern Ireland"
-  },
-  {
-    "id": "Nazmi Gripshi",
-    "names": ["Nazmi Gripshi", null],
-    "nationality": "Albania"
-  },
-  {
-    "id": "Oliver Buff",
-    "names": ["Oliver Buff", "Oliver"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Ronan Finn",
-    "names": ["Ronan Finn", "Ronan"],
-    "nationality": "Republic of Ireland"
-  },
-  {
-    "id": "Dylan Watts",
-    "names": ["Dylan Watts", "Dylan"],
-    "nationality": "Republic of Ireland"
-  },
-  {
-    "id": "Rory Gaffney",
-    "names": ["Rory Gaffney", "Rory"],
-    "nationality": "Republic of Ireland"
-  },
-  {
-    "id": "Mamadou Lamine Danfa",
-    "names": ["Mamadou Lamine Danfa", "Mamadou Lamine"],
-    "nationality": "Senegal"
-  },
-  {
-    "id": "Sunday Adetunji",
-    "names": ["Sunday Adetunji", null],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Manuel Martič",
-    "names": ["Manuel Martič", "Manuel"],
-    "nationality": "Austria"
-  },
-  {
-    "id": "Artūrs Zjuzins",
-    "names": ["Artūrs Zjuzins", "Artūrs"],
-    "nationality": "Latvia"
-  },
-  {
-    "id": "Stefan Panić",
-    "names": ["Stefan Panić", "Stefan"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Murilo",
-    "names": ["Murilo", "Murilo Henrique"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Juanfri",
-    "names": ["Juanfri", "Juan Francisco"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Lee Casciaro",
-    "names": ["Lee Casciaro", "Lee"],
-    "nationality": "Gibraltar"
-  },
-  {
-    "id": "Kristoffer Velde",
-    "names": ["Kristoffer Velde", "Kristoffer"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Kevin Medina",
-    "names": ["Kevin Medina", "Kevin David"],
-    "nationality": "Colombia"
-  },
-  {
-    "id": "Abbas Hüseynov",
-    "names": ["Abbas Hüseynov", "Abbas İsrafil oğlu"],
-    "nationality": "Azerbaijan"
-  },
-  {
-    "id": "Filip Bojić",
-    "names": ["Filip Bojić", "Filip"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Dejvid Sinani",
-    "names": ["Dejvid Sinani", "Dejvid"],
-    "nationality": "Luxembourg"
-  },
-  {
-    "id": "Redon Xhixha",
-    "names": ["Redon Xhixha", "Redon"],
-    "nationality": "Albania"
-  },
-  {
-    "id": "Felix Beijmo",
-    "names": ["Felix Beijmo", "Felix Beijmo"],
-    "nationality": "Sweden"
-  },
-  {
-    "id": "Zurab Davitashvili",
-    "names": ["Zurab Davitashvili", null],
-    "nationality": null
-  },
-  {
-    "id": "Mads Boe Mikkelsen",
-    "names": ["Mads Boe Mikkelsen", null],
-    "nationality": null
-  },
-  {
-    "id": "Igor Sergeev",
-    "names": ["Igor Sergeev", null],
-    "nationality": "Uzbekistan"
-  },
-  {
-    "id": "Bismark Adjei-Boateng",
-    "names": ["Bismark Adjei-Boateng", "Bismark"],
-    "nationality": "Ghana"
-  },
-  {
-    "id": "Claudiu Petrila",
-    "names": ["Claudiu Petrila", "Claudiu"],
-    "nationality": "Romania"
-  },
-  {
-    "id": "Jamie Mulgrew",
-    "names": ["Jamie Mulgrew", "Jamie"],
-    "nationality": "Northern Ireland"
-  },
-  {
-    "id": "Ethan Devine",
-    "names": ["Ethan Devine", null],
-    "nationality": "Northern Ireland"
-  },
-  {
-    "id": "Samir Hadji",
-    "names": ["Samir Hadji", "Samir"],
-    "nationality": "France"
-  },
-  {
-    "id": "Fabien Ourega",
-    "names": ["Fabien Ourega", "Fabien"],
-    "nationality": "France"
-  },
-  {
-    "id": "Lindrit Kamberi",
-    "names": ["Lindrit Kamberi", "Lindrit"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Mirlind Kryeziu",
-    "names": ["Mirlind Kryeziu", "Mirlind"],
-    "nationality": "Kosovo"
-  },
-  {
-    "id": "Ádám Gyurcsó",
-    "names": ["Ádám Gyurcsó", "Ádám"],
-    "nationality": "Hungary"
-  },
-  {
-    "id": "Erik Sviatchenko",
-    "names": ["Erik Sviatchenko", "Erik"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Thiago Rodrigues",
-    "names": ["Thiago Rodrigues", null],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Kirk Millar",
-    "names": ["Kirk Millar", "Kirk"],
-    "nationality": "Northern Ireland"
-  },
-  {
-    "id": "Queven",
-    "names": ["Queven", null],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Renaldo Cephas",
-    "names": ["Renaldo Cephas", null],
-    "nationality": "Jamaica"
-  },
-  {
-    "id": "Bojan Radulovic",
-    "names": ["Bojan Radulovic", "Bojan"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Philip Zinckernagel",
-    "names": ["Philip Zinckernagel", "Philip"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Dolev Haziza",
-    "names": ["Dolev Haziza", null],
-    "nationality": null
-  },
-  {
-    "id": "Guram Kashia",
-    "names": ["Guram Kashia", "Guram"],
-    "nationality": "Georgia"
-  },
-  {
-    "id": "Victor Olatunji",
-    "names": ["Victor Olatunji", "Victor"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Henrik Dalsgaard",
-    "names": ["Henrik Dalsgaard", "Henrik"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Momo Yansané",
-    "names": ["Momo Yansané", "Momo"],
-    "nationality": "Guinea"
-  },
-  {
-    "id": "Luděk Pernica",
-    "names": ["Luděk Pernica", "Luděk"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Lukáš Hejda",
-    "names": ["Lukáš Hejda", "Lukáš"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Aaron Greene",
-    "names": ["Aaron Greene", "Aaron"],
-    "nationality": "Republic of Ireland"
-  },
-  {
-    "id": "Aidomo Emakhu",
-    "names": ["Aidomo Emakhu", null],
-    "nationality": null
-  },
-  {
-    "id": "Ulrik Saltnes",
-    "names": ["Ulrik Saltnes", "Ulrik"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Alfons Sampsted",
-    "names": ["Alfons Sampsted", "Alfons"],
-    "nationality": "Iceland"
-  },
-  {
-    "id": "Attila Szalai",
-    "names": ["Attila Szalai", "Attila"],
-    "nationality": "Hungary"
-  },
-  {
-    "id": "Renan",
-    "names": ["Renan", "Renan Abner do Carmo"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Vernon De Marco",
-    "names": ["Vernon De Marco", null],
-    "nationality": null
-  },
-  {
-    "id": "Mohammad Abu Fani",
-    "names": ["Mohammad Abu Fani", "Mohammad"],
-    "nationality": "Israel"
-  },
-  {
-    "id": "Ibrahim Rasheed",
-    "names": ["Ibrahim Rasheed", null],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Pavel Bucha",
-    "names": ["Pavel Bucha", "Pavel"],
-    "nationality": "Czech Republic"
-  },
-  {
-    "id": "Dino Perić",
-    "names": ["Dino Perić", "Dino"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Bernhard Tekpetey",
-    "names": ["Bernhard Tekpetey", "Bernhard"],
-    "nationality": "Ghana"
-  },
-  {
-    "id": "Axel Disasi",
-    "names": ["Axel Disasi", "Axel"],
-    "nationality": "France"
-  },
-  {
-    "id": "Teddy Teuma",
-    "names": ["Teddy Teuma", "Teddy"],
-    "nationality": "Malta"
-  },
-  {
-    "id": "Dante Vanzeir",
-    "names": ["Dante Vanzeir", "Dante"],
-    "nationality": "Belgium"
-  },
+
   {
     "id": "Luis Suárez",
     "names": ["Luis Suárez", "Luis Alberto Suárez Díaz"],
@@ -4079,51 +2655,7 @@
     "names": ["José Luis Morales", "José Luis"],
     "nationality": "Spain"
   },
-  {
-    "id": "Rafael Mir",
-    "names": ["Rafael Mir", "Rafael"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Kike García",
-    "names": ["Kike García", "Enrique"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Roger Martí",
-    "names": ["Roger Martí", "Roger"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Santi Mina",
-    "names": ["Santi Mina", "Santiago"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Joselu",
-    "names": ["Joselu", "José Luis"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Mikel Oiarzabal",
-    "names": ["Mikel Oiarzabal", "Mikel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Ante Budimir",
-    "names": ["Ante Budimir", "Ante"],
-    "nationality": "Croatia"
-  },
-  {
-    "id": "Carlos Soler",
-    "names": ["Carlos Soler", "Carlos"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Borja Iglesias",
-    "names": ["Borja Iglesias", " Borja Iglesias"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Soldado",
     "names": ["Soldado", "Roberto"],
@@ -4169,86 +2701,7 @@
     "names": ["Roberto Torres", "Roberto"],
     "nationality": "Spain"
   },
-  {
-    "id": "Melero",
-    "names": ["Melero", "Gonzalo Julián"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Lucas Boyé",
-    "names": ["Lucas Boyé", "Lucas"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Nolito",
-    "names": ["Nolito", "Manuel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Paco Alcácer",
-    "names": ["Paco Alcácer", "Francisco"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Iñaki Williams",
-    "names": ["Iñaki Williams", "Iñaki"],
-    "nationality": "Ghana"
-  },
-  {
-    "id": "Fidel",
-    "names": ["Fidel", "Fidel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Fabián Orellana",
-    "names": ["Fabián Orellana", "Fabián Orellana"],
-    "nationality": "Chile"
-  },
-  {
-    "id": "Shon Weissman",
-    "names": ["Shon Weissman", "Shon Zalman"],
-    "nationality": "Israel"
-  },
-  {
-    "id": "Tello",
-    "names": ["Tello", "Christian"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Manu Vallejo",
-    "names": ["Manu Vallejo", "Manuel Javier"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Mata",
-    "names": ["Mata", "Jaime"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Nabil Fekir",
-    "names": ["Nabil Fekir", "Nabil Fekir"],
-    "nationality": "France"
-  },
-  {
-    "id": "Molina",
-    "names": ["Molina", "Jorge"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Ángel",
-    "names": ["Ángel", "Ángel Luis"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Edgar Méndez",
-    "names": ["Edgar Méndez", "Edgar Antonio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Jonathan Calleri",
-    "names": ["Jonathan Calleri", "Jonathan"],
-    "nationality": "Argentina"
-  },
+
   {
     "id": "Sandro",
     "names": ["Sandro", "Sandro"],
@@ -4259,61 +2712,18 @@
     "names": ["Muniain", "Iker"],
     "nationality": "Spain"
   },
-  {
-    "id": "Lucas Ocampos",
-    "names": ["Lucas Ocampos", "Lucas Ariel"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Óscar Plano",
-    "names": ["Óscar Plano", "Óscar"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Raúl García",
     "names": ["Raúl García", "Raúl"],
     "nationality": "Spain"
   },
   {
-    "id": "Carlos Bacca",
-    "names": ["Carlos Bacca", "Carlos Arturo Bacca Ahumada"],
-    "nationality": "Colombia"
-  },
-  {
-    "id": "Gabriel Paulista",
-    "names": ["Gabriel Paulista", "Gabriel Armando"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Darwin Machís",
-    "names": ["Darwin Machís", "Darwin Daniel"],
-    "nationality": "Venezuela"
-  },
-  {
-    "id": "Daniel Wass",
-    "names": ["Daniel Wass", "Daniel"],
-    "nationality": "Denmark"
-  },
-  {
     "id": "Adnan Januzaj",
     "names": ["Adnan Januzaj", "Adnan Januzaj"],
     "nationality": "Belgium"
   },
-  {
-    "id": "Pere Milla",
-    "names": ["Pere Milla", "Pere"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Josán Fernández",
-    "names": ["Josán Fernández", "José Antonio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Luis Rioja",
-    "names": ["Luis Rioja", "Luis Jesús"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Lucas",
     "names": ["Lucas", "Lucas"],
@@ -4324,126 +2734,25 @@
     "names": ["Maranhão", "Marcos André"],
     "nationality": "Brazil"
   },
-  {
-    "id": "Asier Villalibre",
-    "names": ["Asier Villalibre", "Asier"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Jorge de Frutos",
-    "names": ["Jorge de Frutos", "Jorge"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Kevin Gameiro",
-    "names": ["Kevin Gameiro", "Kevin"],
-    "nationality": "France"
-  },
-  {
-    "id": "Kenedy",
-    "names": ["Kenedy", "Robert Kenedy"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Moi Gómez",
-    "names": ["Moi Gómez", "Moisés"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Álex",
-    "names": ["Álex", "Alejandro"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Enes Ünal",
-    "names": ["Enes Ünal", "Enes"],
-    "nationality": "Turkey"
-  },
-  {
-    "id": "Yangel Herrera",
-    "names": ["Yangel Herrera", "Yangel Clemente"],
-    "nationality": "Venezuela"
-  },
-  {
-    "id": "Rubén García",
-    "names": ["Rubén García", "Rubén"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Roberto López",
-    "names": ["Roberto López", " Roberto López"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Aïssa Mandi",
-    "names": ["Aïssa Mandi", "Aïssa Mandi"],
-    "nationality": "Algeria"
-  },
-  {
-    "id": "Unai López",
-    "names": ["Unai López", "Unai"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Cucurella",
     "names": ["Cucurella", "Marc"],
     "nationality": "Spain"
   },
-  {
-    "id": "Esteban Burgos",
-    "names": ["Esteban Burgos", "Esteban Rodrigo"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Germán",
-    "names": ["Germán", "Germán"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Anthony Lozano",
-    "names": ["Anthony Lozano", "Anthony Rubén"],
-    "nationality": "Honduras"
-  },
+
   {
     "id": "Dani Parejo",
     "names": ["Dani Parejo", "Daniel"],
     "nationality": "Spain"
   },
-  {
-    "id": "Antonio Sanabria",
-    "names": ["Antonio Sanabria", "Arnaldo Antonio"],
-    "nationality": "Paraguay"
-  },
+
   {
     "id": "Willian José",
     "names": ["Willian José", " Willian José"],
     "nationality": "Brazil"
   },
-  {
-    "id": "Mauro Arambarri",
-    "names": ["Mauro Arambarri", "Mauro Wilney"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Fran Beltrán",
-    "names": ["Fran Beltrán", "Francisco José"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Hugo Mallo",
-    "names": ["Hugo Mallo", "Hugo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Ander Barrenetxea",
-    "names": ["Ander Barrenetxea", " Ander Barrenetxea"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Sergi Enrich",
-    "names": ["Sergi Enrich", "Sergio"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Jordi Alba",
     "names": ["Jordi Alba", "Jordi Alba Ramos"],
@@ -4453,26 +2762,6 @@
     "id": "Frenkie de Jong",
     "names": ["Frenkie de Jong", "Frenkie"],
     "nationality": "Netherlands"
-  },
-  {
-    "id": "Fernando Niño",
-    "names": ["Fernando Niño", "Fernando"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Guido Carrillo",
-    "names": ["Guido Carrillo", "Guido Marcelo"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Yeremi Pino",
-    "names": ["Yeremi Pino", "Yeremi Jesús"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Bryan",
-    "names": ["Bryan", "Bryan"],
-    "nationality": "Spain"
   },
   {
     "id": "Raúl Guti",
@@ -4485,18 +2774,8 @@
     "nationality": "Spain"
   },
   {
-    "id": "Antonio Puertas",
-    "names": ["Antonio Puertas", "José Antonio"],
-    "nationality": "Spain"
-  },
-  {
     "id": "Jorge Molina",
     "names": ["Jorge Molina", null],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Míchel",
-    "names": ["Míchel", "Miguel Ángel"],
     "nationality": "Spain"
   },
   {
@@ -4505,43 +2784,8 @@
     "nationality": "Portugal"
   },
   {
-    "id": "Dimitrios Siovas",
-    "names": ["Dimitrios Siovas", "Dimitrios"],
-    "nationality": "Greece"
-  },
-  {
     "id": "Diego Costa",
     "names": ["Diego Costa", "Diego Da Silva Costa"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Salva Sánchez",
-    "names": ["Salva Sánchez", "Salvador"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Toni Villa",
-    "names": ["Toni Villa", "Laureano Antonio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Mikel Merino",
-    "names": ["Mikel Merino", " Mikel Merino"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Tete Morente",
-    "names": ["Tete Morente", "José Antonio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "David Ferreiro",
-    "names": ["David Ferreiro", "David"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Oihan Sancet",
-    "names": ["Oihan Sancet", "Oihan"],
     "nationality": "Spain"
   },
   {
@@ -4550,18 +2794,8 @@
     "nationality": "Spain"
   },
   {
-    "id": "Cucho Hernández",
-    "names": ["Cucho Hernández", "Juan Camilo"],
-    "nationality": "Colombia"
-  },
-  {
     "id": "Pau Torres",
     "names": ["Pau Torres", "Pau Francisco"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Ander Capa",
-    "names": ["Ander Capa", "Ander"],
     "nationality": "Spain"
   },
   {
@@ -4569,57 +2803,7 @@
     "names": ["Álvaro Giménez", "Álvaro"],
     "nationality": "Spain"
   },
-  {
-    "id": "Dani Gómez",
-    "names": ["Dani Gómez", "Dani"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Javier Ontiveros",
-    "names": ["Javier Ontiveros", "Javier"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Aitor Ruibal",
-    "names": ["Aitor Ruibal", " Aitor Ruibal"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Ronald Araújo",
-    "names": ["Ronald Araújo", "Ronald Federico"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Lucas Vázquez",
-    "names": ["Lucas Vázquez", " Lucas Vázquez"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Darko Brašanac",
-    "names": ["Darko Brašanac", "Darko"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Sergio León",
-    "names": ["Sergio León", "Sergio"],
-    "nationality": "Spain"
-  },
   { "id": "Saúl", "names": ["Saúl", "Saúl"], "nationality": "Spain" },
-  {
-    "id": "Alberto Perea",
-    "names": ["Alberto Perea", "Alberto"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Joaquín",
-    "names": ["Joaquín", " Joaquín"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Jon Moncayola",
-    "names": ["Jon Moncayola", "Jon"],
-    "nationality": "Spain"
-  },
   {
     "id": "Raphaël Varane",
     "names": ["Raphaël Varane", "Raphaël Varane"],
@@ -4636,78 +2820,8 @@
     "nationality": "Spain"
   },
   {
-    "id": "Quina",
-    "names": ["Quina", "Domingos"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Aleñà",
-    "names": ["Aleñà", "Carles"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Jeison Murillo",
-    "names": ["Jeison Murillo", "Jeison Fabián"],
-    "nationality": "Colombia"
-  },
-  {
-    "id": "Juanmi",
-    "names": ["Juanmi", " Juanmi"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Óscar Mingueza",
-    "names": ["Óscar Mingueza", "Óscar"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Marcos López",
-    "names": ["Marcos López", "Marcos Mauro"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Álvaro Odriozola",
-    "names": ["Álvaro Odriozola", "Álvaro"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Jon Morcillo",
-    "names": ["Jon Morcillo", "Jon"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Augusto Solari",
-    "names": ["Augusto Solari", "Augusto Jorge Mateo"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Pere Pons",
-    "names": ["Pere Pons", "Pere"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Luis Milla",
-    "names": ["Luis Milla", "Luis"],
-    "nationality": "Spain"
-  },
-  {
     "id": "Adrián",
     "names": ["Adrián", "Adrián"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Pablo Maffeo",
-    "names": ["Pablo Maffeo", "Pablo Carmine"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Jorge Pombo",
-    "names": ["Jorge Pombo", "Jorge Marcos"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Sergi Guardiola",
-    "names": ["Sergi Guardiola", "Sergio"],
     "nationality": "Spain"
   },
   {
@@ -4716,149 +2830,14 @@
     "nationality": "Spain"
   },
   {
-    "id": "Kévin Rodrigues",
-    "names": ["Kévin Rodrigues", "Kévin"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Facundo Roncaglia",
-    "names": ["Facundo Roncaglia", "Facundo Sebastián"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Rodrigo Ely",
-    "names": ["Rodrigo Ely", "Rodrigo"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Iván Alejo Peralta",
-    "names": ["Iván Alejo Peralta", "Iván"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Bruno",
-    "names": ["Bruno", "Bruno"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Waldo",
-    "names": ["Waldo", "Waldo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Toni Lato",
-    "names": ["Toni Lato", "Antonio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Tomás Pina",
-    "names": ["Tomás Pina", "Tomás"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Borja Sainz",
-    "names": ["Borja Sainz", "Borja"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Montoro",
-    "names": ["Montoro", "Ángel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Sergio Carreira",
-    "names": ["Sergio Carreira", "Sergio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Lucas Torreira",
-    "names": ["Lucas Torreira", "Lucas Sebastián"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Rúben Vezo",
-    "names": ["Rúben Vezo", "Rúben Miguel"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Yunus Musah",
-    "names": ["Yunus Musah", "Yunus"],
-    "nationality": "United States"
-  },
-  {
-    "id": "Loren",
-    "names": ["Loren", "Lorenzo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Trigueros",
-    "names": ["Trigueros", "Manuel"],
-    "nationality": "Spain"
-  },
-  {
     "id": "Nacho Monreal",
     "names": ["Nacho Monreal", " Nacho Monreal"],
     "nationality": "Spain"
   },
   {
-    "id": "David García",
-    "names": ["David García", "David"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Mariano Díaz",
-    "names": ["Mariano Díaz", " Mariano"],
-    "nationality": "Dominican Republic"
-  },
-  {
-    "id": "Sergio Escudero",
-    "names": ["Sergio Escudero", "Sergio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Domingos Duarte",
-    "names": ["Domingos Duarte", "Domingos"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Ximo Navarro",
-    "names": ["Ximo Navarro", "Joaquín"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Hugo Guillamón",
-    "names": ["Hugo Guillamón", "Hugo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Campaña",
-    "names": ["Campaña", "José Ángel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Miguel Baeza",
-    "names": ["Miguel Baeza", "Miguel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Yoshinori Mutō",
-    "names": ["Yoshinori Mutō", "Yoshinori"],
-    "nationality": "Japan"
-  },
-  {
     "id": "Thomas Lemar",
     "names": ["Thomas Lemar", "Thomas"],
     "nationality": "France"
-  },
-  {
-    "id": "Mikel Rico",
-    "names": ["Mikel Rico", "Mikel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Borja García",
-    "names": ["Borja García", "Borja"],
-    "nationality": "Spain"
   },
   {
     "id": "Shinji Okazaki",
@@ -4869,21 +2848,6 @@
     "id": "Juan Miranda",
     "names": ["Juan Miranda", " Juan Miranda"],
     "nationality": "Spain"
-  },
-  {
-    "id": "Kenan Kodro",
-    "names": ["Kenan Kodro", "Kenan"],
-    "nationality": "Bosnia and Herzegovina"
-  },
-  {
-    "id": "Unai Núñez",
-    "names": ["Unai Núñez", "Unai"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Mouctar Diakhaby",
-    "names": ["Mouctar Diakhaby", "Mouctar"],
-    "nationality": "Guinea"
   },
   {
     "id": "Raúl de Tomás",
@@ -4901,29 +2865,9 @@
     "nationality": "Spain"
   },
   {
-    "id": "Hugo Duro",
-    "names": ["Hugo Duro", "Hugo"],
-    "nationality": "Spain"
-  },
-  {
     "id": "Radamel Falcao",
     "names": ["Radamel Falcao", "Radamel Falcao"],
     "nationality": "Colombia"
-  },
-  {
-    "id": "Chimy Ávila",
-    "names": ["Chimy Ávila", "Luis Ezequiel"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Matheus Cunha",
-    "names": ["Matheus Cunha", "Matheus Santos"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Borja Mayoral",
-    "names": ["Borja Mayoral", "Borja"],
-    "nationality": "Spain"
   },
   {
     "id": "Erik Lamela",
@@ -4936,88 +2880,8 @@
     "nationality": "Spain"
   },
   {
-    "id": "Boulaye Dia",
-    "names": ["Boulaye Dia", "Boulaye"],
-    "nationality": "Senegal"
-  },
-  {
-    "id": "Salva Sevilla",
-    "names": ["Salva Sevilla", "Salvador"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Vedat Muriqi",
-    "names": ["Vedat Muriqi", "Vedat"],
-    "nationality": "Kosovo"
-  },
-  {
-    "id": "Gonzalo Escalante",
-    "names": ["Gonzalo Escalante", "Gonzalo"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Aritz Elustondo",
-    "names": ["Aritz Elustondo", " Aritz Elustondo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Denís Suárez",
-    "names": ["Denís Suárez", "Denís"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Javi Puado",
-    "names": ["Javi Puado", "Javier"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Rubén Sobrino",
-    "names": ["Rubén Sobrino", "Rubén"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Alfonso Pedraza",
-    "names": ["Alfonso Pedraza", "Alfonso"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Nacho",
-    "names": ["Nacho", " Nacho"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Íñigo Martínez",
-    "names": ["Íñigo Martínez", "Íñigo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Dani Rodríguez",
-    "names": ["Dani Rodríguez", "Daniel José"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Óscar Trejo",
-    "names": ["Óscar Trejo", "Óscar Guido"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Randy Ntekja",
-    "names": ["Randy Ntekja", "Randy"],
-    "nationality": "France"
-  },
-  {
-    "id": "Franco Cervi",
-    "names": ["Franco Cervi", "Franco Emanuel"],
-    "nationality": "Argentina"
-  },
-  {
     "id": "Alberto Moreno",
     "names": ["Alberto Moreno", "Alberto"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Laguardia",
-    "names": ["Laguardia", "Víctor"],
     "nationality": "Spain"
   },
   {
@@ -5026,105 +2890,16 @@
     "nationality": "Brazil"
   },
   {
-    "id": "Enis Bardhi",
-    "names": ["Enis Bardhi", "Enis"],
-    "nationality": "North Macedonia"
-  },
-  {
-    "id": "Abdón Prats",
-    "names": ["Abdón Prats", "Abdón"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Sergi Darder",
-    "names": ["Sergi Darder", "Sergi"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Rodrigo de Paul",
-    "names": ["Rodrigo de Paul", "Rodrigo Javier"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Alfonso Espino",
-    "names": ["Alfonso Espino", "Luis Alfonso"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Julen Lobete",
-    "names": ["Julen Lobete", " Julen Lobete"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Daniel Vivian",
-    "names": ["Daniel Vivian", "Daniel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Omar Alderete",
-    "names": ["Omar Alderete", "Omar Federico"],
-    "nationality": "Paraguay"
-  },
-  {
     "id": "Eduardo Camavinga",
     "names": ["Eduardo Camavinga", "Eduardo Camavinga"],
     "nationality": "France"
-  },
-  {
-    "id": "Pathé Ciss",
-    "names": ["Pathé Ciss", "Pathé"],
-    "nationality": "Senegal"
   },
   {
     "id": "Aleix Vidal",
     "names": ["Aleix Vidal", "Aleix"],
     "nationality": "Spain"
   },
-  {
-    "id": "Leandro Cabrera",
-    "names": ["Leandro Cabrera", "Leandro Daniel"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Johan Mojica",
-    "names": ["Johan Mojica", "Johan Andrés"],
-    "nationality": "Colombia"
-  },
-  {
-    "id": "German Sanchez",
-    "names": ["German Sanchez", null],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Isi Palazón",
-    "names": ["Isi Palazón", "Isaac"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Iddrisu Baba",
-    "names": ["Iddrisu Baba", "Iddrisu"],
-    "nationality": "Ghana"
-  },
-  {
-    "id": "Darío Benedetto",
-    "names": ["Darío Benedetto", "Darío Benedetto"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Gaya",
-    "names": ["Gaya", "José Luis"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Nico Ribaudo",
-    "names": ["Nico Ribaudo", "Nicolás Melamed"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Manu Morlanes",
-    "names": ["Manu Morlanes", "Manuel"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Francis Coquelin",
     "names": ["Francis Coquelin", "Francis"],
@@ -5140,11 +2915,7 @@
     "names": ["David Alaba", "David Alaba"],
     "nationality": "Austria"
   },
-  {
-    "id": "Loum Ndiaye",
-    "names": ["Loum Ndiaye", "Mamadou Loum"],
-    "nationality": "Senegal"
-  },
+
   {
     "id": "Busquets",
     "names": ["Busquets", "Sergio Busquets i Burgos"],
@@ -5160,231 +2931,25 @@
     "names": ["Ferland Mendy", "Ferland Mendy"],
     "nationality": "France"
   },
-  {
-    "id": "Thomas Delaney",
-    "names": ["Thomas Delaney", "Thomas Joseph"],
-    "nationality": "Denmark"
-  },
-  {
-    "id": "Nico Gonzalez",
-    "names": ["Nico Gonzalez", null],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Catena",
-    "names": ["Catena", "Alejandro"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Pablo Gavira",
-    "names": ["Pablo Gavira", null],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Enrique Barja",
-    "names": ["Enrique Barja", null],
-    "nationality": null
-  },
-  {
-    "id": "Rubén Alcaraz",
-    "names": ["Rubén Alcaraz", "Rubén"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Renan Lodi",
-    "names": ["Renan Lodi", "Renan Augusto"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Thiago Galhardo",
-    "names": ["Thiago Galhardo", "Thiago"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Mikel Vesga",
-    "names": ["Mikel Vesga", "Mikel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Martín Zubimendi",
-    "names": ["Martín Zubimendi", " Martín Zubimendi"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Álex Collado",
-    "names": ["Álex Collado", "Álex"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Jesús Manuel Corona",
-    "names": ["Jesús Manuel Corona", "Jesús Manuel"],
-    "nationality": "Mexico"
-  },
-  {
-    "id": "Óscar Duarte",
-    "names": ["Óscar Duarte", "Óscar Esau Duarte Gaitán"],
-    "nationality": "Costa Rica"
-  },
-  {
-    "id": "Antonio Raíllo",
-    "names": ["Antonio Raíllo", "Antonio José"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Kike Pérez",
-    "names": ["Kike Pérez", "Enrirque"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Brian Oliván",
-    "names": ["Brian Oliván", "Brian"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Rober Pier",
-    "names": ["Rober Pier", "Roberto"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Enzo Roco",
-    "names": ["Enzo Roco", "Enzo Pablo"],
-    "nationality": "Chile"
-  },
+
   {
     "id": "Dani Carvajal",
     "names": ["Dani Carvajal", " Dani Carvajal"],
     "nationality": "Spain"
   },
-  {
-    "id": "Santiago Comesaña",
-    "names": ["Santiago Comesaña", "Santiago"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Stefan Mitrović",
     "names": ["Stefan Mitrović", "Stefan"],
     "nationality": "Serbia"
   },
-  {
-    "id": "Lee Kangin",
-    "names": ["Lee Kangin", "Kangin"],
-    "nationality": "Korea, South"
-  },
+
   {
     "id": "Isco",
     "names": ["Isco", " Isco"],
     "nationality": "Spain"
   },
-  {
-    "id": "Kike Hermoso",
-    "names": ["Kike Hermoso", " Kike Hermoso"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Cote",
-    "names": ["Cote", "José Ángel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Iñigo Pérez",
-    "names": ["Iñigo Pérez", "Iñigo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Javi Martínez",
-    "names": ["Javi Martínez", "Javier"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Varazdat Haroyan",
-    "names": ["Varazdat Haroyan", "Varazdat"],
-    "nationality": "Armenia"
-  },
-  {
-    "id": "Manuel Sánchez",
-    "names": ["Manuel Sánchez", "Manuel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Rochina",
-    "names": ["Rochina", "Rubén"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Mario Hernández",
-    "names": ["Mario Hernández", "Mario"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Lucas Torró",
-    "names": ["Lucas Torró", "Lucas"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Antonio Sanchez",
-    "names": ["Antonio Sanchez", null],
-    "nationality": null
-  },
-  {
-    "id": "Cristhian Stuani",
-    "names": ["Cristhian Stuani", "Cristhian Ricardo Stuani Curbelo"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Gorka Guruzeta",
-    "names": ["Gorka Guruzeta", "Gorka"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Alejandro Baena",
-    "names": ["Alejandro Baena", "Alejandro"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Valentín Castellanos",
-    "names": ["Valentín Castellanos", "Valentín Castellanos"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Gabriel Veiga",
-    "names": ["Gabriel Veiga", "Gabriel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Sergio Camello",
-    "names": ["Sergio Camello", "Sergio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "El Bilal Touré",
-    "names": ["El Bilal Touré", "El Bilal"],
-    "nationality": "Mali"
-  },
-  {
-    "id": "Aimar Oroz",
-    "names": ["Aimar Oroz", "Aimar"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Takefusa Kubo",
-    "names": ["Takefusa Kubo", "Takefusa"],
-    "nationality": "Japan"
-  },
-  {
-    "id": "Umar Sadiq",
-    "names": ["Umar Sadiq", "Umar"],
-    "nationality": "Nigeria"
-  },
-  {
-    "id": "Florian Lejeune",
-    "names": ["Florian Lejeune", "Florian"],
-    "nationality": "France"
-  },
-  {
-    "id": "Nico Williams",
-    "names": ["Nico Williams", "Nicholas"],
-    "nationality": "Spain"
-  },
+
   {
     "id": "Rodrigo Riquelme",
     "names": ["Rodrigo Riquelme", "Rodrigo"],
@@ -5401,33 +2966,8 @@
     "nationality": "Spain"
   },
   {
-    "id": "Nicolas Jackson",
-    "names": ["Nicolas Jackson", "Nicolas"],
-    "nationality": "Senegal"
-  },
-  {
-    "id": "Largie Ramazani",
-    "names": ["Largie Ramazani", "Largie"],
-    "nationality": "Belgium"
-  },
-  {
     "id": "Óscar",
     "names": ["Óscar", "Óscar"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Samuel Sáiz",
-    "names": ["Samuel Sáiz", "Samuel"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Samuel",
-    "names": ["Samuel", "Samuel"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Samu Castillejo",
-    "names": ["Samu Castillejo", "Samuel"],
     "nationality": "Spain"
   },
   {
@@ -5435,16 +2975,7 @@
     "names": ["Gastón Álvarez", "Pedro Gastón"],
     "nationality": "Uruguay"
   },
-  {
-    "id": "Jose Angel Carmona",
-    "names": ["Jose Angel Carmona", null],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Ezequiel Ponce",
-    "names": ["Ezequiel Ponce", "Ezequiel"],
-    "nationality": "Argentina"
-  },
+
   {
     "id": "André Almeida",
     "names": ["André Almeida", " André Almeida"],
@@ -5454,196 +2985,6 @@
     "id": "Arnau Martinez",
     "names": ["Arnau Martinez", "Arnau"],
     "nationality": "Spain"
-  },
-  {
-    "id": "Nemanja Gudelj",
-    "names": ["Nemanja Gudelj", "Nemanja"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Roque Mesa",
-    "names": ["Roque Mesa", "Roque"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Léo Baptistão",
-    "names": ["Léo Baptistão", "Leonardo"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "David López",
-    "names": ["David López", "David"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Iván Martín",
-    "names": ["Iván Martín", "Iván"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Gonçalo Paciência",
-    "names": ["Gonçalo Paciência", " Gonçalo Paciência"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Anuar Tuhami",
-    "names": ["Anuar Tuhami", "Anuar Mohamed"],
-    "nationality": "Morocco"
-  },
-  {
-    "id": "Karim Rekik",
-    "names": ["Karim Rekik", "Karim"],
-    "nationality": "Netherlands"
-  },
-  {
-    "id": "Eric García",
-    "names": ["Eric García", "Eric"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Reinier",
-    "names": ["Reinier", "Reinier Jesus"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Monchu",
-    "names": ["Monchu", "Ramón"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Juan Iglesias",
-    "names": ["Juan Iglesias", "Juan Antonio"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Damián Suárez",
-    "names": ["Damián Suárez", "Damián Nicolás"],
-    "nationality": "Uruguay"
-  },
-  {
-    "id": "Eray Cömert",
-    "names": ["Eray Cömert", "Eray Ervin"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Lucas Robertone",
-    "names": ["Lucas Robertone", "Lucas"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Srđan Babić",
-    "names": ["Srđan Babić", "Srđan"],
-    "nationality": "Serbia"
-  },
-  {
-    "id": "Víctor Chust",
-    "names": ["Víctor Chust", "Víctor"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Illarramendi",
-    "names": ["Illarramendi", " Illarra"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Igor Zubeldía",
-    "names": ["Igor Zubeldía", " Zubeldía"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Joaquín Fernández",
-    "names": ["Joaquín Fernández", "Joaquín"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Adri Embarba",
-    "names": ["Adri Embarba", "Adrián"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Gonzalo Verdú",
-    "names": ["Gonzalo Verdú", "Gonzalo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Joseph Aidoo",
-    "names": ["Joseph Aidoo", "Joseph"],
-    "nationality": "Ghana"
-  },
-  {
-    "id": "José Carlos Lazo",
-    "names": ["José Carlos Lazo", "José Carlos"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Lázaro",
-    "names": ["Lázaro", " Lázaro"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Cesar de la Hoz",
-    "names": ["Cesar de la Hoz", "Cesar"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Iñigo Eguaras",
-    "names": ["Iñigo Eguaras", "Iñigo"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Theo Bongonda",
-    "names": ["Theo Bongonda", "Theo"],
-    "nationality": "DR Congo"
-  },
-  {
-    "id": "Juan Cruz",
-    "names": ["Juan Cruz", "Juan"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Javi Sánchez",
-    "names": ["Javi Sánchez", "Javier"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Amath Ndiaye",
-    "names": ["Amath Ndiaye", "Amath Ndiaye"],
-    "nationality": "Senegal"
-  },
-  {
-    "id": "Pol Lirola",
-    "names": ["Pol Lirola", null],
-    "nationality": null
-  },
-  {
-    "id": "Kike Salas",
-    "names": ["Kike Salas", null],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Juan Foyth",
-    "names": ["Juan Foyth", "Juan Marcos"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Luiz Henrique",
-    "names": ["Luiz Henrique", " Luiz Henrique"],
-    "nationality": "Brazil"
-  },
-  {
-    "id": "Marcos Acuña",
-    "names": ["Marcos Acuña", "Marcos Javier"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Jørgen Larsen",
-    "names": ["Jørgen Larsen", "Jørgen"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Nianzou Kouassi",
-    "names": ["Nianzou Kouassi", "Nianzou Tanguy"],
-    "nationality": "France"
   },
   {
     "id": "Kaká",
@@ -5711,5 +3052,10 @@
     "id": "Zlatan Ibrahimović",
     "names": ["Zlatan Ibrahimović", "Zlatan Ibrahimovic"],
     "nationality": "Sweden"
+  },
+  {
+    "id": "Robin van Persie",
+    "names": ["Robin van Persie", "RVP"],
+    "nationality": "Netherlands"
   }
 ]

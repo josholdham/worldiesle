@@ -351,5 +351,60 @@
     "competition": "PL",
     "url": "https://youtu.be/Bp9UZkZQ_cc?t=97",
     "homeTeamMatters": true
+  },
+  {
+    "id": "ARS-57-CRY-354-2017-PL",
+    "teamA": "ARS-57",
+    "teamB": "CRY-354",
+    "goalScoredFor": "ARS-57",
+    "player": "Olivier Giroud",
+    "year": "2017",
+    "competition": "PL",
+    "url": "https://www.youtube.com/watch?v=wGOhxt5Ksc0",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "COL-170x-URU-758-2014-WC",
+    "teamA": "COL-170x",
+    "teamB": "URU-758",
+    "goalScoredFor": "COL-170x",
+    "player": "James Rodríguez",
+    "year": "2014",
+    "competition": "WC",
+    "url": "https://www.youtube.com/watch?v=GESyL3MkgNU",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "FRA-773-ARG-762-2018-WC",
+    "teamA": "FRA-773",
+    "teamB": "ARG-762",
+    "goalScoredFor": "FRA-773",
+    "player": "Benjamin Pavard",
+    "year": "2018",
+    "competition": "WC",
+    "url": "https://youtu.be/Cbij3MKhdOY?t=3693",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "POR-765-ESP-760-2018-WC",
+    "teamA": "POR-765",
+    "teamB": "ESP-760",
+    "goalScoredFor": "POR-765",
+    "player": "Cristiano Ronaldo",
+    "year": "2018",
+    "competition": "WC",
+    "url": "https://youtu.be/OFbyNU6UQQs?t=5401",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "ESP-760-NED-8601-2014-WC",
+    "teamA": "ESP-760",
+    "teamB": "NED-8601",
+    "goalScoredFor": "NED-8601",
+    "player": "Robin van Persie",
+    "year": "2014",
+    "competition": "WC",
+    "url": "https://youtu.be/WlNAln9mcg8?t=2747",
+    "homeTeamMatters": false
   }
 ]

@@ -522,5 +522,10 @@
     "id": "BUR-328",
     "names": ["Burnley FC", "Burnley"],
     "intl": false
+  },
+  {
+    "id": "COL-170x",
+    "names": ["Colombia"],
+    "intl": true
   }
 ]
