@@ -35,7 +35,7 @@ Also - it is probably fair to say Premier League, Champions League and the World
 
 ### Time Period
 
-We are currently limiting goals to those from 1994 to present, given the difficulty in finding good quality videos and stills for games prior to this. There is a bias towards recent years for similar reasons.
+We are currently limiting goals to those from 1990 to present, given the difficulty in finding good quality videos and stills for games prior to this. There is a bias towards recent years for similar reasons.
 
 ### Vibes
 

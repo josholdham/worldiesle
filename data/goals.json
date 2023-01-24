@@ -406,5 +406,49 @@
     "competition": "WC",
     "url": "https://youtu.be/WlNAln9mcg8?t=2747",
     "homeTeamMatters": false
+  },
+  {
+    "id": "LIV-64-WHU-563-2007-FAC",
+    "teamA": "LIV-64",
+    "teamB": "WHU-563",
+    "goalScoredFor": "LIV-64",
+    "player": "Steven Gerrard",
+    "year": "2007",
+    "competition": "FAC",
+    "url": "https://youtu.be/7KmlZx2LW8Y?t=5630",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "CRY-354-MUN-66-1990-FAC",
+    "teamA": "CRY-354",
+    "teamB": "MUN-66",
+    "goalScoredFor": "CRY-354",
+    "player": "Ian Wright",
+    "year": "1990",
+    "competition": "FAC",
+    "url": "https://youtu.be/aY6ZmQp9iTU?t=134",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "OLD-7113x-MUN-66-1994-FAC",
+    "teamA": "OLD-7113x",
+    "teamB": "MUN-66",
+    "goalScoredFor": "MUN-66",
+    "player": "Mark Hughes",
+    "year": "1994",
+    "competition": "FAC",
+    "url": "https://www.youtube.com/watch?v=057hr_gM7YU",
+    "homeTeamMatters": false
+  },
+  {
+    "id": "CHE-61-EVE-62-2009-FAC",
+    "teamA": "CHE-61",
+    "teamB": "EVE-62",
+    "goalScoredFor": "EVE-62",
+    "player": "Louis Saha",
+    "year": "2009",
+    "competition": "FAC",
+    "url": "https://www.youtube.com/watch?v=BZCUw0fPz08",
+    "homeTeamMatters": false
   }
 ]

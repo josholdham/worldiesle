@@ -608,16 +608,6 @@
     "nationality": "England"
   },
   {
-    "id": "Jaïro Riedewald",
-    "names": ["Jaïro Riedewald", "Jaïro"],
-    "nationality": "Netherlands"
-  },
-  {
-    "id": "Jacob Murphy",
-    "names": ["Jacob Murphy", "Jacob"],
-    "nationality": "England"
-  },
-  {
     "id": "Hakim Ziyech",
     "names": ["Hakim Ziyech", "Hakim"],
     "nationality": "Morocco"
@@ -867,21 +857,7 @@
     "names": ["Manuel Lanzini", "Manuel"],
     "nationality": "Argentina"
   },
-  {
-    "id": "Tom Cairney",
-    "names": ["Tom Cairney", "Tom"],
-    "nationality": "Scotland"
-  },
-  {
-    "id": "Sander Berge",
-    "names": ["Sander Berge", "Sander Gard"],
-    "nationality": "Norway"
-  },
-  {
-    "id": "Karlan Ahearne-Grant",
-    "names": ["Karlan Ahearne-Grant", "Karlan"],
-    "nationality": "England"
-  },
+
   {
     "id": "Rayan Aït Nouri",
     "names": ["Rayan Aït Nouri", "Rayan"],
@@ -928,39 +904,14 @@
     "nationality": "Poland"
   },
   {
-    "id": "Robbie Brady",
-    "names": ["Robbie Brady", "Robbie"],
-    "nationality": "Ireland"
-  },
-  {
-    "id": "Oliver McBurnie",
-    "names": ["Oliver McBurnie", "Oliver"],
-    "nationality": "Scotland"
-  },
-  {
     "id": "Joël Matip",
     "names": ["Joël Matip", "Joel Matip"],
     "nationality": "Cameroon"
   },
   {
-    "id": "Darnell Furlong",
-    "names": ["Darnell Furlong", "Darnell Anthony"],
-    "nationality": "England"
-  },
-  {
     "id": "Dwight Gayle",
     "names": ["Dwight Gayle", "Dwight"],
     "nationality": "England"
-  },
-  {
-    "id": "Mason Holgate",
-    "names": ["Mason Holgate", "Mason"],
-    "nationality": "England"
-  },
-  {
-    "id": "Ciaran Clark",
-    "names": ["Ciaran Clark", "Ciaran"],
-    "nationality": "Ireland"
   },
   {
     "id": "Jordan Henderson",
@@ -1004,11 +955,6 @@
     "id": "Emmanuel Dennis",
     "names": ["Emmanuel Dennis", "Emmanuel Bonaventure"],
     "nationality": "Nigeria"
-  },
-  {
-    "id": "Maxwel Cornet",
-    "names": ["Maxwel Cornet", "Gnaly Albert Maxwel"],
-    "nationality": "Cote d'Ivoire"
   },
   {
     "id": "Saïd Benrahma",
@@ -1351,11 +1297,6 @@
     "nationality": "Netherlands"
   },
   {
-    "id": "Josh Brownhill",
-    "names": ["Josh Brownhill", "Josh"],
-    "nationality": "England"
-  },
-  {
     "id": "Moussa Sissoko",
     "names": ["Moussa Sissoko", "Moussa Sissoko"],
     "nationality": "France"
@@ -1374,31 +1315,6 @@
     "id": "Douglas Luiz",
     "names": ["Douglas Luiz", "Douglas Luiz"],
     "nationality": "Brazil"
-  },
-  {
-    "id": "Jonny Castro",
-    "names": ["Jonny Castro", "Jonathan"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Trincão",
-    "names": ["Trincão", "Francisco António Machado Mota"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Nathan Collins",
-    "names": ["Nathan Collins", "Nathan Michael"],
-    "nationality": "Ireland"
-  },
-  {
-    "id": "James Tarkowski",
-    "names": ["James Tarkowski", "James Alan"],
-    "nationality": "England"
-  },
-  {
-    "id": "Shane Duffy",
-    "names": ["Shane Duffy", "Shane"],
-    "nationality": "Ireland"
   },
   {
     "id": "Dele Alli",
@@ -1459,11 +1375,6 @@
     "id": "Taiwo Awoniyi",
     "names": ["Taiwo Awoniyi", "Taiwo Micheal"],
     "nationality": "Nigeria"
-  },
-  {
-    "id": "Brennan Johnson",
-    "names": ["Brennan Johnson", "Brennan"],
-    "nationality": "Wales"
   },
   {
     "id": "Philip Billing",
@@ -1576,16 +1487,6 @@
     "nationality": "Colombia"
   },
   {
-    "id": "Jaidon Anthony",
-    "names": ["Jaidon Anthony", "Jaidon"],
-    "nationality": "England"
-  },
-  {
-    "id": "Harrison Reed",
-    "names": ["Harrison Reed", "Harrison"],
-    "nationality": "England"
-  },
-  {
     "id": "Andreas Pereira",
     "names": ["Andreas Pereira", " Andreas Pereira"],
     "nationality": "Brazil"
@@ -1594,11 +1495,6 @@
     "id": "Pascal Struijk",
     "names": ["Pascal Struijk", "Pascal"],
     "nationality": "Netherlands"
-  },
-  {
-    "id": "Romain Perraud",
-    "names": ["Romain Perraud", "Romain"],
-    "nationality": "France"
   },
   {
     "id": "Casemiro",
@@ -2051,49 +1947,9 @@
     "nationality": "Portugal"
   },
   {
-    "id": "Zlatko Junuzović",
-    "names": ["Zlatko Junuzović", "Zlatko"],
-    "nationality": "Austria"
-  },
-  {
-    "id": "Vitaĺ Lisakovič",
-    "names": ["Vitaĺ Lisakovič", "Vitaĺ Michajlavič"],
-    "nationality": "Belarus"
-  },
-  {
-    "id": "Tetê",
-    "names": ["Tetê", "Mateus"],
-    "nationality": "Brazil"
-  },
-  {
     "id": "Luka Modrić",
     "names": ["Luka Modrić", "Luka Modrić"],
     "nationality": "Croatia"
-  },
-  {
-    "id": "Corentin Tolisso",
-    "names": ["Corentin Tolisso", "Corentin"],
-    "nationality": "France"
-  },
-  {
-    "id": "Jonas Hofmann",
-    "names": ["Jonas Hofmann", "Jonas"],
-    "nationality": "Germany"
-  },
-  {
-    "id": "Koka",
-    "names": ["Koka", "Ahmed Hassan Mohamed Abdelmonem Mohamed"],
-    "nationality": "Egypt"
-  },
-  {
-    "id": "Alejandro Gómez",
-    "names": ["Alejandro Gómez", "Alejandro Darío"],
-    "nationality": "Argentina"
-  },
-  {
-    "id": "Aleksei Miranchuk",
-    "names": ["Aleksei Miranchuk", "Aleksei"],
-    "nationality": "Russia"
   },
   {
     "id": "Joshua Kimmich",
@@ -2105,15 +1961,6 @@
     "names": ["Marcos Llorente", "Marcos"],
     "nationality": "Spain"
   },
-  {
-    "id": "Lassina Franck Traoré",
-    "names": [
-      "Lassina Franck Traoré",
-      "Lassina Chamste Soudine Franck"
-    ],
-    "nationality": "Burkina Faso"
-  },
-
   {
     "id": "José Maria Giménez",
     "names": ["José Maria Giménez", "José Maria Giménez de Vargas"],
@@ -2452,49 +2299,9 @@
     "nationality": "Germany"
   },
   {
-    "id": "Sébastien Thill",
-    "names": ["Sébastien Thill", "Sébastien"],
-    "nationality": "Luxembourg"
-  },
-  {
-    "id": "Pieros Sotiriou",
-    "names": ["Pieros Sotiriou", "Pieros"],
-    "nationality": "Cyprus"
-  },
-  {
-    "id": "Vincent Sierro",
-    "names": ["Vincent Sierro", "Vincent Olivier"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Paulinho",
-    "names": ["Paulinho", " Paulinho"],
-    "nationality": "Portugal"
-  },
-  {
-    "id": "Steven Berghuis",
-    "names": ["Steven Berghuis", "Steven"],
-    "nationality": "Netherlands"
-  },
-  {
-    "id": "Donyell Malen",
-    "names": ["Donyell Malen", "Donyell"],
-    "nationality": "Netherlands"
-  },
-  {
     "id": "Serge Gnabry",
     "names": ["Serge Gnabry", "Serge"],
     "nationality": "Germany"
-  },
-  {
-    "id": "Burak Yılmaz",
-    "names": ["Burak Yılmaz", "Burak"],
-    "nationality": "Turkey"
-  },
-  {
-    "id": "André Silva",
-    "names": ["André Silva", "André Miguel"],
-    "nationality": "Portugal"
   },
   {
     "id": "Edin Džeko",
@@ -2502,29 +2309,9 @@
     "nationality": "Bosnia-Herzegovina"
   },
   {
-    "id": "Noah Okafor",
-    "names": ["Noah Okafor", "Noah"],
-    "nationality": "Switzerland"
-  },
-  {
-    "id": "Jonathan David",
-    "names": ["Jonathan David", "Jonathan Christian"],
-    "nationality": "Canada"
-  },
-  {
     "id": "Marco Reus",
     "names": ["Marco Reus", "Marco"],
     "nationality": "Germany"
-  },
-  {
-    "id": "Mendurim Hoti",
-    "names": ["Mendurim Hoti", "Mendurim"],
-    "nationality": "Kosovo"
-  },
-  {
-    "id": "Tokmac Chol Nguen",
-    "names": ["Tokmac Chol Nguen", null],
-    "nationality": null
   },
   {
     "id": "Cody Gakpo",
@@ -2677,21 +2464,6 @@
     "nationality": "Spain"
   },
   {
-    "id": "Portu",
-    "names": ["Portu", " Portu"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Canales",
-    "names": ["Canales", " Canales"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Álex Berenguer",
-    "names": ["Álex Berenguer", "Alejandro Berenguer"],
-    "nationality": "Spain"
-  },
-  {
     "id": "Maxi Gómez",
     "names": ["Maxi Gómez", "Maximiliano"],
     "nationality": "Uruguay"
@@ -2708,12 +2480,6 @@
     "nationality": "Spain"
   },
   {
-    "id": "Muniain",
-    "names": ["Muniain", "Iker"],
-    "nationality": "Spain"
-  },
-
-  {
     "id": "Raúl García",
     "names": ["Raúl García", "Raúl"],
     "nationality": "Spain"
@@ -2722,17 +2488,6 @@
     "id": "Adnan Januzaj",
     "names": ["Adnan Januzaj", "Adnan Januzaj"],
     "nationality": "Belgium"
-  },
-
-  {
-    "id": "Lucas",
-    "names": ["Lucas", "Lucas"],
-    "nationality": "Spain"
-  },
-  {
-    "id": "Maranhão",
-    "names": ["Maranhão", "Marcos André"],
-    "nationality": "Brazil"
   },
 
   {
@@ -3057,5 +2812,20 @@
     "id": "Robin van Persie",
     "names": ["Robin van Persie", "RVP"],
     "nationality": "Netherlands"
+  },
+  {
+    "id": "Ian Wright",
+    "names": ["Ian Wright"],
+    "nationality": "England"
+  },
+  {
+    "id": "Mark Hughes",
+    "names": ["Mark Hughes", "Leslie Mark Hughes"],
+    "nationality": "Wales"
+  },
+  {
+    "id": "Louis Saha",
+    "names": ["Louis Saha", "Louis Laurent Saha"],
+    "nationality": "France"
   }
 ]

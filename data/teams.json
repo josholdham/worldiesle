@@ -527,5 +527,10 @@
     "id": "COL-170x",
     "names": ["Colombia"],
     "intl": true
+  },
+  {
+    "id": "OLD-7113x",
+    "names": ["Oldham Athletic AFC", "Oldham Athletic", "Oldham"],
+    "intl": false
   }
 ]

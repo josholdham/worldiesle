@@ -162,7 +162,7 @@ const Home: React.FC<HomeProps> = ({
 };
 
 const LAUNCH_DATE = '2023-01-23';
-const START_YEAR = 1994;
+const START_YEAR = 1990;
 
 const getJsonFileFromS3 = async (fileName: string) => {
   const clientParams = {
