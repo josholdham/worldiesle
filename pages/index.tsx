@@ -161,7 +161,7 @@ const Home: React.FC<HomeProps> = ({
   );
 };
 
-const LAUNCH_DATE = '2023-01-23';
+const LAUNCH_DATE = '2023-01-24';
 const START_YEAR = 1990;
 
 const getJsonFileFromS3 = async (fileName: string) => {
@@ -238,8 +238,8 @@ const getSignedS3Images = async (goalId: string) => {
 export async function getStaticProps() {
   const END_YEAR = dayjs().year();
   const daysSinceLaunch = dayjs()
-    .add(37, 'hours')
-    .add(62, 'minutes')
+    .add(1, 'hours')
+    .add(30, 'minutes')
     .diff(LAUNCH_DATE, 'day');
 
   const jsonDirectory = path.join(process.cwd(), 'data');
