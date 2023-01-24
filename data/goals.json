@@ -1,5 +1,16 @@
 [
   {
+    "id": "COL-170x-URU-758-2014-WC",
+    "teamA": "COL-170x",
+    "teamB": "URU-758",
+    "goalScoredFor": "COL-170x",
+    "player": "James Rodríguez",
+    "year": "2014",
+    "competition": "WC",
+    "url": "https://www.youtube.com/watch?v=GESyL3MkgNU",
+    "homeTeamMatters": false
+  },
+  {
     "id": "ARS-57-MUN-66-2023-PL-2",
     "teamA": "ARS-57",
     "teamB": "MUN-66",
@@ -295,17 +306,6 @@
     "competition": "PL",
     "url": "https://youtu.be/Bp9UZkZQ_cc?t=97",
     "homeTeamMatters": true
-  },
-  {
-    "id": "COL-170x-URU-758-2014-WC",
-    "teamA": "COL-170x",
-    "teamB": "URU-758",
-    "goalScoredFor": "COL-170x",
-    "player": "James Rodríguez",
-    "year": "2014",
-    "competition": "WC",
-    "url": "https://www.youtube.com/watch?v=GESyL3MkgNU",
-    "homeTeamMatters": false
   },
   {
     "id": "WAT-346-LIV-64-2021-PL",
