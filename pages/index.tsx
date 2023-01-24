@@ -236,8 +236,11 @@ const getSignedS3Images = async (goalId: string) => {
 };
 
 export async function getStaticProps() {
-  const END_YEAR = dayjs().add(13, 'hours').add(62, 'minutes').year();
-  const daysSinceLaunch = dayjs().diff(LAUNCH_DATE, 'day');
+  const END_YEAR = dayjs().year();
+  const daysSinceLaunch = dayjs()
+    .add(13, 'hours')
+    .add(62, 'minutes')
+    .diff(LAUNCH_DATE, 'day');
 
   const jsonDirectory = path.join(process.cwd(), 'data');
   // Get the teams for suggestions
