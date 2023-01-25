@@ -83,9 +83,7 @@ const Home: React.FC<HomeProps> = ({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`/favicons/${
-            darkOrLight === 'dark' ? 'dark' : 'light'
-          }/apple-touch-icon.png`}
+          href={`/icon-192x192.png`}
         />
         <link
           rel="icon"
