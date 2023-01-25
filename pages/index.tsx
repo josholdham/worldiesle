@@ -49,6 +49,7 @@ const Home: React.FC<HomeProps> = ({
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
+        <meta name="theme-color" content="#27272a" />
         <meta
           property="og:title"
           content="worldiesle | a wordle-inspired guess the goal game"

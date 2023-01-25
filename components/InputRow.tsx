@@ -145,7 +145,7 @@ const InputRow: React.FC<{
         aria-label={settings[inputType].placeholder}
         style={
           correctGuess
-            ? { paddingLeft: 27, borderColor: 'green' }
+            ? { paddingLeft: 29, borderColor: 'green' }
             : {}
         }
       />
