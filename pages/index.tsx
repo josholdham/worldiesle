@@ -43,7 +43,9 @@ const Home: React.FC<HomeProps> = ({
         </title>
         <meta
           name="description"
-          content={`worldiesle ${answer.dayNumber} Guess the teams, scorer and year of a daily iconic goal from a series of pictures.`}
+          content={`worldiesle #${
+            answer.dayNumber + 1
+          } Guess the teams, scorer and year of a daily iconic goal from a series of pictures.`}
         />
         <meta
           name="viewport"
@@ -62,7 +64,9 @@ const Home: React.FC<HomeProps> = ({
         />
         <meta
           name="og:description"
-          content={`worldiesle ${answer.dayNumber} Guess the teams, scorer and year of a daily iconic goal from a series of pictures.`}
+          content={`worldiesle #${
+            answer.dayNumber + 1
+          } Guess the teams, scorer and year of a daily iconic goal from a series of pictures.`}
         />
         <meta property="og:image" content={imageUrls[0]} />
         <meta
@@ -71,7 +75,9 @@ const Home: React.FC<HomeProps> = ({
         />
         <meta
           name="twitter:description"
-          content={`worldiesle ${answer.dayNumber} Guess the teams, scorer and year of a daily iconic goal from a series of pictures.`}
+          content={`worldiesle #${
+            answer.dayNumber + 1
+          } Guess the teams, scorer and year of a daily iconic goal from a series of pictures.`}
         />
         <meta name="twitter:image" content={imageUrls[0]} />
         <meta name="twitter:card" content="summary_large_image" />
