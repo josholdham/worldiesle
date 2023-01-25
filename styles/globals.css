@@ -74,6 +74,7 @@ input {
   background-color: rgb(var(--background-weak-rgb));
   border: 2px solid rgb(var(--neutral-rgb));
   font-size: 1rem;
+  color: rgb(var(--foreground-rgb));
 }
 
 button {

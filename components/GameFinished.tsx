@@ -42,7 +42,9 @@ const GameFinished: React.FC<GameFinishedProps> = ({
   const textToShare = useMemo(() => {
     const guessCount = isGameWon ? guesses.length : 'x';
 
-    const title = `#Worldiesle #${answer.dayNumber} ${guessCount}/${SETTINGS.maxGuesses}`;
+    const title = `#Worldiesle #${
+      answer.dayNumber + 1
+    } ${guessCount}/${SETTINGS.maxGuesses}`;
 
     const emojis = [...guesses]
       .reverse()

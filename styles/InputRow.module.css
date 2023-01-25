@@ -9,4 +9,5 @@
   top: 50%;
   left: 8px;
   transform: translateY(-50%);
+  margin-top: -.5px;
 }
