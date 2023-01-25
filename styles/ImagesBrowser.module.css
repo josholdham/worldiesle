@@ -6,7 +6,6 @@
   padding: calc(.56 * 50%) 0;
 }
 
-
 .imageContainer {
   width: var(--image-width);
   height: 100%;
@@ -15,6 +14,15 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 10;
+  background-color: rgb(var(--highlight-secondary-rgb));
+  padding: 5px 10px;
 }
 
 .imageNav {

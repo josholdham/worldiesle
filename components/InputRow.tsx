@@ -18,7 +18,7 @@ import Emoji from './Emoji';
 const fuseOptions = {
   includeScore: true,
   shouldSort: true,
-  threshold: 0.4,
+  threshold: 0.5,
   keys: ['names'],
 };
 

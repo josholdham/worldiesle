@@ -132,6 +132,7 @@ const Game: React.FC<GameProps> = ({
         guessIndex={guesses.length}
         isGameWon={isGameWon}
         imageUrls={imageUrls}
+        answer={answer}
       />
 
       <Confetti isGameWon={isGameWon} />

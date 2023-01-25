@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from '../styles/ImagesBrowser.module.css';
 import { useEffect, useState } from 'react';
 import { SETTINGS } from '../utils/settings';
+import Icon from './Icon';
+import { BasicAnswer } from '../custom-types';
 
 const navArr = Array.from(
   { length: SETTINGS.maxGuesses },
@@ -13,11 +15,13 @@ type ImagesBrowserProps = {
   guessIndex: number;
   isGameWon: boolean;
   imageUrls: string[];
+  answer: BasicAnswer;
 };
 const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
   guessIndex,
   isGameWon,
   imageUrls,
+  answer,
 }) => {
   const [currentViewedIndex, setCurrentViewedIndex] = useState(0);
 
@@ -28,6 +32,10 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
       );
     }
   }, [guessIndex, isGameWon]);
+
+  const openLink = () => {
+    window.open(answer.url, '_blank');
+  };
 
   return (
     <div className="inner-container inner-container--image">
@@ -41,6 +49,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
                 i === currentViewedIndex ? 'visible' : 'hidden',
             }}
           >
+            <div className={styles.imageOverlay}>Image {i + 1}/6</div>
             <Image
               src={imageUrls[i]}
               alt={`Image ${i + 1}`}
@@ -67,6 +76,15 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
             {i + 1}
           </button>
         ))}
+        {answer.url &&
+        (isGameWon || guessIndex >= SETTINGS.maxGuesses) ? (
+          <button
+            className={`${styles.imageNavButton} `}
+            onClick={openLink}
+          >
+            <Icon icon="play_circle_outline" size={22} />
+          </button>
+        ) : null}
       </div>
     </div>
   );
