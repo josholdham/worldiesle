@@ -100,4 +100,4 @@ At the moment, the best way to contact me is via [Twitter](https://twitter.com/w
 
 The best way to support us is to keep playing the game, and share it (and your results) with your friends and family!
 
-However, if you'd like to go further and chuck me a few quid for server costs (or just - I dunno - a treat?) you can do so on [https://ko-fi.com/worldiesle](ko-fi.com/worldiesle). Thanks!
+However, if you'd like to go further and chuck me a few quid for server costs (or just - I dunno - a treat?) you can do so on [ko-fi.com/worldiesle](https://ko-fi.com/worldiesle). Thanks!
