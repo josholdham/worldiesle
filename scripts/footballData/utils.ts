@@ -37,7 +37,7 @@ export const updateExistingFile = async (
 };
 
 const URL_BASE = 'https://api.football-data.org/v4/competitions/';
-const URL_PARAMS = '?limit=200&season=';
+const URL_PARAMS = '?limit=50&season=';
 
 const getSeason = async function (
   competition: Competition,

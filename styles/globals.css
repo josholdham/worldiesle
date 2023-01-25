@@ -225,6 +225,7 @@ footer a {
   background-color: rgba(var(--background-rgb), .75);
   position: fixed;
   inset: 0px;
+  z-index: 2
 }
 
 .modal-body {

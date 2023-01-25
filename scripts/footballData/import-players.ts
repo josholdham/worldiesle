@@ -50,7 +50,7 @@ const importPlayers = async () => {
     FormattedPlayer
   >(0, 'scorers', existing, processResponse);
   await updateExistingFile(updatedJson, 'players');
-  console.log('Done');
+  console.log('Done', updatedJson);
 };
 
 importPlayers();
