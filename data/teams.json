@@ -516,6 +516,11 @@
     "intl": false
   },
   {
+    "id": "WIM-6789x",
+    "names": ["Wimbledon FC", "Wimbledon"],
+    "intl": false
+  },
+  {
     "id": "WOL-76",
     "names": ["Wolverhampton Wanderers FC", "Wolverhampton"],
     "intl": false

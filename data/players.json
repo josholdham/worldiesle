@@ -1375,6 +1375,11 @@
     "nationality": "Spain"
   },
   {
+    "id": "Juan Cuadrado",
+    "names": ["Juan Cuadrado", "Juan Guillermo Cuadrado Bello"],
+    "nationality": "Colombia"
+  },
+  {
     "id": "Juan Hernandez",
     "names": ["Juan Hernandez", null],
     "nationality": null
@@ -2032,6 +2037,11 @@
     "id": "Pablo Fornals",
     "names": ["Pablo Fornals", "Pablo"],
     "nationality": "Spain"
+  },
+  {
+    "id": "Paolo Di Canio",
+    "names": ["Paolo Di Canio"],
+    "nationality": "Italy"
   },
   {
     "id": "Pascal Groß",
