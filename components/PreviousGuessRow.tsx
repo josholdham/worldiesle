@@ -41,7 +41,7 @@ const PreviousGuessRow: React.FC<PreviousGuessRowProps> = ({
             anchorId={`emoji_${guessIndex}_${guessType}`}
             content={guessWithFeedback?.hoverText}
             place="top"
-            events={['hover', 'click']}
+            data-tooltip-events="hover click"
           />
         ) : null}
       </div>

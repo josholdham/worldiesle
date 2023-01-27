@@ -64,7 +64,7 @@ const GameFinished: React.FC<GameFinishedProps> = ({
       })
       .join('\n');
 
-    return [title, emojis, 'https://worldiesle.com'].join('\n');
+    return [title, emojis, 'https://worldiesle.com?r=sh'].join('\n');
   }, [answer, isGameWon, guesses]);
 
   const share = () => {
