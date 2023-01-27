@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import 'node_modules/react-tooltip/dist/react-tooltip.css';
+import 'node_modules/rc-tooltip/assets/bootstrap.css';
 import type { AppProps } from 'next/app';
 import { Inter } from '@next/font/google';
 import 'react-toastify/dist/ReactToastify.css';

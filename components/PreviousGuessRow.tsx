@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Tooltip } from 'react-tooltip';
+import React from 'react';
+import Tooltip from 'rc-tooltip';
+
 import { GuessType, GuessWithFeedback } from '../custom-types';
 import styles from '../styles/PreviousGuess.module.css';
 import Emoji from './Emoji';
@@ -32,18 +33,30 @@ const PreviousGuessRow: React.FC<PreviousGuessRowProps> = ({
         {guessWithFeedback?.guess?.names[0] || '-'}
       </div>
       <div className={indicatorCellCSS}>
-        <Emoji
-          emojiId={guessWithFeedback?.emojiId}
-          id={`emoji_${guessIndex}_${guessType}`}
-        />
         {guessWithFeedback?.hoverText ? (
-          <Tooltip
-            anchorId={`emoji_${guessIndex}_${guessType}`}
-            content={guessWithFeedback?.hoverText}
-            place="top"
-            data-tooltip-events="hover click"
+          <div className={styles.test}>
+            <Tooltip
+              placement="top"
+              trigger={['click', 'hover']}
+              overlay={<span>{guessWithFeedback?.hoverText}</span>}
+              overlayInnerStyle={{
+                textAlign: 'center',
+              }}
+            >
+              <div>
+                <Emoji
+                  emojiId={guessWithFeedback?.emojiId}
+                  id={`emoji_${guessIndex}_${guessType}`}
+                />
+              </div>
+            </Tooltip>
+          </div>
+        ) : (
+          <Emoji
+            emojiId={guessWithFeedback?.emojiId}
+            id={`emoji_${guessIndex}_${guessType}`}
           />
-        ) : null}
+        )}
       </div>
     </div>
   );

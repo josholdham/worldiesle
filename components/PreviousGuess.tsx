@@ -17,6 +17,7 @@ const PreviousGuess: React.FC<PreviousGuessProps> = ({
       <div className={styles['guess-title']}>
         Guess {guessIndex + 1}/{SETTINGS.maxGuesses}
       </div>
+
       <div className={styles['guess-table']}>
         <PreviousGuessRow
           guessIndex={guessIndex}
