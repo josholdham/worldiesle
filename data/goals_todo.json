@@ -9,5 +9,60 @@
     "competition": "CL",
     "url": "https://youtu.be/7HldRlTZj_g?t=341",
     "homeTeamMatters": true
+  },
+  {
+    "id": "MCI-65-CRY-354-2018-PL",
+    "teamA": "MCI-65",
+    "teamB": "CRY-354",
+    "goalScoredFor": "CRY-354",
+    "player": "Andros Townsend",
+    "year": "2018",
+    "competition": "PL",
+    "url": "https://www.youtube.com/watch?v=lAzYAQy8r9U",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "WHU-563-WIM-6789x-2000-PL",
+    "teamA": "WHU-563",
+    "teamB": "WIM-6789x",
+    "goalScoredFor": "WHU-563",
+    "player": "Paolo Di Canio",
+    "year": "2000",
+    "competition": "PL",
+    "url": "https://www.youtube.com/watch?v=9e68pIe45Ys",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "LIV-64-RMA-86-2014-CL",
+    "teamA": "LIV-64",
+    "teamB": "RMA-86",
+    "goalScoredFor": "RMA-86",
+    "player": "Cristiano Ronaldo",
+    "year": "2014",
+    "competition": "CL",
+    "url": "https://www.youtube.com/watch?v=631nzQpgjNU",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "NOR-68-LIV-64-2012-PL",
+    "teamA": "NOR-68",
+    "teamB": "LIV-64",
+    "goalScoredFor": "LIV-64",
+    "player": "Luis Suárez",
+    "year": "2012",
+    "competition": "PL",
+    "url": "https://youtu.be/4AoBHgzfxM8?t=206",
+    "homeTeamMatters": true
+  },
+  {
+    "id": "AJA-678-TOT-73-2019-CL",
+    "teamA": "AJA-678",
+    "teamB": "TOT-73",
+    "goalScoredFor": "TOT-73",
+    "player": "Lucas Moura",
+    "year": "2019",
+    "competition": "CL",
+    "url": "https://youtu.be/xykJYYgohSE?t=382",
+    "homeTeamMatters": true
   }
 ]

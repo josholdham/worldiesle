@@ -1,0 +1,492 @@
+.pseudoContainer {
+  max-width: 370px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pseudoOutline {
+  width: 370px;
+  max-height: 420px;
+  margin: 20px auto;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  position: relative;
+  padding-bottom: 30px;
+  overflow: hidden;
+  background-color: rgb(var(--background-rgb));
+}
+
+.browserButtons {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+  padding: 10px;
+  z-index: 10;
+}
+
+.browserButton {
+  width: 16px;
+  height: 16px;
+  background-color: #ff605d;
+  border-radius: 20px;
+  margin-right: 6px;
+}
+
+.browserButtonYellow {
+  background-color: #f9bc2a;
+}
+
+.browserButtonGreen {
+  background-color: #2bc63d;
+}
+
+.pseudoContent {
+  width: 100%;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.pseudoContentInner {
+  width: 100%;
+  padding: 0 30px;
+  transition: transform 0.5s ease;
+}
+
+.pseudoWorldiesle {
+  font-weight: 600;
+  padding: 20px 30px 20px;
+  background-color: rgb(var(--background-rgb));
+  z-index: 9;
+  position: relative;
+  font-size: 16px;
+}
+
+.pseudoHighlight {
+  color: #3eca96;
+}
+
+.pseudoLead {
+  margin-top: 20px;
+}
+
+.pseudoLine {
+  height: 17px;
+  width: 94%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.pseudoLineShort {
+  width: 74%;
+}
+
+.pseudoImageContainerOuter {
+  margin: 20px auto 8px;
+  width: 310px;
+  height: 186px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes imageContainerInnerAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  45% {
+    transform: translateX(0);
+  }
+
+  60% {
+    transform: translateX(-320px);
+  }
+
+  70% {
+    transform: translateX(-320px);
+  }
+
+  85% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.pseudoImageContainerInner {
+  width: calc(200% + 10px);
+  height: 186px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.pseudoImageContainerInnerAnimation {
+  animation-duration: 5s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-timing-function: ease;
+  animation-name: imageContainerInnerAnimation;
+}
+
+.pseudoImage {
+  margin-right: 10px;
+  width: 310px;
+  height: 186px;
+  background-color: #707072;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 1s ease;
+}
+
+.pseudoImage:last-child {
+  margin-right: 0;
+}
+
+.shine {
+  background: #b0b0b1;
+}
+
+.pseudoNav {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes navButton1Animation {
+  5% {
+    background-color: #3eca96;
+  }
+
+  25% {
+    background-color: #3eca96;
+  }
+
+  45% {
+    background-color: #3eca96;
+  }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  70% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  75% {
+    background-color: #3eca96;
+  }
+
+  100% {
+    background-color: #3eca96;
+  }
+}
+
+@keyframes navButton2Animation {
+  0% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  25% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  30% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  45% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  50% {
+    background-color: #3eca96;
+  }
+
+  70% {
+    background-color: #3eca96;
+  }
+
+  75% {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.pseudoNavButton {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 3px;
+  transition: background-color 0.5s ease;
+}
+
+.pseudoNavButtonAnimation1 {
+  background-color: #3eca96;
+  animation-duration: 5s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-name: navButton1Animation;
+}
+
+.pseudoNavButtonAnimation2 {
+  animation-duration: 5s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-name: navButton2Animation;
+}
+
+.pseudoGuesses {
+  margin: 30px auto 8px;
+  width: 100%;
+}
+
+.pseudoGuessLabel {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.pseudoGuess {
+  margin-bottom: 6px;
+  width: calc(100% -10px);
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-left: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+.pseudoOptions {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: rgb(var(--background-strong-rgb));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  padding-bottom: 5px;
+  opacity: 0;
+}
+
+.homeTeamLabel {
+  overflow: hidden;
+  border: 1px solid white;
+  max-width: 10px;
+}
+
+.pseudoOption {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 10px;
+}
+
+.pseudoGuessButton {
+  background-color: #3eca96;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+
+.pseudoDivider {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.pseudoTable {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+}
+
+.pseudoRow {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 10px;
+}
+
+.pseudoRow:last-child {
+  border-bottom: none;
+}
+
+.pseudoCol {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes colRightAnimation {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  25% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  30% {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+.pseudoColRight {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.pseudoColRightAnimation {
+  animation-duration: 10s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-name: colRightAnimation;
+}
+
+@keyframes tooltipAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.pseudoTooltip {
+  position: absolute;
+  top: 0;
+  right: -20px;
+
+  background-color: rgba(15, 25, 35, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+  border-radius: 5px;
+
+  margin-top: -5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  width: 180px;
+  padding: 10px 10px;
+
+  transform: translateY(-100%);
+
+  opacity: 0;
+}
+
+.pseudoTooltipAnimation {
+  animation-duration: 10s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-name: tooltipAnimation;
+}
+
+.pips {
+  margin: 30px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pip {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 5px;
+}
+
+.pipHighlight {
+  background-color: #3eca96;
+}
+
+.slidesOuter {
+  width: 400px;
+  height: 165px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0;
+}
+.slidesInner {
+  width: 400%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  transition: transform 0.75s ease;
+  display: flex;
+}
+
+.slide {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: rgba(var(--foreground-rgb), 0.8);
+  margin-bottom: 20px;
+}
+
+.description {
+  text-align: center;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  color: rgba(var(--foreground-rgb), 0.5);
+  max-width: 100%;
+}
+
+.description:last-child {
+  margin-bottom: 0;
+}
+
+.buttonNext {
+  background-color: rgb(var(--highlight-secondary-rgb));
+  width: 300px;
+  margin: 25px auto 0;
+  display: block;
+}

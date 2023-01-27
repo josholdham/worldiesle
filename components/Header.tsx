@@ -6,6 +6,7 @@ import StatsModal from './StatsModal';
 import SupportModal from './SupportModal';
 import HelpModal from './HelpModal';
 import { BasicAnswer } from '../custom-types';
+import OnboardingModal from './OnboardingModal';
 
 const MODAL_SETTINGS: {
   [key: string]: {
@@ -20,6 +21,9 @@ const MODAL_SETTINGS: {
   },
   help: {
     w: 600,
+  },
+  onboarding: {
+    w: 700,
   },
 };
 
@@ -56,7 +60,7 @@ const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
           </div>
           <div
             className={styles.iconContainer}
-            onClick={() => setModalIsOpen('help')}
+            onClick={() => setModalIsOpen('onboarding')}
           >
             <Icon icon="help_outline" size={24} color="white" />
           </div>
@@ -77,14 +81,17 @@ const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
             : {}
         }
       >
-        <div className="modal-close" onClick={closeModal}>
-          &times;
-        </div>
+        {modalIsOpen !== 'onboarding' ? (
+          <div className="modal-close" onClick={closeModal}>
+            &times;
+          </div>
+        ) : null}
         {modalIsOpen === 'stats' ? (
           <StatsModal answer={answer} />
         ) : null}
         {modalIsOpen === 'support' ? <SupportModal /> : null}
         {modalIsOpen === 'help' ? <HelpModal /> : null}
+        {modalIsOpen === 'onboarding' ? <OnboardingModal /> : null}
       </Modal>
     </>
   );
