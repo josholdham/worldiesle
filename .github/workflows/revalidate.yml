@@ -14,4 +14,4 @@ jobs:
           WORLDIESLE_SECRET: ${{ secrets.WORLDIESLE_SECRET }}
         uses: wei/curl@v1
         with:
-          args: -X GET https://worldiesle.vercel.app/api/revalidate?secret=$WORLDIESLE_SECRET
+          args: -X GET https://worldiesle.com/api/revalidate?secret=$WORLDIESLE_SECRET
