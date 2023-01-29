@@ -285,9 +285,9 @@
 }
 
 .homeTeamLabel {
-  overflow: hidden;
+  /* overflow: hidden;
   border: 1px solid white;
-  max-width: 10px;
+  max-width: 10px; */
 }
 
 .pseudoOption {

@@ -270,7 +270,10 @@ export async function getStaticProps() {
   // TODO: type expected response?
   const answers = await getJsonFileFromS3('goals.json');
   const answer = answers[daysSinceLaunch];
-  answer.dateId = dayjs().format('YYYY-MM-DD');
+  answer.dateId = dayjs()
+    .add(1, 'hours')
+    .add(30, 'minutes')
+    .format('YYYY-MM-DD');
   answer.dayNumber = daysSinceLaunch;
   console.log(daysSinceLaunch, 'answer', answer);
 
