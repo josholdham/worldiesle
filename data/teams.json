@@ -28,7 +28,22 @@
   },
   {
     "id": "ATH-77",
-    "names": ["Athletic Club", "Athletic"],
+    "names": [
+      "Athletic Bilbao",
+      "Atlético Bilbao",
+      "Athletic Club",
+      "Athletic"
+    ],
+    "intl": false
+  },
+  {
+    "id": "ATL-78",
+    "names": [
+      "Athletic Madrid",
+      "Club Atletico de Madrid",
+      "Club Atlético de Madrid",
+      "Atleti"
+    ],
     "intl": false
   },
   {
@@ -46,7 +61,17 @@
     "names": ["Bayer 04 Leverkusen", "Leverkusen"],
     "intl": false
   },
+  {
+    "id": "FCB-5",
+    "names": ["Bayern Munich", "FC Bayern München", "Bayern"],
+    "intl": false
+  },
   { "id": "BEL-805", "names": ["Belgium", "Belgium"], "intl": true },
+  {
+    "id": "BOL-7114x",
+    "names": ["Bolton Wanderers", "Bolton Wanderers F.C."],
+    "intl": false
+  },
   {
     "id": "BVB-4",
     "names": ["Borussia Dortmund", "Dortmund"],
@@ -90,11 +115,6 @@
     "intl": false
   },
   {
-    "id": "ATL-78",
-    "names": ["Club Atlético de Madrid", "Atleti"],
-    "intl": false
-  },
-  {
     "id": "CLU-851",
     "names": ["Club Brugge KV", "Club Brugge"],
     "intl": false
@@ -133,11 +153,6 @@
   {
     "id": "FCB-81",
     "names": ["FC Barcelona", "Barça"],
-    "intl": false
-  },
-  {
-    "id": "FCB-5",
-    "names": ["FC Bayern München", "Bayern"],
     "intl": false
   },
   {
@@ -444,6 +459,11 @@
     "id": "SHR-2921",
     "names": ["Shamrock Rovers FC", "Shamrock Rov"],
     "intl": false
+  },
+  {
+    "id": "ZAF-710x",
+    "names": ["South Africa", "Republic of South Africa"],
+    "intl": true
   },
   {
     "id": "KOR-772",

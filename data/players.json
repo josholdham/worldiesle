@@ -175,6 +175,11 @@
     "nationality": "Portugal"
   },
   {
+    "id": "Andy Cole",
+    "names": ["Andy Cole", "Andrew Cole"],
+    "nationality": "England"
+  },
+  {
     "id": "Angeliño",
     "names": ["Angeliño", "José Ángel"],
     "nationality": "Spain"
@@ -712,6 +717,11 @@
     "nationality": "England"
   },
   {
+    "id": "Dwight Yorke",
+    "names": ["Dwight Yorke"],
+    "nationality": "Trinidad and Tobago"
+  },
+  {
     "id": "Eberechi Eze",
     "names": ["Eberechi Eze", "Eberechi"],
     "nationality": "England"
@@ -1243,6 +1253,11 @@
     "id": "Joelinton",
     "names": ["Joelinton", "Joelinton Cassio"],
     "nationality": "Brazil"
+  },
+  {
+    "id": "Johan Elmander",
+    "names": ["Johan Elmander"],
+    "nationality": "Sweden"
   },
   {
     "id": "John McGinn",
@@ -1999,6 +2014,11 @@
     "nationality": "Nigeria"
   },
   {
+    "id": "Ole Gunnar Solskjaer",
+    "names": ["Ole Gunnar Solskjaer", "Ole Gunnar Solskjær"],
+    "nationality": "Norway"
+  },
+  {
     "id": "Olivier Giroud",
     "names": ["Olivier Giroud", "Olivier Giroud"],
     "nationality": "France"
@@ -2452,6 +2472,11 @@
     "nationality": "Japan"
   },
   {
+    "id": "Siphiwe Tshabalala",
+    "names": ["Siphiwe Tshabalala", "Lawrence Siphiwe Tshabalala"],
+    "nationality": "South Africa"
+  },
+  {
     "id": "Soldado",
     "names": ["Soldado", "Roberto"],
     "nationality": "Spain"
@@ -2535,6 +2560,11 @@
     "id": "Tariq Lamptey",
     "names": ["Tariq Lamptey", "Tariq"],
     "nationality": "Ghana"
+  },
+  {
+    "id": "Teddy Sheringham",
+    "names": ["Teddy Sheringham", "Edward Paul Sheringham"],
+    "nationality": "England"
   },
   {
     "id": "Teemu Pukki",

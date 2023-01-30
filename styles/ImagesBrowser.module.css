@@ -3,7 +3,7 @@
   position: relative;
   overflow: hidden;
   width: var(--image-width);
-  padding: calc(.56 * 50%) 0;
+  padding: calc(0.56 * 50%) 0;
 }
 
 .imageContainer {
@@ -25,10 +25,15 @@
   padding: 5px 10px;
 }
 
-.imageNav {
+.imageNavContainer {
   display: flex;
   justify-content: center;
   margin: 10px auto 0;
+}
+
+.imageNav {
+  display: flex;
+  justify-content: center;
 }
 
 .imageNavButton {
@@ -45,5 +50,5 @@
 }
 
 .imageNavButtonActive {
-  background-color: rgb(var(--highlight-rgb))
+  background-color: rgb(var(--highlight-rgb));
 }
