@@ -6,6 +6,7 @@ import StatsModal from './StatsModal';
 import SupportModal from './SupportModal';
 import HelpModal from './HelpModal';
 import { BasicAnswer } from '../custom-types';
+import { trackModalOpen } from '../utils/analytics';
 
 const MODAL_SETTINGS: {
   [key: string]: {
@@ -31,6 +32,11 @@ const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
     undefined
   );
 
+  const openModal = (modalName: string) => {
+    trackModalOpen(modalName);
+    setModalIsOpen(modalName);
+  };
+
   const closeModal = () => setModalIsOpen(undefined);
   return (
     <>
@@ -44,19 +50,19 @@ const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
         <div className={styles.headerIcons}>
           <div
             className={styles.iconContainer}
-            onClick={() => setModalIsOpen('support')}
+            onClick={() => openModal('support')}
           >
             <Icon icon="favorite_outline" size={24} color="white" />
           </div>
           <div
             className={styles.iconContainer}
-            onClick={() => setModalIsOpen('stats')}
+            onClick={() => openModal('stats')}
           >
             <Icon icon="bar_chart" size={24} color="white" />
           </div>
           <div
             className={styles.iconContainer}
-            onClick={() => setModalIsOpen('help')}
+            onClick={() => openModal('help')}
           >
             <Icon icon="help_outline" size={24} color="white" />
           </div>

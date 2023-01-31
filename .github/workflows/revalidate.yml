@@ -4,7 +4,7 @@ name: Trigger NextJS revalidation on a CRON Schedule, by sending GET request to 
 on:
   schedule:
     # Runs "at 11:35 UTC every day" TODO: adjust for BST?
-    - cron: '49 21 * * *'
+    - cron: '0 0 * * *'
 jobs:
   curl:
     runs-on: ubuntu-latest

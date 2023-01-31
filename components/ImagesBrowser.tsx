@@ -6,6 +6,7 @@ import styles from '../styles/ImagesBrowser.module.css';
 import { SETTINGS } from '../utils/settings';
 import Icon from './Icon';
 import { BasicAnswer } from '../custom-types';
+import { sendAnalyticsEvent } from '../utils/analytics';
 
 const navArr = Array.from(
   { length: SETTINGS.maxGuesses },
@@ -35,6 +36,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
   }, [guessIndex, isGameWon]);
 
   const openLink = () => {
+    sendAnalyticsEvent('Open Video', {url: answer.url});
     window.open(answer.url, '_blank');
   };
 

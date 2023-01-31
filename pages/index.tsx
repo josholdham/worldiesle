@@ -249,7 +249,7 @@ export async function getStaticProps() {
 
   console.log(
     'Getting answer for ',
-    dayjs().add(1, 'hours').add(30, 'minutes'),
+    dayjs().add(1, 'hours').add(30, 'minutes').toISOString(),
     'day',
     daysSinceLaunch
   );
@@ -282,7 +282,6 @@ export async function getStaticProps() {
     .add(30, 'minutes')
     .format('YYYY-MM-DD');
   answer.dayNumber = daysSinceLaunch;
-  console.log(daysSinceLaunch, 'answer', answer);
 
   const signedUrls = await getSignedS3Images(answer.id);
 
