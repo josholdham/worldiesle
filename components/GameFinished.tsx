@@ -9,6 +9,7 @@ import {
 import { useMemo } from 'react';
 import emojisMap, { EmojiId } from '../utils/emojis';
 import { SETTINGS } from '../utils/settings';
+import { sendAnalyticsEvent } from '../utils/analytics';
 
 type GameFinishedProps = {
   teams: FormattedTeam[];
@@ -68,6 +69,7 @@ const GameFinished: React.FC<GameFinishedProps> = ({
   }, [answer, isGameWon, guesses]);
 
   const share = () => {
+    sendAnalyticsEvent('Share', {'isGameWon': isGameWon});
     toast('Results copied to clipboard');
   };
 

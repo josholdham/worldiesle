@@ -18,6 +18,7 @@ import { getTodaysGuesses, storeGuess } from '../utils/storage';
 import PuffLoader from 'react-spinners/PuffLoader';
 import GameFinished from './GameFinished';
 import { SETTINGS } from '../utils/settings';
+import { trackGuess } from '../utils/analytics';
 
 declare global {
   var umami: {
@@ -85,20 +86,7 @@ const Game: React.FC<GameProps> = ({
     setGuesses([newGuess, ...guesses]);
 
     // Track guess with analytics
-    if (process.env.NODE_ENV !== 'development') {
-      const umami = window.umami;
-      umami.trackEvent('Guess', newGuess);
-      if (
-        newGuess.teamA?.isCorrect &&
-        newGuess.teamB?.isCorrect &&
-        newGuess.player?.isCorrect &&
-        newGuess.year?.isCorrect
-      ) {
-        umami.trackEvent('Correct Guess', {
-          guessNumber,
-        });
-      }
-    }
+    trackGuess(newGuess, guessNumber);
   };
 
   const isGameWon = useMemo(() => {
