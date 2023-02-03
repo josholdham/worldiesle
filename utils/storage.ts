@@ -68,6 +68,7 @@ export const getShouldShowLeaveBlank = (): boolean => {
     if (hasLeftBlankBefore) break;
   }
   if (hasLeftBlankBefore) {
+    setSeenLeaveBlankMessage('true');
     return false;
   }
 
