@@ -53,12 +53,12 @@ html, body {
   min-height: 100vh;
 }
 
-a {
+a, .pseudo-link {
   color: rgb(var(--highlight-rgb));
   text-decoration: none;
 }
 
-a:hover {
+a:hover, .pseudo-link:hover {
   cursor: pointer;
   text-decoration: underline;
 }

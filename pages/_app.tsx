@@ -4,10 +4,15 @@ import type { AppProps } from 'next/app';
 import { Inter } from '@next/font/google';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, Slide } from 'react-toastify';
+import { useEffect } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  useEffect(() => {
+    console.log('app refreshed')
+  }, [])
   return (
     <>
       <style jsx global>{`

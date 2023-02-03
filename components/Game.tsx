@@ -45,6 +45,10 @@ const Game: React.FC<GameProps> = ({
   );
   const [loaded, setLoaded] = useState(false);
 
+  useEffect(() => {
+    console.log('game refreshed');
+  }, []);
+
   /** When we get a new answer (this includes when the component is initialised)
    * we check local storage to see if any guesses already exist */
   useEffect(() => {

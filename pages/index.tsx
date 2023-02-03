@@ -17,6 +17,7 @@ import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
 import { usePrefersColorScheme } from '../hooks/use-prefers-color-scheme';
 import { SETTINGS } from '../utils/settings';
+import { useEffect } from 'react';
 
 type HomeProps = {
   teams: FormattedTeam[];
@@ -34,6 +35,10 @@ const Home: React.FC<HomeProps> = ({
   imageUrls,
 }) => {
   const darkOrLight = usePrefersColorScheme();
+
+  useEffect(() => {
+    console.log('index refreshed')
+  }, [])
 
   return (
     <>
