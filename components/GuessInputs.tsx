@@ -38,10 +38,8 @@ const GuessInputs: React.FC<GuessInputsProps> = ({
 
   useEffect(() => {
     const shouldShowLeaveBlank = getShouldShowLeaveBlank();
-    console.log('shouldShowLeaveBlank', shouldShowLeaveBlank);
     setShowLeaveBlank(shouldShowLeaveBlank);
     if (shouldShowLeaveBlank) {
-      console.log('setSeenLeaveBlankMessage');
       setSeenLeaveBlankMessage('true');
     }
   }, []);
