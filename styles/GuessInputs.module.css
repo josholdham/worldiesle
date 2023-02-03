@@ -7,3 +7,48 @@
   font-size: .8rem;
   padding-bottom: 5px;
 }
+
+.buttonContainer {
+  position: relative;
+}
+
+.leaveBlank {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: -30px;
+  transform: translateY(-100%);
+  background-color: #1d2533;
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 10px;
+  margin-top: 10px;
+  z-index: 1;
+  color: #cdd7e0;
+  text-align: center;
+  border: 1px solid #020816;
+  transition: transform 2s ease-in-out;
+}
+
+.leaveBlankAnimated {
+  animation: bounce 4s 8;
+}
+
+.leaveBlankBottomArrow {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #1d2533;
+}
+
+@keyframes bounce { 
+  0%, 10%, 25%, 40%, 50%, 100% {transform: translateY(-100%);} 
+  20% {transform: translateY(-140%);} 
+  30% {transform: translateY(-125%);} 
+}

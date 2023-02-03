@@ -8,6 +8,7 @@ import { ToastContainer, Slide } from 'react-toastify';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
+
   return (
     <>
       <style jsx global>{`

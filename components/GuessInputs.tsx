@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   FormattedPlayer,
   FormattedTeam,
@@ -9,6 +9,7 @@ import {
 } from '../custom-types';
 import styles from '../styles/GuessInputs.module.css';
 import { SETTINGS } from '../utils/settings';
+import { getShouldShowLeaveBlank, setSeenLeaveBlankMessage } from '../utils/storage';
 import InputRow from './InputRow';
 
 type GuessInputsProps = {
@@ -27,10 +28,21 @@ const GuessInputs: React.FC<GuessInputsProps> = ({
   onSubmit,
   correctGuesses,
 }) => {
+  const [showLeaveBlank, setShowLeaveBlank] = useState(false);
+  const [leaveBlankIsPaused, setLeaveBlankIsPaused] = useState(false);
+
   const [teamA, setTeamA] = useState<Suggestion>();
   const [teamB, setTeamB] = useState<Suggestion>();
   const [player, setPlayer] = useState<Suggestion>();
   const [year, setYear] = useState<Suggestion>();
+
+  useEffect(() => {
+    const shouldShowLeaveBlank = getShouldShowLeaveBlank();
+    setShowLeaveBlank(shouldShowLeaveBlank);
+    if (shouldShowLeaveBlank) {
+      setSeenLeaveBlankMessage('true');
+    }
+  }, []);
 
   const onGuessClick = () => {
     onSubmit({
@@ -46,7 +58,9 @@ const GuessInputs: React.FC<GuessInputsProps> = ({
   };
 
   return (
-    <div className={styles['guess-container']}>
+    <div className={styles['guess-container']} onClick={() => {
+      setShowLeaveBlank(false);
+    }}>
       <div className={styles['guess-title']}>
         Guess {guessIndex + 1}/{SETTINGS.maxGuesses}
       </div>
@@ -78,12 +92,20 @@ const GuessInputs: React.FC<GuessInputsProps> = ({
         guessIndex={guessIndex}
         correctGuess={correctGuesses.year?.guess}
       />
-      <button
-        className={`button button-highlight`}
-        onClick={onGuessClick}
-      >
-        Guess
-      </button>
+      <div className={styles.buttonContainer}>
+        <button
+          className={`button button-highlight`}
+          onClick={onGuessClick}
+        >
+          Guess
+        </button>
+        {showLeaveBlank ? (<div className={`${styles.leaveBlank} ${!leaveBlankIsPaused ? styles.leaveBlankAnimated : null}`} onMouseEnter={() => setLeaveBlankIsPaused(true)} onMouseLeave={() => setLeaveBlankIsPaused(false)}>
+          NOTE: You can click &apos;Guess&apos; without filling out all the fields to skip & reveal a new image. [ <span className="pseudo-link">OK</span> ]
+          <div className={styles.leaveBlankBottomArrow}></div>
+        </div>) : null}
+      </div>
+
+      
     </div>
   );
 };

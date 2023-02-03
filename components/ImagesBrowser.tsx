@@ -63,6 +63,7 @@ const ImagesBrowser: React.FC<ImagesBrowserProps> = ({
             }
           }}
           disabled={!isGameWon && guessIndex < buttonNumber}
+          key={`imageNav_${buttonNumber}`}
         >
           {buttonNumber + 1}
         </button>

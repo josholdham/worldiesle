@@ -31,3 +31,46 @@ export const storeGuess = (
     })
   );
 };
+
+export const setSeenLeaveBlankMessage = (msg: string) => {
+  localStorage.setItem('seenLeaveBlankMessage', msg);
+}
+
+// TODO
+// export const getRoughNumberOfVisits = (): number => {
+//   const storedGuesses = localStorage.getItem('visits');
+//   if (!storedGuesses) {
+//     return 0;
+//   }
+// };
+
+export const getShouldShowLeaveBlank = (): boolean => {
+  const seenLeaveBlankMessage = localStorage.getItem('seenLeaveBlankMessage');
+  if (seenLeaveBlankMessage === 'true') {
+    return false;
+  }
+
+  const allGuesses = loadAllGuesses();
+  const dayGuesses = Object.values(allGuesses);
+  const length = dayGuesses.length;
+  let hasLeftBlankBefore = false;
+  for (let i = 0; i < length; i++) {
+    const day = dayGuesses[i];
+    const dayLength = day.length;
+    for (let j = 0; j < dayLength; j++) {
+      const guess = day[j];
+      if (guess.teamA?.emojiId === 'noAnswer' || guess.teamB?.emojiId === 'noAnswer' || guess.player?.emojiId === 'noAnswer' || guess.year?.emojiId === 'noAnswer') {
+        hasLeftBlankBefore = true;
+        break;
+      } 
+    }
+
+    if (hasLeftBlankBefore) break;
+  }
+  if (hasLeftBlankBefore) {
+    setSeenLeaveBlankMessage('true');
+    return false;
+  }
+
+  return true;
+};

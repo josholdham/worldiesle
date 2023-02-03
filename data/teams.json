@@ -103,6 +103,7 @@
     "names": ["Cameroon", "Cameroon"],
     "intl": true
   },
+  { "id": "CAR-715", "names": ["Cardiff City F.C.", "Canada"], "intl": false },
   { "id": "CAN-828", "names": ["Canada", "Canada"], "intl": true },
   {
     "id": "CEL-732",
@@ -530,6 +531,7 @@
     "intl": false
   },
   { "id": "WAL-833", "names": ["Wales", "Wales"], "intl": true },
+  { "id": "WAT-346", "names": ["Watford FC", "Watford"], "intl": false },
   {
     "id": "WHU-563",
     "names": ["West Ham United FC", "West Ham"],

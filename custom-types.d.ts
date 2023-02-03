@@ -22,16 +22,21 @@ export type GuessType = 'teamA' | 'teamB' | 'player' | 'year';
 
 export type Competition = keyof typeof SETTINGS.competitions;
 
-export type BasicAnswer = {
-  dateId: string;
-  dayNumber: number;
+export type BasicGoal = {
+  id: string;
   teamA: string;
   teamB: string;
+  goalScoredFor: string;
   player: string;
   year: string;
   competition: Competition;
   url?: string;
   homeTeamMatters?: boolean;
+};
+
+export type BasicAnswer = BasicGoal & {
+  dateId: string;
+  dayNumber: number;
 };
 
 export type Suggestion =

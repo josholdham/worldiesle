@@ -178,6 +178,7 @@ const InputRow: React.FC<{
       renderInputComponent={renderInputComponent}
       shouldRenderSuggestions={() => true}
     />
+
   );
 };
 
