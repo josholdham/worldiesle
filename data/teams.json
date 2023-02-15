@@ -533,6 +533,11 @@
   { "id": "WAL-833", "names": ["Wales", "Wales"], "intl": true },
   { "id": "WAT-346", "names": ["Watford FC", "Watford"], "intl": false },
   {
+    "id": "WBA-66",
+    "names": ["West Brom", "West Bromwich Albion", "West Bromwich Albion FC"],
+    "intl": false
+  },
+  {
     "id": "WHU-563",
     "names": ["West Ham United FC", "West Ham"],
     "intl": false

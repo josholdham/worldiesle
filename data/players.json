@@ -115,11 +115,6 @@
     "nationality": "Sweden"
   },
   {
-    "id": "Alexander Sørloth",
-    "names": ["Alexander Sørloth", "Alexander Sørloth"],
-    "nationality": "Norway"
-  },
-  {
     "id": "Alexandre Lacazette",
     "names": ["Alexandre Lacazette", "Alexandre"],
     "nationality": "France"
@@ -135,14 +130,14 @@
     "nationality": "Chile"
   },
   {
+    "id": "Alisson",
+    "names": ["Alisson", "Alisson Becker", "Alisson Ramsés Becker", "Allisson"],
+    "nationality": "Brazil"
+  },
+  {
     "id": "Allan Saint-Maximin",
     "names": ["Allan Saint-Maximin", "Allan Irénèe"],
     "nationality": "France"
-  },
-  {
-    "id": "Amadou Haïdara",
-    "names": ["Amadou Haïdara", "Amadou"],
-    "nationality": "Mali"
   },
   {
     "id": "Amadou Onana",
@@ -887,6 +882,11 @@
     "nationality": "Brazil"
   },
   {
+    "id": "Fernando Llorente",
+    "names": ["Fernando Llorente", "Fernando Javier Llorente Torres"],
+    "nationality": "Spain"
+  },
+  {
     "id": "Fernando Torres",
     "names": ["Fernando Torres"],
     "nationality": "Spain"
@@ -1455,17 +1455,17 @@
   },
   {
     "id": "Kaoru Mitoma",
-    "names": ["Kaoru Mitoma", "Kaoru"],
+    "names": ["Kaoru Mitoma"],
     "nationality": "Japan"
   },
   {
     "id": "Karim Adeyemi",
-    "names": ["Karim Adeyemi", "Karim"],
+    "names": ["Karim Adeyemi"],
     "nationality": "Germany"
   },
   {
     "id": "Karim Benzema",
-    "names": ["Karim Benzema", "Karim Benzema"],
+    "names": ["Karim Benzema"],
     "nationality": "France"
   },
   {
@@ -2312,11 +2312,6 @@
     "nationality": "Belgium"
   },
   {
-    "id": "Roope Riski",
-    "names": ["Roope Riski", "Roope"],
-    "nationality": "Finland"
-  },
-  {
     "id": "Ross Barkley",
     "names": ["Ross Barkley", "Ross Barkley"],
     "nationality": "England"
@@ -2327,14 +2322,14 @@
     "nationality": "England"
   },
   {
-    "id": "Ruud Vormer",
-    "names": ["Ruud Vormer", "Ruud"],
-    "nationality": "Netherlands"
+    "id": "Ryan Fraser",
+    "names": ["Ryan Fraser"],
+    "nationality": "Scotland"
   },
   {
-    "id": "Ryan Fraser",
-    "names": ["Ryan Fraser", "Ryan"],
-    "nationality": "Scotland"
+    "id": "Ryan Giggs",
+    "names": ["Ryan Giggs"],
+    "nationality": "Wales"
   },
   {
     "id": "Ryan Gravenberch",
@@ -2348,7 +2343,7 @@
   },
   {
     "id": "Ryan Sessegnon",
-    "names": ["Ryan Sessegnon", "Ryan"],
+    "names": ["Ryan Sessegnon"],
     "nationality": "England"
   },
   {
