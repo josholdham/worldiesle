@@ -126,6 +126,8 @@ const testPlayersAndTeamsExist = async () => {
     }
   });
 
+  console.log(`${goals.length} goals checked.`)
+
 }
 
 const init = async () => {
