@@ -19,6 +19,7 @@ import PuffLoader from 'react-spinners/PuffLoader';
 import GameFinished from './GameFinished';
 import { SETTINGS } from '../utils/settings';
 import { trackGuess } from '../utils/analytics';
+import { correctPastGuesses } from '../utils/corrections';
 
 declare global {
   var umami: {
@@ -49,7 +50,8 @@ const Game: React.FC<GameProps> = ({
    * we check local storage to see if any guesses already exist */
   useEffect(() => {
     const existingBasicGuesses = getTodaysGuesses(answer.dateId);
-    setGuesses(existingBasicGuesses);
+    const correctedGuesses = correctPastGuesses(answer, existingBasicGuesses)
+    setGuesses(correctedGuesses);
     setLoaded(true);
   }, [answer]);
 

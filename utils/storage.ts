@@ -15,6 +15,20 @@ export const getTodaysGuesses = (
   return storedGuesses[dateStr] || [];
 };
 
+export const overwriteTodaysGuesses = (
+  dateStr: string,
+  guess: SetOfGuessesWithFeedback[]
+) => {
+  const allGuesses = loadAllGuesses();
+  localStorage.setItem(
+    'guesses',
+    JSON.stringify({
+      ...allGuesses,
+      [dateStr]: guess,
+    })
+  );
+}
+
 export const storeGuess = (
   dateStr: string,
   guess: SetOfGuessesWithFeedback

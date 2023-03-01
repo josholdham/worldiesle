@@ -49,7 +49,7 @@ const StatsModal: React.FC<StatsModalProps> = ({ answer }) => {
         if (!hasLost) {
           currentStreakCount++;
         }
-        guessDistributionCount[setOfGuesses.length]++;
+        guessDistributionCount[setOfGuesses.length - 1]++;
       } else {
         streakCount = 0;
         hasLost = true;
