@@ -31,7 +31,7 @@ export const updateExistingFile = async (
 ) => {
   const status = await fs.writeFile(
     `./data/${filename}.json`,
-    JSON.stringify(updatedJson)
+    JSON.stringify(updatedJson, undefined, 2)
   );
   return status;
 };
