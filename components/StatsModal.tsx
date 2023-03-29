@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import styles from '../styles/Modals.module.css';
-import { loadAllGuesses } from '../utils/storage';
-import { BasicAnswer } from '../custom-types';
+import React, { useEffect, useState } from "react";
+import styles from "../styles/Modals.module.css";
+import { loadAllGuesses } from "../utils/storage";
+import { BasicAnswer } from "../custom-types";
 
 type StatsModalProps = {
   answer: BasicAnswer;
@@ -11,9 +11,7 @@ const StatsModal: React.FC<StatsModalProps> = ({ answer }) => {
   const [gamesWonPerc, setGamesWonPerc] = useState(0);
   const [maxStreak, setMaxStreak] = useState(0);
   const [currentStreak, setCurrentStreak] = useState(0);
-  const [guessDistribution, setGuessDistribution] = useState<
-    number[]
-  >([]);
+  const [guessDistribution, setGuessDistribution] = useState<number[]>([]);
   const [maxPerc, setMaxPerc] = useState(100);
 
   useEffect(() => {
@@ -29,7 +27,7 @@ const StatsModal: React.FC<StatsModalProps> = ({ answer }) => {
     let hasLost = false;
     const guessDistributionCount = [0, 0, 0, 0, 0];
 
-    let lastKey = '';
+    let lastKey = "";
 
     keys.forEach((key) => {
       // TODO: check days are consecutive?
@@ -56,12 +54,10 @@ const StatsModal: React.FC<StatsModalProps> = ({ answer }) => {
       }
     });
 
-    const perc = gamesPlayedCount
-      ? (gamesWon / gamesPlayedCount) * 100
-      : 0;
+    const perc = gamesPlayedCount ? (gamesWon / gamesPlayedCount) * 100 : 0;
 
     setGamesPlayed(gamesPlayedCount);
-    setGamesWonPerc(perc);
+    setGamesWonPerc(Math.ceil(perc));
     setMaxStreak(maxStreakCount);
     setCurrentStreak(currentStreakCount);
     setGuessDistribution(guessDistributionCount);
@@ -98,10 +94,7 @@ const StatsModal: React.FC<StatsModalProps> = ({ answer }) => {
         {guessDistribution.map((val, i) => {
           const perc = (val / maxPerc) * 100;
           return (
-            <div
-              className={styles.distributionRow}
-              key={`guessdist_${i}`}
-            >
+            <div className={styles.distributionRow} key={`guessdist_${i}`}>
               <div className={styles.distributionNumber}>{i + 1}</div>
               <div className={styles.distributionBarContainer}>
                 <div

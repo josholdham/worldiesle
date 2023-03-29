@@ -1,12 +1,12 @@
-import Modal from 'react-modal';
-import styles from '../styles/Home.module.css';
-import Icon from '../components/Icon';
-import { useState } from 'react';
-import StatsModal from './StatsModal';
-import SupportModal from './SupportModal';
-import HelpModal from './HelpModal';
-import { BasicAnswer } from '../custom-types';
-import { trackModalOpen } from '../utils/analytics';
+import Modal from "react-modal";
+import styles from "../styles/Home.module.css";
+import Icon from "../components/Icon";
+import { useState } from "react";
+import StatsModal from "./StatsModal";
+import SupportModal from "./SupportModal";
+import HelpModal from "./HelpModal";
+import { BasicAnswer } from "../custom-types";
+import { trackModalOpen } from "../utils/analytics";
 
 const MODAL_SETTINGS: {
   [key: string]: {
@@ -25,12 +25,10 @@ const MODAL_SETTINGS: {
 };
 
 // The following line is for aria accessibility
-Modal.setAppElement('#__next');
+Modal.setAppElement("#__next");
 
 const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
-  const [modalIsOpen, setModalIsOpen] = useState<string | undefined>(
-    undefined
-  );
+  const [modalIsOpen, setModalIsOpen] = useState<string | undefined>(undefined);
 
   const openModal = (modalName: string) => {
     trackModalOpen(modalName);
@@ -44,25 +42,24 @@ const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
         <div className={styles.headerLeft}>
           <h2>
             worldies<span className="highlighted-text">le</span>
-            <span className={styles.headerBeta}>Beta</span>
           </h2>
         </div>
         <div className={styles.headerIcons}>
           <div
             className={styles.iconContainer}
-            onClick={() => openModal('support')}
+            onClick={() => openModal("support")}
           >
             <Icon icon="favorite_outline" size={24} color="white" />
           </div>
           <div
             className={styles.iconContainer}
-            onClick={() => openModal('stats')}
+            onClick={() => openModal("stats")}
           >
             <Icon icon="bar_chart" size={24} color="white" />
           </div>
           <div
             className={styles.iconContainer}
-            onClick={() => openModal('help')}
+            onClick={() => openModal("help")}
           >
             <Icon icon="help_outline" size={24} color="white" />
           </div>
@@ -86,11 +83,9 @@ const Header: React.FC<{ answer: BasicAnswer }> = ({ answer }) => {
         <div className="modal-close" onClick={closeModal}>
           &times;
         </div>
-        {modalIsOpen === 'stats' ? (
-          <StatsModal answer={answer} />
-        ) : null}
-        {modalIsOpen === 'support' ? <SupportModal /> : null}
-        {modalIsOpen === 'help' ? <HelpModal /> : null}
+        {modalIsOpen === "stats" ? <StatsModal answer={answer} /> : null}
+        {modalIsOpen === "support" ? <SupportModal /> : null}
+        {modalIsOpen === "help" ? <HelpModal /> : null}
       </Modal>
     </>
   );

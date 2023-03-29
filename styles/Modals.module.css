@@ -28,11 +28,11 @@
 
 .statsLabel {
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding-bottom: 8px;
   max-width: 100px;
   text-align: left;
-  opacity: .8
+  opacity: 0.8;
 }
 
 .statsDivider {
@@ -67,20 +67,6 @@
   background-color: rgb(var(--highlight-rgb));
 }
 
-.betaWarning {
-  border: 2px solid rgb(231, 76, 60);
-  background-color: rgba(231, 76, 60, .2);
-  border-radius: 6px;
-  font-size: .9rem;
-  line-height: 1.3rem;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.betaBold {
-  font-weight: 800;
-}
-
 .howToPlayContainer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -95,7 +81,7 @@
 }
 
 .howToPlayBlockIcon {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .howToPlayBlockBody {
@@ -104,13 +90,13 @@
 
 .howToPlayContainer p {
   margin-top: 0;
-  opacity: .9;
-  font-size: 1.1rem
+  opacity: 0.9;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 410px) {
   .howToPlayBlockIcon {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   .howToPlayBlockBody {
     padding-left: 15px;
@@ -131,5 +117,5 @@
 }
 
 .faqBlock p {
-  margin-top: 10px
+  margin-top: 10px;
 }

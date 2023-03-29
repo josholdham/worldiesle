@@ -6,23 +6,23 @@ import {
   SetOfGuesses,
   SetOfGuessesWithFeedback,
   Suggestion,
-} from '../custom-types';
+} from "../custom-types";
 
-const DEFAULT_FEEDBACK: Omit<GuessWithFeedback, 'guess'> = {
-  emojiId: 'noAnswer',
-  hoverText: 'No answer was guessed.',
+const DEFAULT_FEEDBACK: Omit<GuessWithFeedback, "guess"> = {
+  emojiId: "noAnswer",
+  hoverText: "No answer was guessed.",
   isCorrect: false,
 };
 
-const CORRECT_FEEDBACK: Omit<GuessWithFeedback, 'guess'> = {
-  emojiId: 'correct',
+const CORRECT_FEEDBACK: Omit<GuessWithFeedback, "guess"> = {
+  emojiId: "correct",
   isCorrect: true,
-  hoverText: '',
+  hoverText: "",
 };
 
-const INCORRECT_FEEDBACK: Omit<GuessWithFeedback, 'guess'> = {
-  emojiId: 'incorrect',
-  hoverText: 'Incorrect Guess.',
+const INCORRECT_FEEDBACK: Omit<GuessWithFeedback, "guess"> = {
+  emojiId: "incorrect",
+  hoverText: "Incorrect Guess.",
   isCorrect: false,
 };
 
@@ -37,7 +37,7 @@ const getTeamGuessFeedback = (
   };
 
   const teamGuess = guesses[guessKey];
-  const secondaryGuessKey = guessKey === 'teamA' ? 'teamB' : 'teamA';
+  const secondaryGuessKey = guessKey === "teamA" ? "teamB" : "teamA";
   const secondaryGuess = guesses[secondaryGuessKey];
 
   if (teamGuess?.id === answer[guessKey]) {
@@ -62,9 +62,9 @@ const getTeamGuessFeedback = (
     teamGuess?.id === answer[secondaryGuessKey] &&
     secondaryGuess?.id !== answer[secondaryGuessKey]
   ) {
-    guessWithFeedback.emojiId = 'homeAway';
-    guessWithFeedback.hoverText =
-      'This team did feature in this match, but not as the home team';
+    guessWithFeedback.emojiId = "homeAway";
+    const homeAwayText = guessKey === "teamA" ? "home" : "away";
+    guessWithFeedback.hoverText = `This team did feature in this match, but not as the ${homeAwayText} team`;
   } else if (teamGuess) {
     guessWithFeedback = {
       ...guessWithFeedback,
@@ -94,9 +94,9 @@ const getPlayerGuessFeedback = (
     playerGuess?.nationality &&
     playerGuess?.nationality === fullPlayerAnswer?.nationality
   ) {
-    guessWithFeedback.emojiId = 'correctNationality';
+    guessWithFeedback.emojiId = "correctNationality";
     guessWithFeedback.hoverText =
-      'The correct player has the same nationality as your guessed player';
+      "The correct player has the same nationality as your guessed player";
   } else if (playerGuess?.id) {
     guessWithFeedback = {
       ...guessWithFeedback,
@@ -130,29 +130,27 @@ const getYearGuessFeedback = (
       ...CORRECT_FEEDBACK,
     };
   } else if (diff >= -2 && diff < 0) {
-    guessWithFeedback.emojiId = 'upSmall';
+    guessWithFeedback.emojiId = "upSmall";
     guessWithFeedback.hoverText =
-      'You are within 2 years of the correct answer';
+      "You are within 2 years of the correct answer";
   } else if (diff <= 2 && diff > 0) {
-    guessWithFeedback.emojiId = 'downSmall';
+    guessWithFeedback.emojiId = "downSmall";
     guessWithFeedback.hoverText =
-      'You are within 2 years of the correct answer';
+      "You are within 2 years of the correct answer";
   } else if (diff >= -5 && diff < 0) {
-    guessWithFeedback.emojiId = 'upMedium';
+    guessWithFeedback.emojiId = "upMedium";
     guessWithFeedback.hoverText =
-      'You are within 5 years of the correct answer';
+      "You are within 5 years of the correct answer";
   } else if (diff <= 5 && diff > 0) {
-    guessWithFeedback.emojiId = 'downMedium';
+    guessWithFeedback.emojiId = "downMedium";
     guessWithFeedback.hoverText =
-      'You are within 5 years of the correct answer';
+      "You are within 5 years of the correct answer";
   } else if (diff < 0) {
-    guessWithFeedback.emojiId = 'upLarge';
-    guessWithFeedback.hoverText =
-      'You are a long way off the correct year';
+    guessWithFeedback.emojiId = "upLarge";
+    guessWithFeedback.hoverText = "You are a long way off the correct year";
   } else if (diff > 0) {
-    guessWithFeedback.emojiId = 'downLarge';
-    guessWithFeedback.hoverText =
-      'You are a long way off the correct year';
+    guessWithFeedback.emojiId = "downLarge";
+    guessWithFeedback.hoverText = "You are a long way off the correct year";
   }
 
   return guessWithFeedback;
@@ -180,11 +178,11 @@ export const getGuessFeedback = (
     };
   }
 
-  if (guessKey === 'teamA' || guessKey === 'teamB') {
+  if (guessKey === "teamA" || guessKey === "teamB") {
     return getTeamGuessFeedback(guess, guessKey, answer);
   }
 
-  if (guessKey === 'player') {
+  if (guessKey === "player") {
     return getPlayerGuessFeedback(
       guess.player as FormattedPlayer,
       answer,
