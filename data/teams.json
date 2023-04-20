@@ -676,7 +676,7 @@
   },
   {
     "id": "WOL-76",
-    "names": ["Wolverhampton Wanderers FC", "Wolverhampton"],
+    "names": ["Wolverhampton Wanderers FC", "Wolverhampton", "Wolves"],
     "intl": false
   },
   {
@@ -692,6 +692,16 @@
   {
     "id": "HUL-7690x",
     "names": ["Hull City", "Hull City Association Football Club"],
+    "intl": false
+  },
+  {
+    "id": "CHA-7691x",
+    "names": ["Charlton Athletic", "Charlton", "Charlton FC"],
+    "intl": false
+  },
+  {
+    "id": "BLA-7692x",
+    "names": ["Blackburn Rovers FC", "Blackburn"],
     "intl": false
   }
 ]
