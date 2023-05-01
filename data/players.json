@@ -2417,6 +2417,14 @@
     "nationality": "Japan"
   },
   {
+    "id": "Karel Poborsky",
+    "names": [
+      "Karel Poborsky",
+      "Karel Poborský"
+    ],
+    "nationality": "Czech Republic"
+  },
+  {
     "id": "Karim Adeyemi",
     "names": [
       "Karim Adeyemi"
@@ -2445,6 +2453,13 @@
       "Kevin De Bruyne"
     ],
     "nationality": "Belgium"
+  },
+  {
+    "id": "Kevin-Prince Boateng",
+    "names": [
+      "Kevin-Prince Boateng"
+    ],
+    "nationality": "Ghana"
   },
   {
     "id": "Kieffer Moore",
